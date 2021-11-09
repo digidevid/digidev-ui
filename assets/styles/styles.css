@@ -1,3 +1,13 @@
+.btn-primary {
+  background-color: #0a7dfa;
+  color: white;
+}
+.btn-secondary {
+  background-color: white;
+  color: #0a7dfa;
+}
+
 .bg-primary {
-    background-color: pink;
+  background-color: #0a7dfa;
+  color: white;
 }

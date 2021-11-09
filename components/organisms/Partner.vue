@@ -4,26 +4,17 @@
     <div class="container px-8 mx-auto sm:px-12 lg:px-20">
       <h1
         class="
-          text-sm
+          text-4xl
           font-bold
           tracking-wide
-          text-center text-gray-800
-          uppercase
+          text-start text-gray-800
           mb-7
+          px-[163px]
         "
       >
-        Trusted by top-leading companies.
+        Perusahaan Rekanan
       </h1>
-      <div
-        class="
-          flex
-          grid
-          items-center
-          justify-center
-          grid-cols-4 grid-cols-12
-          gap-y-8
-        "
-      >
+      <div class="flex items-center justify-center space-y-8 space-x-10">
         <div
           class="
             flex

@@ -1,23 +1,19 @@
 <template>
   <div>
-    <section class="w-full px-6 pb-12 antialiased bg-white">
-      <div class="mx-auto max-w-7xl">
-        <Navbar />
-        <Hero />
-        <Benefit />
-        <Partner />
-        <Service />
-        <Mentor />
-        <Class />
-        <Testimoni />
-        <Footer />
-      </div>
-    </section>
+    <Navigation />
+    <Info />
+    <Benefit />
+    <Partner />
+    <!-- <Service /> -->
+    <Mentor />
+    <Class />
+    <Testimoni />
+    <Footer /> -->
   </div>
 </template>
 
 <script>
-import Navbar from "~/components/organisms/Navbar";
+import Navigation from "~/components/organisms/Navigation";
 import Hero from "~/components/organisms/Hero";
 import Partner from "~/components/organisms/Partner";
 import Benefit from "~/components/organisms/Benefit";
@@ -26,10 +22,11 @@ import Mentor from "~/components/organisms/Mentor";
 import Class from "~/components/organisms/Class";
 import Testimoni from "~/components/organisms/Testimoni";
 import Footer from "~/components/organisms/Footer";
+import Info from "../components/organisms/Info.vue";
 
 export default {
   components: {
-    Navbar,
+    Navigation,
     Hero,
     Partner,
     Benefit,
@@ -38,6 +35,13 @@ export default {
     Class,
     Testimoni,
     Footer,
+    Info,
   },
 };
 </script>
+
+<style lang="scss" scoped>
+body {
+  font-family: "Poppins", sans-serif;
+}
+</style>
