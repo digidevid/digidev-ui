@@ -6,7 +6,7 @@
     </p>
   </div>
 
-  <Button />
+  <!-- <Button /> -->
 </template>
 
 <script>
