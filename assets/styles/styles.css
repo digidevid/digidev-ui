@@ -1,6 +1,21 @@
 html * {
   color: #2d2d2d;
 }
+.btn-primary {
+  background-color: #0a7dfa;
+  color: white;
+}
+.btn-secondary {
+  background-color: white;
+  color: #0a7dfa;
+}
+.bg-primary {
+  background-color: #0a7dfa;
+  color: white;
+}
+.text-primary {
+  color: #0a7dfa;
+}
 .dark-grey {
   color: #2d2d2d;
   opacity: 80%;

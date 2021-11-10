@@ -19,7 +19,7 @@
         >
           <p
             class="text-18 font-bold"
-            :class="{ 'text-blue-500': faq.isActive }"
+            :class="{ 'text-primary': faq.isActive }"
           >
             {{ faq.question }}
           </p>

@@ -8,7 +8,7 @@
     <div class="mt-10">
       <div class="p-12 grid grid-cols-3 bg-white rounded-xl shadow-lg">
         <div class="col-span-2">
-          <h1 class="text-blue-500 font-bold text-[20px]">
+          <h1 class="text-primary font-bold text-[20px]">
             {{ activeTutor.name }}
           </h1>
           <p class="dark-grey text-14">{{ activeTutor.location }}</p>

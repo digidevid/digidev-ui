@@ -13,8 +13,8 @@
         :key="id"
         class="flex space-x-5 items-center"
       >
-        <p class="text-[20px] text-blue-500 font-bold text-center">
-          <span class="text-blue-500" v-if="id < 9">0</span>{{ id + 1 }}
+        <p class="text-[20px] text-primary font-bold text-center">
+          <span class="text-primary" v-if="id < 9">0</span>{{ id + 1 }}
         </p>
         <p class="col-span-11 text-[20px] font-bold">
           {{ syllabus }}

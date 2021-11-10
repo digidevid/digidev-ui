@@ -10,8 +10,8 @@
         :key="id"
         class="flex space-x-5 items-start"
       >
-        <p class="text-2xl text-blue-500 font-bold text-center">
-          <span class="text-blue-500" v-if="item.id < 10">0</span>{{ item.id }}
+        <p class="text-2xl text-primary font-bold text-center">
+          <span class="text-primary" v-if="item.id < 10">0</span>{{ item.id }}
         </p>
         <p class="text-18 font-medium">
           {{ item.content }}
