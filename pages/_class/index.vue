@@ -42,6 +42,10 @@
         <div id="class-types" class="class-type my-16">
           <ClassType :class-types="chosedClass.classTypes" />
         </div>
+
+        <div id="class-location" class="class-location my-16">
+          <ClassLocation :class-locations="chosedClass.locations" />
+        </div>
       </div>
     </div>
   </div>
@@ -51,12 +55,14 @@
 import ClassInfo from "./views/ClassInfo.vue";
 import ClassGoals from "./views/ClassGoals.vue";
 import ClassType from "./views/ClassType.vue";
+import ClassLocation from "./views/ClassLocation.vue";
 import { classList } from "~/constants/class-list.js";
 export default {
   components: {
     ClassInfo,
     ClassGoals,
     ClassType,
+    ClassLocation,
   },
   data() {
     return {

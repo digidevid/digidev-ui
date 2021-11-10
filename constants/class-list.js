@@ -5,6 +5,7 @@ export const classList = [
     slug: "web-basic",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Yogyakarta"],
     classTypes: [
       {
         id: 1,
@@ -61,6 +62,7 @@ export const classList = [
     slug: "front-end",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
     classTypes: [
       {
         id: 1,
@@ -117,6 +119,7 @@ export const classList = [
     slug: "back-end",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Surabaya", "Bali"],
     classTypes: [
       {
         id: 1,
@@ -173,6 +176,7 @@ export const classList = [
     slug: "full-stack",
     classDays: 16,
     classWeeks: 8,
+    locations: ["Medan", "Jakarta", "Yogyakarta", "Bali", "Palembang"],
     classTypes: [
       {
         id: 1,
