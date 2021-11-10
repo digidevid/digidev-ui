@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Lokasi belajar yang tersedia</h1>
-    <p class="opacity-80">
+    <p class="dark-grey">
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, doloremque.
     </p>
     <div class="grid grid-cols-2 mt-8">

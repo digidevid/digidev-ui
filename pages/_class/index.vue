@@ -5,11 +5,7 @@
         <div class="bg-white rounded-2xl shadow-lg p-6 max-h-max fixed">
           <p class="font-bold mb-5">Detail Kelas</p>
           <ul class="space-y-4">
-            <li
-              v-for="(item, id) in menu"
-              :key="id"
-              class="text-[#2d2d2d] opacity-50"
-            >
+            <li v-for="(item, id) in menu" :key="id" class="light-grey">
               {{ item.name }}
             </li>
           </ul>
@@ -46,6 +42,10 @@
         <div id="class-location" class="class-location my-16">
           <ClassLocation :class-locations="chosedClass.locations" />
         </div>
+
+        <div id="class-syllabus" class="class-syllabus my-16">
+          <ClassSyllabus :class-syllabus="chosedClass.syllabus" />
+        </div>
       </div>
     </div>
   </div>
@@ -56,6 +56,7 @@ import ClassInfo from "./views/ClassInfo.vue";
 import ClassGoals from "./views/ClassGoals.vue";
 import ClassType from "./views/ClassType.vue";
 import ClassLocation from "./views/ClassLocation.vue";
+import ClassSyllabus from "./views/ClassSyllabus.vue";
 import { classList } from "~/constants/class-list.js";
 export default {
   components: {
@@ -63,6 +64,7 @@ export default {
     ClassGoals,
     ClassType,
     ClassLocation,
+    ClassSyllabus,
   },
   data() {
     return {

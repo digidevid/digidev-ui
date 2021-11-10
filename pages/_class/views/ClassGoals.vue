@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Tujuan Kelas</h1>
-    <p class="opacity-80">
+    <p class="dark-grey">
       Apa Saja yang Akan Anda Dapatkan Melalui Program Ini
     </p>
     <div class="space-y-3 mt-6 w-3/4">
@@ -11,7 +11,7 @@
         class="grid grid-cols-12 items-start"
       >
         <p class="text-2xl text-blue-500 font-bold text-center">
-          0{{ item.id }}
+          <span class="text-blue-500" v-if="item.id < 10">0</span>{{ item.id }}
         </p>
         <p class="col-span-11 text-[18px] font-medium">
           {{ item.content }}

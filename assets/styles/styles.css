@@ -1,3 +1,11 @@
-.bg-primary {
-    background-color: pink;
+html * {
+  color: #2d2d2d;
+}
+.dark-grey {
+  color: #2d2d2d;
+  opacity: 80%;
+}
+.light-grey {
+  color: #2d2d2d;
+  opacity: 50%;
 }

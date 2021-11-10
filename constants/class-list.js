@@ -6,6 +6,16 @@ export const classList = [
     classDays: 8,
     classWeeks: 4,
     locations: ["Medan", "Jakarta", "Yogyakarta"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -63,6 +73,16 @@ export const classList = [
     classDays: 8,
     classWeeks: 4,
     locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -120,6 +140,16 @@ export const classList = [
     classDays: 8,
     classWeeks: 4,
     locations: ["Medan", "Jakarta", "Surabaya", "Bali"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -177,6 +207,16 @@ export const classList = [
     classDays: 16,
     classWeeks: 8,
     locations: ["Medan", "Jakarta", "Yogyakarta", "Bali", "Palembang"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
