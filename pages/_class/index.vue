@@ -16,7 +16,12 @@
         >
           <p class="font-bold mb-5 text-18">Detail Kelas</p>
           <ul class="space-y-4">
-            <li v-for="(item, id) in menu" :key="id" class="light-grey">
+            <li
+              v-for="(item, id) in menu"
+              :key="id"
+              class="light-grey cursor-pointer"
+              @click="scrollToSection(item.id)"
+            >
               {{ item.name }}
             </li>
           </ul>
@@ -148,6 +153,64 @@ export default {
     },
     prevTutor(id) {
       this.shownTutor = this.chosedClass.tutors[id - 1 - 1];
+    },
+    scrollToSection(id) {
+      if (id === 1) {
+        const infoSection = document.getElementById("class-info");
+        infoSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 2) {
+        const goalsSection = document.getElementById("class-goals");
+        goalsSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 3) {
+        const classTypeSection = document.getElementById("class-types");
+        classTypeSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 4) {
+        const locationSection = document.getElementById("class-location");
+        locationSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 5) {
+        const mentorSection = document.getElementById("class-mentor");
+        mentorSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 6) {
+        const syllabusSection = document.getElementById("class-syllabus");
+        syllabusSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+      if (id === 7) {
+        const faqSection = document.getElementById("class-faq");
+        faqSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
     },
   },
 };
