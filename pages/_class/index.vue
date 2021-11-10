@@ -1,8 +1,19 @@
 <template>
   <div class="bg-[#fdfdfd] p-20">
-    <div class="grid grid-cols-5 gap-14">
-      <div>
-        <div class="bg-white rounded-2xl shadow-lg p-6 max-h-max fixed">
+    <div class="grid grid-cols-7 gap-14">
+      <div class="col-span-2 px-8 relative">
+        <div
+          class="
+            bg-white
+            rounded-2xl
+            shadow-lg
+            p-6
+            max-h-max
+            w-full
+            sticky
+            top-16
+          "
+        >
           <p class="font-bold mb-5">Detail Kelas</p>
           <ul class="space-y-4">
             <li v-for="(item, id) in menu" :key="id" class="light-grey">
@@ -26,7 +37,7 @@
         </div>
       </div>
 
-      <div class="col-span-4 p-8">
+      <div class="col-span-5 p-8">
         <div id="class-info" class="class-info mb-16">
           <ClassInfo :class-info="chosedClass" />
         </div>
