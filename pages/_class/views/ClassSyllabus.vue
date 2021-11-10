@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold leading-10">
       Materi yang akan kamu pelajari
     </h1>
-    <p class="dark-grey">
+    <p class="dark-grey w-1/2">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga nam
       eum eius cupiditate quidem nobis labore quasi dolor ipsa.
     </p>

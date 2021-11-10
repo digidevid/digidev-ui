@@ -46,6 +46,10 @@
         <div id="class-syllabus" class="class-syllabus my-16">
           <ClassSyllabus :class-syllabus="chosedClass.syllabus" />
         </div>
+
+        <div id="class-faq" class="class-faq my-16">
+          <ClassFaq :class-faq="chosedClass.faq" />
+        </div>
       </div>
     </div>
   </div>
@@ -57,6 +61,7 @@ import ClassGoals from "./views/ClassGoals.vue";
 import ClassType from "./views/ClassType.vue";
 import ClassLocation from "./views/ClassLocation.vue";
 import ClassSyllabus from "./views/ClassSyllabus.vue";
+import ClassFaq from "./views/ClassFaq.vue";
 import { classList } from "~/constants/class-list.js";
 export default {
   components: {
@@ -65,6 +70,7 @@ export default {
     ClassType,
     ClassLocation,
     ClassSyllabus,
+    ClassFaq,
   },
   data() {
     return {

@@ -65,6 +65,32 @@ export const classList = [
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
       },
     ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
   },
   {
     id: 2,
@@ -130,6 +156,32 @@ export const classList = [
         id: 3,
         content:
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+      },
+    ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
       },
     ],
   },
@@ -199,6 +251,32 @@ export const classList = [
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
       },
     ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
   },
   {
     id: 4,
@@ -264,6 +342,32 @@ export const classList = [
         id: 3,
         content:
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+      },
+    ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
       },
     ],
   },
