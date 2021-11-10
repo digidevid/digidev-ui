@@ -3,7 +3,7 @@
     <h1 class="text-3xl font-bold leading-10">
       Materi yang akan kamu pelajari
     </h1>
-    <p class="dark-grey w-1/2">
+    <p class="dark-grey w-1/2 text-18">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga nam
       eum eius cupiditate quidem nobis labore quasi dolor ipsa.
     </p>
@@ -13,10 +13,10 @@
         :key="id"
         class="flex space-x-5 items-center"
       >
-        <p class="text-[18px] text-blue-500 font-bold text-center">
+        <p class="text-[20px] text-blue-500 font-bold text-center">
           <span class="text-blue-500" v-if="id < 9">0</span>{{ id + 1 }}
         </p>
-        <p class="col-span-11 text-[18px] font-bold">
+        <p class="col-span-11 text-[20px] font-bold">
           {{ syllabus }}
         </p>
       </div>

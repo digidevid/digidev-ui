@@ -18,7 +18,7 @@
           @click="faq.isActive = !faq.isActive"
         >
           <p
-            class="text-[18px] font-bold"
+            class="text-18 font-bold"
             :class="{ 'text-blue-500': faq.isActive }"
           >
             {{ faq.question }}
