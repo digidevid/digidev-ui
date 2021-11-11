@@ -20,7 +20,7 @@
               v-for="(item, id) in menu"
               :key="id"
               class="light-grey cursor-pointer"
-              @click="scrollToSection(item.id)"
+              @click="scrollToSection(item.slug)"
             >
               {{ item.name }}
             </li>
@@ -107,30 +107,37 @@ export default {
       menu: [
         {
           id: 1,
+          slug: "class-info",
           name: "Informasi Kelas",
         },
         {
           id: 2,
+          slug: "class-goals",
           name: "Tujuan Kelas",
         },
         {
           id: 3,
+          slug: "class-types",
           name: "Tipe Kelas",
         },
         {
           id: 4,
+          slug: "class-location",
           name: "Lokasi Belajar",
         },
         {
           id: 5,
+          slug: "class-mentor",
           name: "Tutor",
         },
         {
           id: 6,
+          slug: "class-syllabus",
           name: "Silabus/Materi",
         },
         {
           id: 7,
+          slug: "class-faq",
           name: "FAQ Kelas",
         },
       ],
@@ -154,63 +161,13 @@ export default {
     prevTutor(id) {
       this.shownTutor = this.chosedClass.tutors[id - 1 - 1];
     },
-    scrollToSection(id) {
-      if (id === 1) {
-        const infoSection = document.getElementById("class-info");
-        infoSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 2) {
-        const goalsSection = document.getElementById("class-goals");
-        goalsSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 3) {
-        const classTypeSection = document.getElementById("class-types");
-        classTypeSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 4) {
-        const locationSection = document.getElementById("class-location");
-        locationSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 5) {
-        const mentorSection = document.getElementById("class-mentor");
-        mentorSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 6) {
-        const syllabusSection = document.getElementById("class-syllabus");
-        syllabusSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
-      if (id === 7) {
-        const faqSection = document.getElementById("class-faq");
-        faqSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }
+    scrollToSection(slug) {
+      const section = document.getElementById(slug);
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
     },
   },
 };
