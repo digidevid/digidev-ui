@@ -29,13 +29,11 @@
           py-12
           text-center
           leading-loose
-          bg-gradient-to-b
-          from-gray-200
-          to-white
           rounded-2xl
+          gradient-banner
         "
       >
-        <div class="">
+        <div class="relative z-50">
           <h1 class="font-bold text-5xl pb-4">
             Ingin jadi mentor? Daftar yuk!
           </h1>
@@ -45,8 +43,8 @@
           </p>
           <Button />
         </div>
-        <div class="absolute top-0 right-0 z-0 opacity-50">
-          <img src="/vector736.png" alt="" />
+        <div class="absolute top-0 right-0 z-0">
+          <img src="/images/vector/vector736.png" alt="" />
         </div>
       </div>
     </div>
@@ -84,4 +82,14 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.gradient-banner {
+  background: linear-gradient(
+      0deg,
+      #ffffff 10.12%,
+      #2e89ff 1300.12%,
+      rgba(255, 255, 255, 0) 250%
+    ),
+    #2e89ff;
+}
+</style>

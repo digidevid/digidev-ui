@@ -12,18 +12,9 @@
     "
   >
     <div class="relative rounded-full">
-      <img class="w-30 h-28" src="/bg-mentor.png" alt="" />
+      <img class="w-28 h-28" src="/bg-mentor.png" alt="" />
       <img
-        class="
-          w-24
-          h-24
-          absolute
-          opacity-800
-          rounded-full
-          text-center
-          top-2
-          right-[7.7px]
-        "
+        class="w-24 h-24 rounded-full text-center mentor-image"
         :src="`/images/mentor/${mentorName}.jpg`"
         alt="mentor"
       />
@@ -50,4 +41,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.mentor-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

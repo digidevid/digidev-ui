@@ -19,7 +19,7 @@
         float-right
       "
     >
-      <button class="absolute top-3 left-3.5 items-center justify-center">
+      <button class="arrow-image">
         <img src="/images/vector/Icon Artwork.png" alt="" />
       </button>
     </div>
@@ -41,4 +41,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.arrow-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

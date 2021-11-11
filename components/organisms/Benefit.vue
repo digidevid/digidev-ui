@@ -1,14 +1,14 @@
 <template>
-  <div class="py-20 bg-black relative w-full">
-    <div class="absolute w-full top-0 left-0">
-      <img src="/images/vector/Vector123.png" alt="" />
+  <div class="py-20 relative w-full">
+    <div class="absolute w-full top-40 left-0 -z-10">
+      <img class="w-full" src="/images/vector/Vector123.png" alt="" />
     </div>
     <h2 class="text-4xl tracking-tight text-center">
       <span class="font-bold">Keunggulan</span> DigiDev
     </h2>
 
-    <div class="px-[163px] pt-16 flex lg:flex-row space-x-4">
-      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl">
+    <div class="relative px-[163px] pt-16 flex lg:flex-row space-x-4 z-50">
+      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
         <div
           class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]"
         ></div>
@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl">
+      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
         <div
           class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]"
         ></div>
@@ -29,7 +29,8 @@
           privat dan eksklusif dengan mengikuti prokes.
         </p>
       </div>
-      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl">
+
+      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
         <div
           class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]"
         ></div>
@@ -41,7 +42,7 @@
           <span class="font-bold">kebutuhan dunia kerja</span> saat ini.
         </p>
       </div>
-      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl">
+      <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
         <div
           class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]"
         ></div>
