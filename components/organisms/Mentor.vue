@@ -1,37 +1,5 @@
 <template>
   <section class="relative py-20 overflow-hidden bg-white">
-    <span
-      class="
-        absolute
-        top-0
-        right-0
-        flex flex-col
-        items-end
-        mt-0
-        -mr-16
-        opacity-60
-      "
-    >
-      <span
-        class="
-          container
-          hidden
-          w-screen
-          h-32
-          max-w-xs
-          mt-20
-          transform
-          rounded-full rounded-r-none
-          md:block md:max-w-xs
-          lg:max-w-lg
-          2xl:max-w-3xl
-          bg-blue-50
-        "
-      ></span>
-    </span>
-
-    <span class="absolute bottom-0 left-0"> </span>
-
     <div class="relative px-16 mx-auto max-w-7xl">
       <h2
         class="
@@ -41,16 +9,44 @@
           mt-5
           mb-10
           text-3xl
-          font-bold
           leading-tight
           lg:text-4xl
         "
       >
-        Mentor yang Tersedia
+        <span class="font-bold">Mentor</span> yang Tersedia
       </h2>
       <div class="grid w-full grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-4">
         <div v-for="(mentor, id) in mentorlist" :key="id">
-          <CardMentor :mentorName="mentor.mentorName" :skill="mentor.skill" />
+          <MentorCard :mentorName="mentor.mentorName" :skill="mentor.skill" />
+        </div>
+      </div>
+      <div></div>
+      <div
+        class="
+          relative
+          px-40
+          mt-20
+          py-12
+          text-center
+          leading-loose
+          bg-gradient-to-b
+          from-gray-200
+          to-white
+          rounded-2xl
+        "
+      >
+        <div class="">
+          <h1 class="font-bold text-5xl pb-4">
+            Ingin jadi mentor? Daftar yuk!
+          </h1>
+          <p class="text-[#2D2D2D] text-[20px] pb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
+            semper aliquam vel ipsum id urna enim, duis.
+          </p>
+          <Button />
+        </div>
+        <div class="absolute top-0 right-0 z-0 opacity-50">
+          <img src="/vector736.png" alt="" />
         </div>
       </div>
     </div>
@@ -58,10 +54,11 @@
 </template>
 
 <script>
-import CardMentor from "../mollecules/CardMentor.vue";
+import Button from "../atoms/Button.vue";
+import MentorCard from "../mollecules/MentorCard.vue";
 
 export default {
-  components: { CardMentor },
+  components: { MentorCard, Button },
   data() {
     return {
       mentorlist: [
@@ -70,7 +67,7 @@ export default {
           skill: "Full Stack Develover",
         },
         {
-          mentorName: "Ibnu Hazar",
+          mentorName: "Faishal Arif",
           skill: "Full Stack Develover",
         },
         {

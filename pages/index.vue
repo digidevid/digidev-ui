@@ -6,6 +6,7 @@
     <Partner />
     <!-- <Service /> -->
     <Mentor />
+    <Profession />
     <Class />
     <Testimoni />
     <Footer /> -->
@@ -23,6 +24,7 @@ import Class from "~/components/organisms/Class";
 import Testimoni from "~/components/organisms/Testimoni";
 import Footer from "~/components/organisms/Footer";
 import Info from "../components/organisms/Info.vue";
+import Profession from "../components/organisms/Profession.vue";
 
 export default {
   components: {
@@ -36,6 +38,7 @@ export default {
     Testimoni,
     Footer,
     Info,
+    Profession,
   },
 };
 </script>

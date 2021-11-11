@@ -5,20 +5,24 @@
       flex flex-col
       bg-white
       w-[270px]
-      pt-9
+      py-9
       shadow-xl
       items-center
       text-center
     "
   >
-    <div class="rounded-full border-solid border-4 border-blue-500">
+    <div class="relative rounded-full">
+      <img class="w-30 h-28" src="/bg-mentor.png" alt="" />
       <img
         class="
-          w-28
-          h-28
+          w-24
+          h-24
+          absolute
+          opacity-800
           rounded-full
           text-center
-          border-solid border-white border-2
+          top-2
+          right-[7.7px]
         "
         :src="`/images/mentor/${mentorName}.jpg`"
         alt="mentor"
