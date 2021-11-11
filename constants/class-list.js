@@ -5,6 +5,17 @@ export const classList = [
     slug: "web-basic",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Yogyakarta"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -54,6 +65,61 @@ export const classList = [
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
       },
     ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
+    tutors: [
+      {
+        id: 1,
+        name: "Faishal Arif",
+        location: "Medan",
+        photo: "/images/mentor/faishal.png",
+        job: "CEO & Founder",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 2,
+        name: "M. Ihsan Batubara",
+        location: "Medan",
+        photo: "/images/mentor/uncu.png",
+        job: "Software Engineer",
+        company: "Digidev.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 3,
+        name: "Ibnu Hazar",
+        location: "Medan",
+        photo: "/images/mentor/ibnu.jpg",
+        job: "Software Engineer",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+    ],
   },
   {
     id: 2,
@@ -61,6 +127,17 @@ export const classList = [
     slug: "front-end",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -108,6 +185,61 @@ export const classList = [
         id: 3,
         content:
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+      },
+    ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
+    tutors: [
+      {
+        id: 1,
+        name: "Faishal Arif",
+        location: "Medan",
+        photo: "/images/mentor/faishal.png",
+        job: "CEO & Founder",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 2,
+        name: "M. Ihsan Batubara",
+        location: "Medan",
+        photo: "/images/mentor/uncu.png",
+        job: "Software Engineer",
+        company: "Digidev.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 3,
+        name: "Ibnu Hazar",
+        location: "Medan",
+        photo: "/images/mentor/ibnu.jpg",
+        job: "Software Engineer",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
       },
     ],
   },
@@ -117,6 +249,17 @@ export const classList = [
     slug: "back-end",
     classDays: 8,
     classWeeks: 4,
+    locations: ["Medan", "Jakarta", "Surabaya", "Bali"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -166,6 +309,61 @@ export const classList = [
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
       },
     ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
+    tutors: [
+      {
+        id: 1,
+        name: "Faishal Arif",
+        location: "Medan",
+        photo: "/images/mentor/faishal.png",
+        job: "CEO & Founder",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 2,
+        name: "M. Ihsan Batubara",
+        location: "Medan",
+        photo: "/images/mentor/uncu.png",
+        job: "Software Engineer",
+        company: "Digidev.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        id: 3,
+        name: "Ibnu Hazar",
+        location: "Medan",
+        photo: "/images/mentor/ibnu.jpg",
+        job: "Software Engineer",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+    ],
   },
   {
     id: 4,
@@ -173,6 +371,17 @@ export const classList = [
     slug: "full-stack",
     classDays: 16,
     classWeeks: 8,
+    locations: ["Medan", "Jakarta", "Yogyakarta", "Bali", "Palembang"],
+    syllabus: [
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+      "Pengenalan Modern Web Development",
+    ],
     classTypes: [
       {
         id: 1,
@@ -220,6 +429,58 @@ export const classList = [
         id: 3,
         content:
           "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+      },
+    ],
+    faq: [
+      {
+        question: "Bagaimana peluang karier seorang data scientist?",
+        answer: "Bagaimana peluang karier seorang data scientist?",
+        isActive: false,
+      },
+      {
+        question:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        answer:
+          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+        isActive: false,
+      },
+      {
+        question:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        answer:
+          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        isActive: false,
+      },
+      {
+        question: "Apakah ada test masuk untuk mengikuti program ini?",
+        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        isActive: false,
+      },
+    ],
+    tutors: [
+      {
+        name: "Faishal Arif",
+        location: "Medan",
+        photo: "/images/mentor/faishal.png",
+        job: "CEO & Founder",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        name: "M. Ihsan Batubara",
+        location: "Medan",
+        photo: "/images/mentor/uncu.png",
+        job: "Software Engineer",
+        company: "Digidev.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+      },
+      {
+        name: "Ibnu Hazar",
+        location: "Medan",
+        photo: "/images/mentor/ibnu.jpg",
+        job: "Software Engineer",
+        company: "Seakun.id",
+        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
       },
     ],
   },

@@ -33,7 +33,7 @@
     <span class="absolute bottom-0 left-0"> </span>
 
     <div class="relative px-16 mx-auto max-w-7xl">
-      <p class="font-medium tracking-wide text-blue-500 uppercase">OUR TEAM</p>
+      <p class="font-medium tracking-wide text-primary uppercase">OUR TEAM</p>
       <h2
         class="
           relative

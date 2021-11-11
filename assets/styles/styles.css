@@ -1,3 +1,32 @@
+html * {
+  color: #2d2d2d;
+}
+.btn-primary {
+  background-color: #0a7dfa;
+  color: white;
+}
+.btn-secondary {
+  background-color: white;
+  color: #0a7dfa;
+}
 .bg-primary {
-    background-color: pink;
+  background-color: #0a7dfa;
+  color: white;
+}
+.text-primary {
+  color: #0a7dfa;
+}
+.dark-grey {
+  color: #2d2d2d;
+  opacity: 80%;
+}
+.light-grey {
+  color: #2d2d2d;
+  opacity: 50%;
+}
+.text-18 {
+  font-size: 18px;
+}
+.text-14 {
+  font-size: 14px;
 }

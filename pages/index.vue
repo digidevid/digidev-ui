@@ -2,7 +2,7 @@
   <div>
     <section class="w-full px-6 pb-12 antialiased bg-white">
       <div class="mx-auto max-w-7xl">
-        <!-- <Navbar />
+        <Navbar />
         <Hero />
         <Benefit />
         <Partner />
@@ -10,7 +10,7 @@
         <Mentor />
         <Class />
         <Testimoni />
-        <Footer /> -->
+        <Footer />
       </div>
     </section>
   </div>
@@ -26,7 +26,6 @@ import Mentor from "~/components/organisms/Mentor";
 import Class from "~/components/organisms/Class";
 import Testimoni from "~/components/organisms/Testimoni";
 import Footer from "~/components/organisms/Footer";
-
 export default {
   components: {
     Navbar,
