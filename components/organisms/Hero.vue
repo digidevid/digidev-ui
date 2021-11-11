@@ -10,6 +10,7 @@
       md:max-w-none md:text-center
     "
   >
+  <div class="bg-primary">Hello pinlk</div>
     <h1
       class="
         text-5xl
