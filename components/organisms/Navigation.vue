@@ -13,8 +13,8 @@
         <a href="#">Alumni</a>
       </div>
     </div>
-    <div class="flex lg:flex-col px-[163px] space-y-5 pt-[253px]">
-      <p class="text-white text-4xl leading-relaxed">
+    <div class="px-[163px] space-y-5 pt-[150px]">
+      <p class="text-white text-52 leading-relaxed">
         <span class="font-bold"> Siapkan dirimu</span> menjadi profesional
         Software Engineer dengan belajar dan praktikum secara privat dan
         eksklusif (offline learning) bersama
@@ -39,7 +39,5 @@ export default {
   background-size: cover;
   width: 100%;
   height: 887px;
-  // position: absolute;
-  // top: 0;
 }
 </style>
