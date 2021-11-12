@@ -25,41 +25,28 @@
               {{ item.name }}
             </li>
           </ul>
-          <button
-            class="
-              w-full
-              mt-6
-              px-4
-              py-2
-              text-white
-              bg-blue-500
-              rounded-full
-              font-bold
-            "
-          >
-            Daftar Sekarang
-          </button>
+          <Button class="text-16 mt-6 w-full" />
         </div>
       </div>
 
       <div class="col-span-5 p-8">
-        <div id="class-info" class="class-info mb-16">
+        <div id="class-info" class="class-info">
           <ClassInfo :class-info="chosedClass" />
         </div>
 
-        <div id="class-goals" class="class-goals my-16">
+        <div id="class-goals" class="class-goals pt-16">
           <ClassGoals :class-goals="chosedClass.goals" />
         </div>
 
-        <div id="class-types" class="class-type my-16">
+        <div id="class-types" class="class-type pt-16">
           <ClassType :class-types="chosedClass.classTypes" />
         </div>
 
-        <div id="class-location" class="class-location my-16">
+        <div id="class-location" class="class-location pt-16">
           <ClassLocation :class-locations="chosedClass.locations" />
         </div>
 
-        <div id="class-mentor" class="class-mentor my-16">
+        <div id="class-mentor" class="class-mentor pt-16">
           <ClassMentor
             :class-tutors="chosedClass.tutors"
             :active-tutor="shownTutor"
@@ -68,11 +55,11 @@
           />
         </div>
 
-        <div id="class-syllabus" class="class-syllabus my-16">
+        <div id="class-syllabus" class="class-syllabus pt-16">
           <ClassSyllabus :class-syllabus="chosedClass.syllabus" />
         </div>
 
-        <div id="class-faq" class="class-faq my-16">
+        <div id="class-faq" class="class-faq pt-16">
           <ClassFaq :class-faq="chosedClass.faq" />
         </div>
       </div>
@@ -81,6 +68,7 @@
 </template>
 
 <script>
+import Button from "~/components/atoms/Button";
 import ClassInfo from "./views/ClassInfo.vue";
 import ClassGoals from "./views/ClassGoals.vue";
 import ClassType from "./views/ClassType.vue";
@@ -91,6 +79,7 @@ import ClassFaq from "./views/ClassFaq.vue";
 import { classList } from "~/constants/class-list.js";
 export default {
   components: {
+    Button,
     ClassInfo,
     ClassGoals,
     ClassType,

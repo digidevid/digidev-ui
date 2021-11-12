@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <button :class="`btn-${type} px-5 py-3 rounded-full text-20 font-bold`">
-      {{ content }}
-    </button>
-  </div>
+  <!-- <div class="w-full"> -->
+  <button :class="`btn-${type} px-5 py-3 text-20 rounded-full font-bold`">
+    {{ content }}
+  </button>
+  <!-- </div> -->
 </template>
 
 <script>
