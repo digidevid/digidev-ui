@@ -9,7 +9,7 @@
     <Profession />
     <Class />
     <Testimoni />
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
