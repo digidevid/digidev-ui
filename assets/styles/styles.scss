@@ -1,32 +1,29 @@
-html * {
+html {
   color: #2d2d2d;
 }
 .btn-primary {
   background-color: #0a7dfa;
   color: white;
+  &:focus,
+  &:active,
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .btn-secondary {
   background-color: white;
   color: #0a7dfa;
-}
-.bg-primary {
-  background-color: #0a7dfa;
-  color: white;
-}
-.text-primary {
-  color: #0a7dfa;
+  &:focus,
+  &:active,
+  &:hover {
+    opacity: 0.7;
+  }
 }
 .dark-grey {
   color: #2d2d2d;
-  opacity: 80%;
+  opacity: 0.8;
 }
 .light-grey {
   color: #2d2d2d;
-  opacity: 50%;
-}
-.text-18 {
-  font-size: 18px;
-}
-.text-14 {
-  font-size: 14px;
+  opacity: 0.5;
 }
