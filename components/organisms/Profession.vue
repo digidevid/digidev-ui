@@ -13,6 +13,7 @@
         <ProfessionCard
           :bgProfessionCard="item.bgProfessionCard"
           :skill="item.skill"
+          :vectorProfession="item.vectorProfession"
         />
       </div>
     </div>
@@ -30,18 +31,22 @@ export default {
         {
           bgProfessionCard: "[#FCFDFE]",
           skill: "Mobile Developer",
+          vectorProfession: "development",
         },
         {
           bgProfessionCard: "white",
           skill: "Frontend Developer",
+          vectorProfession: "web-design",
         },
         {
           bgProfessionCard: "[#FCFDFE]",
           skill: "Backend Developer",
+          vectorProfession: "browser 1",
         },
         {
           bgProfessionCard: "white",
           skill: "Full Stack Developer",
+          vectorProfession: "stack-overflow",
         },
       ],
     };

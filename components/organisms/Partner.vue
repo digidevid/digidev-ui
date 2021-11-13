@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white pt-7 pb-14">
-    <h2 class="text-[40px] px-[163px] pb-20">
+    <h2 class="relative text-[40px] px-[163px] pb-20 z-10">
       <span class="font-bold">Perusahaan</span> Rekanan
     </h2>
     <div class="px-44">
@@ -8,7 +8,7 @@
         class="
           flex flex-wrap
           bg-color-white
-          shadow-lg
+          shadow-md
           px-44
           py-5
           w-full
@@ -37,16 +37,13 @@ export default {
           partnerName: "SEAKUN",
         },
         {
-          partnerName: "IREDIUM",
-        },
-        {
           partnerName: "IQRA",
         },
         {
-          partnerName: "Iredium",
+          partnerName: "CODEBOX",
         },
         {
-          partnerName: "Iredium",
+          partnerName: "IREDIUM",
         },
       ],
     };
