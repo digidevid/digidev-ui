@@ -8,6 +8,8 @@
     <Mentor />
     <Profession />
     <Class />
+    <Flow />
+    <Alumni />
     <Testimoni />
     <Footer />
   </div>
@@ -25,6 +27,8 @@ import Testimoni from "~/components/organisms/Testimoni";
 import Footer from "~/components/organisms/Footer";
 import Info from "../components/organisms/Info.vue";
 import Profession from "../components/organisms/Profession.vue";
+import Flow from "../components/organisms/Flow.vue";
+import Alumni from "../components/organisms/Alumni.vue";
 
 export default {
   components: {
@@ -39,6 +43,8 @@ export default {
     Footer,
     Info,
     Profession,
+    Flow,
+    Alumni,
   },
 };
 </script>

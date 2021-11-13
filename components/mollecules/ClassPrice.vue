@@ -21,8 +21,6 @@
         border border-solid
         rounded-lg
         lg:-mr-3
-        sm:my-0 sm:p-6
-        md:my-8 md:p-8
       "
     >
       <h3
@@ -79,19 +77,23 @@
       </div>
 
       <Button class="mt-8" />
-      <p
-        class="
-          mt-6
-          mb-5
-          text-base
-          leading-normal
-          text-left text-gray-900
-          border-0 border-gray-200
-        "
-      >
-        {{ scheduling }}
-      </p>
     </div>
+    <p
+      class="
+        relative
+        z-10
+        flex flex-col
+        items-center
+        max-w-[300px]
+        p-4
+        mx-auto
+        border border-solid
+        rounded-lg
+        lg:-mr-3
+      "
+    >
+      {{ scheduling }}
+    </p>
   </div>
 </template>
 
