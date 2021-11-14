@@ -13,6 +13,7 @@
         text-3xl
         leading-tight
         lg:text-4xl
+        font-semibold
       "
     >
       <span class="font-bold">Portofolio</span> Alumni
@@ -20,7 +21,7 @@
     <div class="relative z-50 mx-auto pl-[250px]">
       <div class="flex overflow-x-scroll">
         <div v-for="(mentor, id) in mentorlist" :key="id">
-          <AlumniCard :alumni="mentor" />
+          <PortofolioCard :alumni="mentor" />
         </div>
       </div>
 
@@ -62,10 +63,10 @@
 
 <script>
 import Button from "../atoms/Button.vue";
-import AlumniCard from "../mollecules/AlumniCard.vue";
+import PortofolioCard from "../mollecules/PortofolioCard.vue";
 
 export default {
-  components: { AlumniCard, Button },
+  components: { PortofolioCard, Button },
   data() {
     return {
       mentorlist: [
