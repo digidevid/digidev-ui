@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-white pt-7 pb-14 max-w-[1120px] m-auto">
-    <h2 class="relative text-[40px] pb-20 z-10">
+  <section class="bg-white py-20 max-w-[1120px] m-auto">
+    <h2 class="relative text-40 pb-20 z-10 font-semibold text-center">
       <span class="font-bold">Perusahaan</span> Rekanan
     </h2>
     <div

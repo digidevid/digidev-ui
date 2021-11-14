@@ -6,6 +6,7 @@
       border-0 border-gray-200
       sm:mt-6 sm:gap-6
       md:mt-8 md:gap-0
+      bg-white
     "
   >
     <div

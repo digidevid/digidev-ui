@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1200px] m-auto">
+  <div class="max-w-[1200px] mx-auto py-20">
     <h2
       class="
         relative
@@ -9,7 +9,7 @@
         mb-10
         text-40
         leading-tight
-        lg:text-4xl
+        font-semibold
       "
     >
       <span class="font-bold">Tahapan Mengikuti</span> Program Kelas

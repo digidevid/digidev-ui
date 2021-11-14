@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#fdfdfd]">
+  <div class="bg-main">
     <Navigation />
     <div
       class="p-20 relative rounded-t-[55px] -mt-14 relative z-20 bg-[#fdfdfd]"

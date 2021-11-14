@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-20 overflow-hidden bg-white">
+  <section class="relative py-20 overflow-hidden bg-main">
     <div class="relative px-16 mx-auto max-w-7xl">
       <h2
         class="
@@ -8,10 +8,9 @@
           text-center
           mt-5
           mb-10
-          text-3xl
+          text-40
           leading-tight
           font-semibold
-          lg:text-4xl
         "
       >
         <span class="font-bold">Mentor</span> yang Tersedia

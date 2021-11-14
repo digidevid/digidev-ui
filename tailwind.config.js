@@ -12,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#0a7dfa'
+        'primary': '#0a7dfa',
+        'main': '#fdfdfd'
       },
       backgroundImage: {
         mentorBg: "url('~/static/bg-mentor.jpg')",

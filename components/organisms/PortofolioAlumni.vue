@@ -10,9 +10,8 @@
         text-center
         mt-5
         mb-10
-        text-3xl
+        text-40
         leading-tight
-        lg:text-4xl
         font-semibold
       "
     >

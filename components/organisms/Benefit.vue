@@ -3,7 +3,7 @@
     <div class="absolute w-full top-40 left-0 -z-10">
       <img class="w-full" src="/images/vector/Vector123.png" alt="" />
     </div>
-    <h2 class="text-4xl tracking-tight text-center">
+    <h2 class="text-40 font-semibold tracking-tight text-center">
       <span class="font-bold">Keunggulan</span> Digidev
     </h2>
 

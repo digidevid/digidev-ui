@@ -1,6 +1,6 @@
 <template>
-  <div class="relative -mt-20 bg-white rounded-t-[55px] px-[163px]">
-    <h2 class="text-[40px] p-12">
+  <div class="relative pb-20 -mt-20 bg-white rounded-t-[55px] px-[163px]">
+    <h2 class="text-40 p-12 font-semibold">
       <span class="font-bold">Informasi Gaji</span> Software Engineer
     </h2>
     <div class="">
