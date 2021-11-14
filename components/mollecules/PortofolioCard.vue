@@ -2,13 +2,12 @@
   <div
     :class="`
       ${alumni.bgColor}
-      rounded-xl
+      rounded-3xl
       flex flex-col
       w-[360px]
       h-[360px]
       mx-4
       py-9
-      shadow-xl
       items-center
       text-center`"
   >
