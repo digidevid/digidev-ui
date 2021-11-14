@@ -1,26 +1,24 @@
 <template>
-  <section class="bg-white pt-7 pb-14">
-    <h2 class="relative text-[40px] px-[163px] pb-20 z-10">
+  <section class="bg-white pt-7 pb-14 max-w-[1120px] m-auto">
+    <h2 class="relative text-[40px] pb-20 z-10">
       <span class="font-bold">Perusahaan</span> Rekanan
     </h2>
-    <div class="px-44">
-      <div
-        class="
-          flex flex-wrap
-          bg-color-white
-          shadow-md
-          px-44
-          py-5
-          w-full
-          space-x-14
-          items-center
-          justify-center
-          rounded-full
-        "
-      >
-        <div v-for="(partner, id) in partnerList" :key="id">
-          <PartnerList :partnerName="partner.partnerName" />
-        </div>
+    <div
+      class="
+        flex flex-wrap
+        bg-color-white
+        shadow-md
+        px-44
+        py-5
+        w-full
+        space-x-14
+        items-center
+        justify-center
+        rounded-full
+      "
+    >
+      <div v-for="(partner, id) in partnerList" :key="id">
+        <PartnerList :partnerName="partner.partnerName" />
       </div>
     </div>
   </section>

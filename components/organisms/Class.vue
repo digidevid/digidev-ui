@@ -8,20 +8,12 @@
       sm:py-12
       md:py-16
       lg:py-24
-      px-[163px]
+      max-w-[1120px]
+      m-auto
     "
   >
     <div
-      class="
-        box-border
-        px-4
-        mx-auto
-        border-solid
-        sm:px-6
-        md:px-6
-        lg:px-8
-        max-w-7xl
-      "
+      class="box-border mx-auto border-solid sm:px-6 md:px-6 lg:px-8 max-w-7xl"
     >
       <div
         class="

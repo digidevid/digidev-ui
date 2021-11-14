@@ -14,26 +14,24 @@
         z-10
         flex flex-col
         items-center
-        max-w-[300px] max-h-[350px]
+        max-w-[280px] max-h-[350px]
         p-4
         mx-auto
         my-0
-        border border-solid
-        rounded-lg
+        shadow
+        rounded-sm
         lg:-mr-3
       "
     >
       <h3
         class="
           m-0
-          text-2xl
+          text-[20px]
           font-semibold
           leading-tight
           tracking-tight
           text-black
           border-0 border-gray-200
-          sm:text-3xl
-          md:text-4xl
         "
       >
         {{ classType }}
@@ -84,11 +82,11 @@
         z-10
         flex flex-col
         items-center
-        max-w-[300px]
+        max-w-[280px]
         p-4
         mx-auto
-        border border-solid
-        rounded-lg
+        shadow
+        rounded-sm
         lg:-mr-3
       "
     >
