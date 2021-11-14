@@ -2,15 +2,15 @@
   <div :class="`navigation ${setHeight}`">
     <div class="flex w-full justify-between items-center px-[240px] pt-9">
       <div>
-        <a href="#"
+        <nuxt-link to="/"
           ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
-        /></a>
+        /></nuxt-link>
       </div>
       <div class="flex space-x-14 text-white text-lg" v-if="!typeClass">
-        <a href="#">Keunggulan</a>
-        <a href="#">Mentor</a>
-        <a href="#">Rekanan</a>
-        <a href="#">Alumni</a>
+        <nuxt-link to="/">Keunggulan</nuxt-link>
+        <nuxt-link to="/">Mentor</nuxt-link>
+        <nuxt-link to="/">Rekanan</nuxt-link>
+        <nuxt-link to="/">Alumni</nuxt-link>
       </div>
     </div>
     <div :class="`px-[250px] space-y-5 ${setPaddingTop}`">
@@ -23,7 +23,10 @@
         praktikum secara privat dan eksklusif (offline learning) bersama
         <span class="font-bold">Digidev</span>.
       </p>
-      <p class="text-white text-52 leading-relaxed max-w-[1116px]" v-else>
+      <p
+        class="text-white font-semibold text-52 leading-relaxed max-w-[1116px]"
+        v-else
+      >
         {{ titleClass }}
       </p>
       <Button />
