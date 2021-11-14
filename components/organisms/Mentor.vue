@@ -34,12 +34,13 @@
         "
       >
         <div class="relative z-50">
-          <h1 class="font-bold text-5xl pb-4">
+          <h1 class="font-bold text-[40px] pb-4">
             Ingin jadi mentor? Daftar yuk!
           </h1>
           <p class="text-[#2D2D2D] text-[20px] pb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-            semper aliquam vel ipsum id urna enim, duis.
+            Dapatkan penghasilan tambahan sekaligus memberikan bantuan kepada
+            mereka yang sedang mempersiapkan skill untuk berkari sebagai
+            profesional.
           </p>
           <Button />
         </div>
