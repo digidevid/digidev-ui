@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Tipe Kelas</h1>
-    <p class="dark-grey text-18">Apa Saja Tipe Kelas di digiDev</p>
+    <p class="dark-grey text-18">
+      Tipe kelas yang tersedia yaitu sebagai berikut.
+    </p>
     <div class="my-8 space-y-6">
       <div
         v-for="(type, id) in classTypes"
