@@ -7,7 +7,6 @@
       class="
         flex flex-wrap
         bg-color-white
-        shadow-md
         px-44
         py-5
         w-full
@@ -16,6 +15,7 @@
         justify-center
         rounded-full
       "
+      style="box-shadow: 0px 29px 62px -22px rgba(10, 125, 250, 0.04)"
     >
       <div v-for="(partner, id) in partnerList" :key="id">
         <PartnerList :partnerName="partner.partnerName" />

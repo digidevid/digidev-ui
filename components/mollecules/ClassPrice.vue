@@ -74,7 +74,7 @@
         </p>
       </div>
 
-      <Button class="mt-8" />
+      <Button class="mt-8 text-16 py-[14px] px-[36px]" />
     </div>
     <p
       class="

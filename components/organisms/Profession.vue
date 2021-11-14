@@ -9,12 +9,13 @@
       sudah mengikuti program kelas yang diadakan oleh Digidev.
     </p>
     <div class="flex justify-center">
-      <div v-for="item in items" :key="item.id">
+      <div v-for="(item, id) in items" :key="id">
         <ProfessionCard
           :bgProfessionCard="item.bgProfessionCard"
           :skill="item.skill"
           :vectorProfession="item.vectorProfession"
           :detail="item.detail"
+          :id="id"
         />
       </div>
     </div>

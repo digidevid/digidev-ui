@@ -1,6 +1,8 @@
 <template>
   <div
-    :class="`bg-${bgProfessionCard} py-20 px-6 rounded-xl mt-20 shadow-xl max-w-[280px]`"
+    :class="`bg-${bgProfessionCard} py-20 px-6 mt-20 max-w-[280px] ${setBackground(
+      id
+    )}`"
   >
     <div>
       <img
@@ -51,6 +53,16 @@ export default {
       type: String,
       default:
         "Mentor dengan segudang pengalaman yang berkarir di startup ternama.",
+    },
+    id: {
+      type: String | Number,
+      default: "0",
+    },
+  },
+  methods: {
+    setBackground(id) {
+      let idx = parseInt(id);
+      return idx % 2 === 0 ? "bg-[#FCFDFE]" : "bg-[#FFFFFF] shadow-sm";
     },
   },
 };
