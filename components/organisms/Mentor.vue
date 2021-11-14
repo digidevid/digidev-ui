@@ -10,6 +10,7 @@
           mb-10
           text-3xl
           leading-tight
+          font-semibold
           lg:text-4xl
         "
       >
@@ -17,7 +18,7 @@
       </h2>
       <div class="grid w-full grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-4">
         <div v-for="(mentor, id) in mentorlist" :key="id">
-          <MentorCard :mentorName="mentor.mentorName" :skill="mentor.skill" />
+          <MentorCard :mentor="mentor" />
         </div>
       </div>
       <div></div>
@@ -62,20 +63,24 @@ export default {
     return {
       mentorlist: [
         {
-          mentorName: "Faishal Arif",
-          skill: "Full Stack Develover",
+          name: "Faishal Arif",
+          skill: "Frontend Develover",
+          photo: "/images/mentor/faishal.png",
         },
         {
-          mentorName: "Faishal Arif",
-          skill: "Full Stack Develover",
+          name: "M. Ihsan Batubara",
+          skill: "Frontend Develover",
+          photo: "/images/mentor/uncu.png",
         },
         {
-          mentorName: "Faishal Arif",
-          skill: "Full Stack Develover",
+          name: "Ibnu Hazar",
+          skill: "Frontend Develover",
+          photo: "/images/mentor/ibnu.jpg",
         },
         {
-          mentorName: "Faishal Arif",
-          skill: "Full Stack Develover",
+          name: "Irwan Soleh Siregar",
+          skill: "Frontend Develover",
+          photo: "/images/mentor/irwan.jpg",
         },
       ],
     };
