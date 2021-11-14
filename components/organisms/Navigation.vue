@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <div class="flex w-full justify-between items-center px-[163px] pt-9">
+    <div class="flex w-full justify-between items-center px-[240px] pt-9">
       <div>
         <a href="#"
           ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
@@ -13,12 +13,12 @@
         <a href="#">Alumni</a>
       </div>
     </div>
-    <div class="px-[163px] space-y-5 pt-[150px]">
-      <p class="text-white text-52 leading-relaxed">
-        <span class="font-bold"> Siapkan dirimu</span> menjadi profesional
-        Software Engineer dengan belajar dan praktikum secara privat dan
-        eksklusif (offline learning) bersama
-        <span class="font-bold">DigiDev</span>.
+    <div class="px-[250px] space-y-5 pt-[150px]">
+      <p class="text-white text-52 leading-relaxed max-w-[1116px]">
+        Siapkan dirimu menjadi profesional <br />
+        <span class="font-bold">Software Engineer</span> dengan belajar dan
+        praktikum secara privat dan eksklusif (offline learning) bersama
+        <span class="font-bold">Digidev</span>.
       </p>
       <Button />
     </div>

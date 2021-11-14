@@ -7,14 +7,13 @@
         flex flex-col
         items-center
         max-w-[300px] max-h-[350px]
-        p-4
         mx-auto
         my-0
         sm:my-0 sm:p-6
-        md:my-8 md:p-8
+        md:my-8 md:p-3
       "
     >
-      <div class="mb-3 relative w-[56px] h-[56px] rounded-full bg-[#F0F6FF]">
+      <div class="relative w-[56px] h-[56px] rounded-full bg-[#F0F6FF]">
         <div class="vector">
           <img
             :src="`/images/vector/${vectorElement}.png`"
@@ -24,17 +23,18 @@
       </div>
       <h3
         class="
+          mt-[29px]
           text-center
           m-0
           font-semibold
           leading-tight
           tracking-tight
-          text-black text-2xl
+          text-black text-24
         "
       >
         {{ headerContent }}
       </h3>
-      <p class="text-center">{{ paragraphContent }}</p>
+      <p class="text-center text-16 mt-2">{{ paragraphContent }}</p>
     </div>
   </div>
 </template>

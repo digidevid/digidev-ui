@@ -1,32 +1,47 @@
 <template>
-  <div
-    class="
-      relative
-      px-[163px]
-      grid
-      w-full
-      grid-cols-3
-      gap-0
-      sm:grid-cols-3
-      lg:grid-cols-4
-    "
-  >
-    <div v-for="item in elemenContent" :key="item.id">
-      <FlowCard
-        :vectorElement="item.vectorElement"
-        :headerContent="item.headerContent"
-        :paragraphContent="item.paragraphContent"
-      />
-    </div>
-    <div class="w-full absolute flex justify-center space-x-28 top-16">
-      <div>
-        <img src="/images/vector/Vector-a.png" alt="Vector-a" />
+  <div class="max-w-[1200px] m-auto">
+    <h2
+      class="
+        relative
+        w-full
+        text-center
+        mt-5
+        mb-10
+        text-40
+        leading-tight
+        lg:text-4xl
+      "
+    >
+      <span class="font-bold">Tahapan Mengikuti</span> Program Kelas
+    </h2>
+    <div
+      class="
+        relative
+        grid
+        w-full
+        grid-cols-3
+        gap-0
+        sm:grid-cols-3
+        lg:grid-cols-4
+      "
+    >
+      <div v-for="item in elemenContent" :key="item.id">
+        <FlowCard
+          :vectorElement="item.vectorElement"
+          :headerContent="item.headerContent"
+          :paragraphContent="item.paragraphContent"
+        />
       </div>
-      <div>
-        <img class="pt-9" src="/images/vector/Vector-b.png" alt="Vector-b" />
-      </div>
-      <div>
-        <img src="/images/vector/Vector-c.png" alt="Vector-c" />
+      <div class="w-full absolute flex justify-center space-x-28 top-12">
+        <div>
+          <img src="/images/vector/Vector-a.png" alt="Vector-a" />
+        </div>
+        <div>
+          <img class="pt-5" src="/images/vector/Vector-b.png" alt="Vector-b" />
+        </div>
+        <div>
+          <img src="/images/vector/Vector-c.png" alt="Vector-c" />
+        </div>
       </div>
     </div>
   </div>
