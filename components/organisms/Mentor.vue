@@ -42,7 +42,7 @@
             mereka yang sedang mempersiapkan skill untuk berkari sebagai
             profesional.
           </p>
-          <Button class="mt-5" />
+          <Button content="Daftar jadi mentor" class="mt-5" />
         </div>
         <div class="absolute top-0 right-0 z-0">
           <img src="/images/vector/vector736.png" alt="" />
