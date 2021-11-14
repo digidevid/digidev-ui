@@ -3,24 +3,22 @@
     <div class="absolute w-full -bottom-32 left-0 -z-10">
       <img class="w-full" src="/images/vector/Vector.png" alt="lower-theme" />
     </div>
-    <div class="relative z-50 px-16 mx-auto max-w-7xl">
-      <h2
-        class="
-          relative
-          w-full
-          text-center
-          mt-5
-          mb-10
-          text-3xl
-          leading-tight
-          lg:text-4xl
-        "
-      >
-        <span class="font-bold">Portofolio</span> Alumni
-      </h2>
-      <div
-        class="grid w-full grid-cols-2 gap-[32px] sm:grid-cols-3 lg:grid-cols-4"
-      >
+    <h2
+      class="
+        relative
+        w-full
+        text-center
+        mt-5
+        mb-10
+        text-3xl
+        leading-tight
+        lg:text-4xl
+      "
+    >
+      <span class="font-bold">Portofolio</span> Alumni
+    </h2>
+    <div class="relative z-50 mx-auto pl-[250px]">
+      <div class="flex overflow-x-scroll">
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <AlumniCard :alumni="mentor" />
         </div>

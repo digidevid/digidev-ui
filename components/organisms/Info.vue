@@ -1,11 +1,10 @@
 <template>
-  <div class="relative">
-    <div class="bg-white rounded-t-[55px] top-[-50px] px-[163px] -mt-20">
+  <div class="relative -mt-20 bg-white rounded-t-[55px] px-[163px]">
+    <h2 class="text-[40px] p-12">
+      <span class="font-bold">Informasi Gaji</span> Software Engineer
+    </h2>
+    <div class="">
       <div class="">
-        <h2 class="text-[40px] p-12">
-          <span class="font-bold">Informasi Gaji</span> Software Engineer
-        </h2>
-
         <table class="table-fixed w-full">
           <thead class="text-[22px]">
             <tr>

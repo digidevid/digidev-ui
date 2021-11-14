@@ -6,14 +6,14 @@
           ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
         /></a>
       </div>
-      <div class="flex space-x-5 text-white text-lg">
+      <div class="flex space-x-14 text-white text-lg">
         <a href="#">Keunggulan</a>
         <a href="#">Mentor</a>
         <a href="#">Rekanan</a>
         <a href="#">Alumni</a>
       </div>
     </div>
-    <div class="px-[250px] space-y-5 pt-[150px]">
+    <div class="px-[250px] space-y-5 pt-[130px]">
       <p class="text-white text-52 leading-relaxed max-w-[1116px]">
         Siapkan dirimu menjadi profesional <br />
         <span class="font-bold">Software Engineer</span> dengan belajar dan

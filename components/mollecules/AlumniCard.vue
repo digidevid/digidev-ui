@@ -6,15 +6,13 @@
       flex flex-col
       w-[360px]
       h-[360px]
+      mx-4
       py-9
       shadow-xl
       items-center
       text-center`"
   >
-    <div>
-      <h2 class="font-bold pt-6">{{ alumni.alumniName }}</h2>
-      <p>{{ alumni.skill }}</p>
-    </div>
+    <div></div>
   </div>
 </template>
 
