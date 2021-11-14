@@ -37,12 +37,12 @@
           <h1 class="font-bold text-[40px] pb-4">
             Ingin jadi mentor? Daftar yuk!
           </h1>
-          <p class="text-[#2D2D2D] text-[20px] pb-4">
+          <p class="text-[#2D2D2D] text-[20px]">
             Dapatkan penghasilan tambahan sekaligus memberikan bantuan kepada
             mereka yang sedang mempersiapkan skill untuk berkari sebagai
             profesional.
           </p>
-          <Button />
+          <Button class="mt-5" />
         </div>
         <div class="absolute top-0 right-0 z-0">
           <img src="/images/vector/vector736.png" alt="" />
