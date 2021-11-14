@@ -6,12 +6,20 @@
           ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
         /></nuxt-link>
       </div>
-      <div class="flex space-x-14 text-white text-lg" v-if="!typeClass">
-        <nuxt-link to="/">Keunggulan</nuxt-link>
-        <nuxt-link to="/">Mentor</nuxt-link>
-        <nuxt-link to="/">Rekanan</nuxt-link>
-        <nuxt-link to="/">Alumni</nuxt-link>
-      </div>
+      <ul class="flex space-x-14 text-white text-lg" v-if="!typeClass">
+        <li class="cursor-pointer" @click="scrollToSection('benefit')">
+          Keunggulan
+        </li>
+        <li class="cursor-pointer" @click="scrollToSection('mentor')">
+          Mentor
+        </li>
+        <li class="cursor-pointer" @click="scrollToSection('partner')">
+          Rekanan
+        </li>
+        <li class="cursor-pointer" @click="scrollToSection('portofolio')">
+          Portofolio Alumni
+        </li>
+      </ul>
     </div>
     <div :class="`px-[250px] space-y-5 ${setPaddingTop}`">
       <p
@@ -64,6 +72,16 @@ export default {
   },
   mounted() {
     this.typeClass = this.$route.query.paket_kelas;
+  },
+  methods: {
+    scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    },
   },
 };
 </script>

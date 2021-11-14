@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-20 max-w-[1120px] m-auto">
+  <section id="partner" class="bg-white py-20 max-w-[1120px] m-auto">
     <h2 class="relative text-40 pb-20 z-10 font-semibold text-center">
       <span class="font-bold">Perusahaan</span> Rekanan
     </h2>

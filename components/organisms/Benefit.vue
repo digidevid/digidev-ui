@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 relative w-full">
+  <div id="benefit" class="py-20 relative w-full">
     <div class="absolute w-full top-40 left-0 -z-10">
       <img class="w-full" src="/images/vector/Vector123.png" alt="" />
     </div>

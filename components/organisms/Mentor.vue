@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-20 overflow-hidden bg-main">
+  <section id="mentor" class="relative py-20 overflow-hidden bg-main">
     <div class="relative px-16 mx-auto max-w-7xl">
       <h2
         class="
