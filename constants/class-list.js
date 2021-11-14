@@ -5,46 +5,56 @@ export const classList = [
     slug: "web-basic",
     classDays: 8,
     classWeeks: 4,
-    locations: ["Medan", "Jakarta", "Yogyakarta"],
+    locations: [
+      "Medan",
+      "Jakarta (coming soon)",
+      "Bandung (coming soon)",
+      "Malang (coming soon)",
+    ],
     syllabus: [
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
-      "Pengenalan Modern Web Development",
+      "Pengenalan tentang Website, Frontend, Backend, Database",
+      "Pengenalan penggunaan Tools yang digunakan untuk ngoding",
+      "Pengenalan tentang komponen utama web (HTML, CSS, JS) beserta analoginya",
+      "Pengenalan detail HTML",
+      "Pengenalan detail CSS",
+      "Library CSS - TailwindCSS",
+      "Pengenalan penggunaan Git & Github",
+      "Pengenalan dasar Javascript",
+      "Introduction Vue js & Nuxt js",
     ],
     classTypes: [
       {
         id: 1,
-        name: "Kelas Privat",
-        price: 1,
-        priceType: "jt",
-        isPreOrder: false,
+        name: "Kelas Grup",
+        price: 750,
+        priceType: "ribu",
+        realPrice: 750000,
+        isPreOrder: true,
         details: [
-          "4 minggu (8x pertemuan)",
-          "pertemuan offline",
-          "Kurikulum terupdate",
-          "Instruktur berpengalaman",
-          "Dibutuhkan fulltime commitment",
-          "Eksklusif untuk 1 mentee",
+          "Eksklusif tatap muka",
+          "8x pertemuan",
+          "Mentor berpengalaman",
+          "Kurikulum terupdate dunia kerja",
+          "Pertemuan offline (wajib)",
+          "Gabung ke grup whatsapp dengan siswa lain",
+          "Sertifikat",
         ],
       },
       {
         id: 2,
-        name: "Kelas Grup",
-        price: 500,
-        priceType: "ribu",
-        isPreOrder: true,
+        name: "Kelas Privat",
+        price: 2,
+        priceType: "jt",
+        realPrice: 2000000,
+        isPreOrder: false,
         details: [
-          "4 minggu (8x pertemuan)",
-          "pertemuan offline",
-          "Kurikulum terupdate",
-          "Instruktur berpengalaman",
-          "Dibutuhkan fulltime commitment",
-          "1 grup terdiri dari 5 mentee",
+          "Eksklusif untuk 1 siswa",
+          "8x pertemuan",
+          "Mentor berpengalaman",
+          "Kurikulum terupdate dunia kerja",
+          "Pertemuan offline (tatap muka) atau online (daring)",
+          "Gabung ke grup whatsapp dengan siswa lain",
+          "Sertifikat",
         ],
       },
     ],
@@ -52,42 +62,71 @@ export const classList = [
       {
         id: 1,
         content:
-          "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+          "Siswa memahami dengan baik apa itu website, frontend dan backend",
       },
       {
         id: 2,
         content:
-          "Dengan memahami cara kerja digital marketing, Anda akan dapat memiliki marketing yang jauh lebih efektif dan tepat sasaran",
+          "Siswa bisa menggunakan tools yang direkomendasikan Digidev dengan baik",
       },
       {
         id: 3,
         content:
-          "Anda akan mengerti ilmu digital marketing yang dapat diterapkan dalam pekerjaan Anda",
+          "Siswa memahami dengan baik HTML dan mampu membuat code berbasis HTML ",
+      },
+      {
+        id: 4,
+        content:
+          "Siswa memahami dengan baik CSS dan mampu men-styling element HTML dengan menggunakan CSS",
+      },
+      {
+        id: 5,
+        content:
+          "Siswa memahami dengan baik Javascript, mampu memanipulasi Element HTML dan/atau style (CSS), melakukan opsional rendering dan melakukan looping menggunakan Javascript",
+      },
+      {
+        id: 6,
+        content:
+          "Siswa mampu membuat projek sederhana menggunakan HTML, CSS dan Javascript",
       },
     ],
     faq: [
       {
-        question: "Bagaimana peluang karier seorang data scientist?",
-        answer: "Bagaimana peluang karier seorang data scientist?",
+        question:
+          "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
+        answer:
+          "Kelas Basic Modern Web ini memang disasarkan untuk kamu yang belum memiliki pengetahuan sama sekali tentang dunia web development.",
+        isActive: false,
+      },
+      {
+        question: "Apa saja syarat untuk mengikuti kelas ini?",
+        answer:
+          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Memahami basic penggunaan komputer, seperti install sebuah aplikasi, menggunakan file explorer dan browser, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
+        isActive: false,
+      },
+      {
+        question: "Apakah kelas ini bisa dilaksanakan secara online?",
+        answer:
+          "Kelas Basic Modern Web ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {
         question:
-          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+          "Apakah akan mendapatkan sertifikat setelah selesai mengikuti kelas?",
         answer:
-          "Berapa spec minimum laptop untuk mengikuti program Job Connector ini?",
+          "Setiap siswa yang telah selesai mengikuti kelas apapun di Digidev akan mendapatkan sertifikat sesuai dengan kelas yang diikuti dengan syarat mengikuti kelas sampai akhir.",
         isActive: false,
       },
       {
-        question:
-          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+        question: "Kapan jadwal kelas dilaksanakan?",
         answer:
-          "Apa saja profesi yang dapat saya tempati setelah lulus dari program ini?",
+          "Jadwal kelas akan ditentukan pada saat briefiing (meeting awal) antara tim Digidev, mentor dan siswa. Jadi kamu diharuskan untuk hadir saat briefing kelas yang dipilih. Jika tidak hadir maka dianggap batal mengikuti kelas.",
         isActive: false,
       },
       {
-        question: "Apakah ada test masuk untuk mengikuti program ini?",
-        answer: "Apakah ada test masuk untuk mengikuti program ini?",
+        question: "Diaman kelas akan dilaksanakan?",
+        answer:
+          "Lokasi kelas akan ditentukan pada saat (meeting awal) antara tim Digidev, mentor dan siswa. Lokasi bisa di rumah siswa, cafe, atau learning space milik Digidev.",
         isActive: false,
       },
     ],
@@ -95,28 +134,28 @@ export const classList = [
       {
         id: 1,
         name: "Faishal Arif",
-        location: "Medan",
+        location: "Medan - Jakarta Selatan",
         photo: "/images/mentor/faishal.png",
         job: "CEO & Founder",
-        company: "Seakun.id",
-        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
+        company: "ex-Blanja.com, ex-Elevenia, Seakun.id",
+        bio: "Faishal Arif adalah seorang Software Engineer dengan pengalaman di dunia profesional selama 4 tahun. Saat ini sedang berkarir sebagai CEO di startup yang dibangunnya yaitu Seakun.id. Memiliki skill dan pengalaman di dunia modern web development untuk frontend, backend maupun mobile apps development.",
       },
       {
         id: 2,
+        name: "Ibnu Hazar",
+        location: "Medan",
+        photo: "/images/mentor/ibnu.jpg",
+        job: "Frontend Software Engineer",
+        company: "Iredium.com, Seakun.id",
+        bio: "Ibnu adalah seorang Junior Software Engineer yang memulai karir nya di dunia Web Development di tahun 2021. Selain bekerja fulltime di Seakun.id, Ibnu juga bekerja parttime di Iredium.com.",
+      },
+      {
+        id: 3,
         name: "M. Ihsan Batubara",
         location: "Medan",
         photo: "/images/mentor/uncu.png",
         job: "Software Engineer",
         company: "Digidev.id",
-        bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
-      },
-      {
-        id: 3,
-        name: "Ibnu Hazar",
-        location: "Medan",
-        photo: "/images/mentor/ibnu.jpg",
-        job: "Software Engineer",
-        company: "Seakun.id",
         bio: "Memiliki pengalaman 10+ tahun dan pernah bekerja di perusahaan besar seperti Unilever. Sebelumnya, Intan juga telah memimpin berbagai project dari brand seperti XL Axiata, Nestle, dan lainnya.",
       },
     ],
