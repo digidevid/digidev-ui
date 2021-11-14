@@ -1,7 +1,7 @@
 <template>
   <section class="py-20 bg-main">
     <div class="leading-7 max-w-[1120px] mx-auto">
-      <div class="box-border mx-auto border-solid px-8 max-w-7xl">
+      <div class="box-border mx-auto border-solid max-w-7xl">
         <div
           class="
             flex
@@ -26,36 +26,49 @@
             <span class="font-bold">Kelas</span> yang tersedia
           </h2>
 
-          <div class="flex h-[55px] w-[177px]">
+          <div class="flex h-[55px]">
             <button
-              class="bg-primary text-white h-full w-full rounded-l-[10px] px-8"
+              class="
+                font-semibold
+                h-full
+                text-18
+                w-full
+                rounded-l-[10px]
+                px-14
+                border-2 border-primary
+              "
+              :class="{
+                'bg-primary text-white': activeClassList === privateClass,
+              }"
+              @click="activeClassList = privateClass"
             >
               Private
             </button>
             <button
               class="
-                bg-white
                 h-full
+                text-18
                 w-full
+                font-semibold
                 border-2 border-primary
                 rounded-r-[10px]
-                px-8
+                px-14
               "
+              :class="{
+                'bg-primary text-white': activeClassList === groupClass,
+              }"
+              @click="activeClassList = groupClass"
             >
               Group
             </button>
           </div>
         </div>
       </div>
-      <div class="grid w-full grid-cols-3 gap-0 sm:grid-cols-3 lg:grid-cols-4">
-        <div v-for="item in itemClass" :key="item.id">
-          <ClassPrice
-            :price="item.price"
-            :classType="item.classType"
-            :className="item.className"
-            :scheduling="item.scheduling"
-            :slug="item.slug"
-          />
+      <div
+        class="grid w-full grid-cols-3 gap-0 sm:grid-cols-3 lg:grid-cols-4 mt-4"
+      >
+        <div v-for="(item, id) in activeClassList" :key="id">
+          <ClassPrice :packet="item" />
         </div>
       </div>
     </div>
@@ -69,37 +82,79 @@ export default {
   components: { ClassPrice, Button },
   data() {
     return {
-      itemClass: [
+      activeClassList: [],
+      privateClass: [
         {
-          price: "1",
+          price: "2",
+          priceType: "jt",
           classType: "Kelas Basic",
           className: "Modern Web",
           scheduling: "Sebulan 8x pertemuan",
           slug: "web-basic",
         },
         {
-          price: "1,5",
+          price: "2,8",
+          priceType: "jt",
           classType: "Kelas Frontend",
           className: "(Vue Js)",
           scheduling: "Sebulan 8x pertemuan",
           slug: "front-end",
         },
         {
-          price: "1,5",
+          price: "2,8",
+          priceType: "jt",
           classType: "Kelas Backend",
           className: "(Node JS)",
           scheduling: "Sebulan 8x pertemuan",
           slug: "back-end",
         },
         {
-          price: "2,8",
+          price: "4",
+          priceType: "jt",
           classType: "Kelas Fullstack",
           className: "(Vue JS + Node JS)",
+          scheduling: "Sebulan 16x pertemuan",
+          slug: "full-stack",
+        },
+      ],
+      groupClass: [
+        {
+          price: "750",
+          priceType: "ribu",
+          classType: "Kelas Basic",
+          className: "Modern Web",
           scheduling: "Sebulan 8x pertemuan",
+          slug: "web-basic",
+        },
+        {
+          price: "950",
+          priceType: "ribu",
+          classType: "Kelas Frontend",
+          className: "(Vue Js)",
+          scheduling: "Sebulan 8x pertemuan",
+          slug: "front-end",
+        },
+        {
+          price: "950",
+          priceType: "ribu",
+          classType: "Kelas Backend",
+          className: "(Node JS)",
+          scheduling: "Sebulan 8x pertemuan",
+          slug: "back-end",
+        },
+        {
+          price: "1,8",
+          priceType: "jt",
+          classType: "Kelas Fullstack",
+          className: "(Vue JS + Node JS)",
+          scheduling: "Sebulan 16x pertemuan",
           slug: "full-stack",
         },
       ],
     };
+  },
+  mounted() {
+    this.activeClassList = this.privateClass;
   },
 };
 </script>

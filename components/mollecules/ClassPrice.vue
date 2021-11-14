@@ -1,7 +1,6 @@
 <template>
   <div
     class="
-      mt-4
       leading-7
       border-0 border-gray-200
       sm:mt-6 sm:gap-6
@@ -16,28 +15,27 @@
         flex flex-col
         items-center
         max-w-[280px] max-h-[350px]
-        p-4
+        px-4
+        py-8
         mx-auto
         my-0
         shadow
         rounded-sm
-        lg:-mr-3
       "
     >
       <h3
         class="
           m-0
-          text-[20px]
-          font-semibold
+          text-20
+          font-bold
           leading-tight
           tracking-tight
-          text-black
           border-0 border-gray-200
         "
       >
-        {{ classType }}
+        {{ packet.classType }}
       </h3>
-      <p>{{ className }}</p>
+      <p class="font-medium">{{ packet.className }}</p>
       <div
         class="
           relative
@@ -65,19 +63,20 @@
             border-solid
           "
         >
-          {{ price }}
+          {{ packet.price }}
         </p>
         <p
           class="box-border font-bold m-0 border-solid text-xl"
           style="border-image: initial"
         >
-          jt
+          {{ packet.priceType }}
         </p>
       </div>
 
       <Button
+        content="Lihat Detail Kelas"
         class="mt-8 text-16 py-[14px] px-[36px]"
-        @click="$router.push(`/class?paket_kelas=${slug}`)"
+        @click="$router.push(`/class?paket_kelas=${packet.slug}`)"
       />
     </div>
     <p
@@ -91,10 +90,11 @@
         mx-auto
         shadow
         rounded-sm
-        lg:-mr-3
+        text-16
+        font-medium
       "
     >
-      {{ scheduling }}
+      {{ packet.scheduling }}
     </p>
   </div>
 </template>
@@ -105,25 +105,9 @@ export default {
   components: { Button },
 
   props: {
-    price: {
-      type: String,
-      default: "1",
-    },
-    classType: {
-      type: String,
-      default: "Kelas Basic",
-    },
-    className: {
-      type: String,
-      default: "Modern Web",
-    },
-    scheduling: {
-      type: String,
-      default: "Sebulan 8x pertemuan",
-    },
-    slug: {
-      type: String,
-      default: "web-basic",
+    packet: {
+      type: Object,
+      default: () => {},
     },
   },
 };

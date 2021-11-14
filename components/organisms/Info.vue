@@ -1,9 +1,14 @@
 <template>
-  <div class="relative pb-20 -mt-20 bg-white rounded-t-[55px] px-[163px]">
-    <h2 class="text-40 p-12 font-semibold">
+  <div class="relative py-20 -mt-20 bg-white rounded-t-[55px] px-[163px]">
+    <img
+      class="absolute z-0 top-0 left-0"
+      src="/images/info-illust.png"
+      alt="info illustration"
+    />
+    <h2 class="text-40 pb-12 px-12 font-semibold relative z-20">
       <span class="font-bold">Informasi Gaji</span> Software Engineer
     </h2>
-    <div class="">
+    <div class="relative z-20">
       <div class="">
         <table class="table-fixed w-full">
           <thead class="text-[22px]">
