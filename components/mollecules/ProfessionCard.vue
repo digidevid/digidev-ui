@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`bg-${bgProfessionCard} py-20 px-6  rounded-xl mt-20 shadow-xl `"
+    :class="`bg-${bgProfessionCard} py-20 px-6 rounded-xl mt-20 shadow-xl max-w-[280px]`"
   >
     <div>
       <img
@@ -10,8 +10,7 @@
       />
       <h1 class="font-bold text-xl pb-2">{{ skill }}</h1>
       <p>
-        Mentor dengan segudang <span class="font-bold">pengalaman</span> yang
-        berkarir di startup ternama.
+        {{ detail }}
       </p>
     </div>
     <div
@@ -47,6 +46,11 @@ export default {
     vectorProfession: {
       type: String,
       default: "development",
+    },
+    detail: {
+      type: String,
+      default:
+        "Mentor dengan segudang pengalaman yang berkarir di startup ternama.",
     },
   },
 };
