@@ -74,7 +74,10 @@
         </p>
       </div>
 
-      <Button class="mt-8 text-16 py-[14px] px-[36px]" />
+      <Button
+        class="mt-8 text-16 py-[14px] px-[36px]"
+        @click="$router.push(`/class?paket_kelas=${slug}`)"
+      />
     </div>
     <p
       class="
@@ -116,6 +119,10 @@ export default {
     scheduling: {
       type: String,
       default: "Sebulan 8x pertemuan",
+    },
+    slug: {
+      type: String,
+      default: "web-basic",
     },
   },
 };

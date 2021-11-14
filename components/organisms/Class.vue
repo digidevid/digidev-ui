@@ -69,6 +69,7 @@
           :classType="item.classType"
           :className="item.className"
           :scheduling="item.scheduling"
+          :slug="item.slug"
         />
       </div>
     </div>
@@ -88,24 +89,28 @@ export default {
           classType: "Kelas Basic",
           className: "Modern Web",
           scheduling: "Sebulan 8x pertemuan",
+          slug: "web-basic",
         },
         {
           price: "1,5",
           classType: "Kelas Frontend",
           className: "(Vue Js)",
           scheduling: "Sebulan 8x pertemuan",
+          slug: "front-end",
         },
         {
           price: "1,5",
           classType: "Kelas Backend",
           className: "(Node JS)",
           scheduling: "Sebulan 8x pertemuan",
+          slug: "back-end",
         },
         {
           price: "2,8",
           classType: "Kelas Fullstack",
           className: "(Vue JS + Node JS)",
           scheduling: "Sebulan 8x pertemuan",
+          slug: "full-stack",
         },
       ],
     };

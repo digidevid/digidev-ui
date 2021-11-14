@@ -1,5 +1,8 @@
 <template>
-  <button :class="`btn-${type} px-5 py-3 text-20 rounded-full font-bold`">
+  <button
+    :class="`btn-${type} px-5 py-3 text-20 rounded-full font-bold`"
+    @click="$emit('click')"
+  >
     {{ content }}
   </button>
 </template>
