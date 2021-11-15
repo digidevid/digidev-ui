@@ -58,19 +58,19 @@ export default {
           vectorElement: "NotePencil",
           headerContent: "Daftar",
           paragraphContent:
-            "Tunggu admin digidev menghubungi kamu untuk melakukan persiapan kelas.",
-        },
-        {
-          vectorElement: "CreditCard",
-          headerContent: "Pembayaran",
-          paragraphContent:
-            "Lakukan pembayaran agar kelas bisa dilaksakan. Kamu akan diinvite ke dalam grup  whatsapp setelah melakukan pembayaran.",
+            "Tunggu admin digidev menghubungi kamu untuk diinvite ke dalam grup whatsapp agar dapat mengatur jadwal briefing.",
         },
         {
           vectorElement: "Crosshair",
           headerContent: "Penentuan Lokasi & Waktu Belajar",
           paragraphContent:
             "Diskusi lokasi dan waktu belajar. Proses belajar akan dilaksanakan secara offline (agar eksklusif) dengan mengikuti prokes.",
+        },
+        {
+          vectorElement: "CreditCard",
+          headerContent: "Pembayaran",
+          paragraphContent:
+            "Lakukan pembayaran 3 hari sebelum kelas dimulai, atau siswa dianggap batal mengikuti kelas.",
         },
         {
           vectorElement: "ChalkboardTeacher",
