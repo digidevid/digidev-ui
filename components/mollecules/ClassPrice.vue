@@ -93,8 +93,10 @@
         text-16
         font-medium
       "
+      v-for="(item, id) in packet.scheduling"
+      :key="id"
     >
-      {{ packet.scheduling }}
+      {{ item }}
     </p>
   </div>
 </template>

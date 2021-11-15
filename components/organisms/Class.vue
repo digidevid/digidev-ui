@@ -38,11 +38,11 @@
                 border-2 border-primary
               "
               :class="{
-                'bg-primary text-white': activeClassList === privateClass,
+                'bg-primary text-white': activeClassList === groupClass,
               }"
-              @click="activeClassList = privateClass"
+              @click="activeClassList = groupClass"
             >
-              Private
+              Group
             </button>
             <button
               class="
@@ -55,11 +55,11 @@
                 px-14
               "
               :class="{
-                'bg-primary text-white': activeClassList === groupClass,
+                'bg-primary text-white': activeClassList === privateClass,
               }"
-              @click="activeClassList = groupClass"
+              @click="activeClassList = privateClass"
             >
-              Group
+              Private
             </button>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default {
           priceType: "jt",
           classType: "Kelas Basic",
           className: "Modern Web",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan"],
           slug: "web-basic",
         },
         {
@@ -97,7 +97,7 @@ export default {
           priceType: "jt",
           classType: "Kelas Frontend",
           className: "(Vue Js)",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan"],
           slug: "front-end",
         },
         {
@@ -105,7 +105,7 @@ export default {
           priceType: "jt",
           classType: "Kelas Backend",
           className: "(Node JS)",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan"],
           slug: "back-end",
         },
         {
@@ -113,7 +113,7 @@ export default {
           priceType: "jt",
           classType: "Kelas Fullstack",
           className: "(Vue JS + Node JS)",
-          scheduling: "Sebulan 16x pertemuan",
+          scheduling: ["2 bulan 16x pertemuan"],
           slug: "full-stack",
         },
       ],
@@ -123,7 +123,7 @@ export default {
           priceType: "ribu",
           classType: "Kelas Basic",
           className: "Modern Web",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "web-basic",
         },
         {
@@ -131,7 +131,7 @@ export default {
           priceType: "ribu",
           classType: "Kelas Frontend",
           className: "(Vue Js)",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "front-end",
         },
         {
@@ -139,7 +139,7 @@ export default {
           priceType: "ribu",
           classType: "Kelas Backend",
           className: "(Node JS)",
-          scheduling: "Sebulan 8x pertemuan",
+          scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "back-end",
         },
         {
@@ -147,14 +147,14 @@ export default {
           priceType: "jt",
           classType: "Kelas Fullstack",
           className: "(Vue JS + Node JS)",
-          scheduling: "Sebulan 16x pertemuan",
+          scheduling: ["2 bulan 16x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "full-stack",
         },
       ],
     };
   },
   mounted() {
-    this.activeClassList = this.privateClass;
+    this.activeClassList = this.groupClass;
   },
 };
 </script>

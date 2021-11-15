@@ -20,7 +20,7 @@
       "
     >
       <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
-        <div class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]">
+        <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
           <img class="vector" src="/images/vector/rating.png" alt="rating" />
         </div>
         <h4 class="text-[22px] mt-5 font-bold text-start">Berpengalaman</h4>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
-        <div class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]">
+        <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
           <img
             class="vector"
             src="/images/vector/exclusive.png"
@@ -48,7 +48,7 @@
       </div>
 
       <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
-        <div class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]">
+        <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
           <img
             class="vector"
             src="/images/vector/curriculum.png"
@@ -64,7 +64,7 @@
         </p>
       </div>
       <div class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white">
-        <div class="absolute w-14 h-14 bg-primary rounded-full top-[-25px]">
+        <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
           <img class="vector" src="/images/vector/money.png" alt="money" />
         </div>
         <h4 class="text-[22px] mt-5 font-bold text-start">

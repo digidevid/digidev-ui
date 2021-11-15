@@ -9,7 +9,7 @@ export const classList = [
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
       "Kuota Terbatas",
-      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa",
+      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
     ],
     locations: [
       "Medan",

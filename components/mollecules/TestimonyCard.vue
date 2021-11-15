@@ -16,7 +16,7 @@
     <div class="col-span-3">
       <div class="flex items-start space-x-3 pb-[40px] border-b-2">
         <img src="/images/vector/quote.png" alt="quotes" />
-        <p class="text-18 font-medium">
+        <p class="text-18">
           {{ currentTestimony.testi }}
         </p>
       </div>
