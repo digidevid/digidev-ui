@@ -173,6 +173,12 @@ export const classList = [
     classDays: 8,
     classWeeks: 4,
     locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
+    summaryInfo: [
+      "Belajar & Praktik (4 Minggu)",
+      "8x Pertemuan",
+      "Kuota Terbatas",
+      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
+    ],
     syllabus: [
       "Pengenalan Modern Web Development",
       "Pengenalan Modern Web Development",
@@ -295,6 +301,12 @@ export const classList = [
     classDays: 8,
     classWeeks: 4,
     locations: ["Medan", "Jakarta", "Surabaya", "Bali"],
+    summaryInfo: [
+      "Belajar & Praktik (4 Minggu)",
+      "8x Pertemuan",
+      "Kuota Terbatas",
+      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
+    ],
     syllabus: [
       "Pengenalan Modern Web Development",
       "Pengenalan Modern Web Development",
@@ -417,6 +429,12 @@ export const classList = [
     classDays: 16,
     classWeeks: 8,
     locations: ["Medan", "Jakarta", "Yogyakarta", "Bali", "Palembang"],
+    summaryInfo: [
+      "Belajar & Praktik (4 Minggu)",
+      "16x Pertemuan",
+      "Kuota Terbatas",
+      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
+    ],
     syllabus: [
       "Pengenalan Modern Web Development",
       "Pengenalan Modern Web Development",
