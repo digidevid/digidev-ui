@@ -13,8 +13,6 @@ import Navigation from "../components/organisms/Navigation.vue";
 import Register from "../components/organisms/Register.vue";
 export default {
   components: { Navigation, Footer, Register, NavbarRegister },
-
-  Footer,
 };
 </script>
 
