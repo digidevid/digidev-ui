@@ -5,6 +5,12 @@ export const classList = [
     slug: "web-basic",
     classDays: 8,
     classWeeks: 4,
+    summaryInfo: [
+      "Belajar & Praktik (4 Minggu)",
+      "8x Pertemuan",
+      "Kuota Terbatas",
+      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa",
+    ],
     locations: [
       "Medan",
       "Jakarta (coming soon)",

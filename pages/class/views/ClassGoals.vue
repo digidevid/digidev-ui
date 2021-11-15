@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Tujuan Kelas</h1>
-    <p class="dark-grey text-18">
-      Apa Saja yang Akan Anda Dapatkan Melalui Program Ini
+    <p class="dark-grey mt-4 text-18">
+      Berikut ini merupakan beberapa tujuan yang diharapkan akan diterima oleh
+      siswa setelah mengikuti kelas {{ classTitle }}.
     </p>
     <div class="space-y-3 mt-6 w-3/4">
       <div
@@ -10,7 +11,7 @@
         :key="id"
         class="flex space-x-5 items-start"
       >
-        <p class="text-2xl text-primary font-bold text-center">
+        <p class="text-[18px] text-primary font-semibold text-center">
           <span class="text-primary" v-if="item.id < 10">0</span>{{ item.id }}
         </p>
         <p class="text-18 font-medium">
@@ -31,6 +32,10 @@ export default {
     classGoals: {
       type: Array,
       default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

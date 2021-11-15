@@ -35,19 +35,31 @@
 
         <div class="col-span-5 p-8">
           <div id="class-info" class="class-info">
-            <ClassInfo :class-info="chosedClass" />
+            <ClassInfo
+              :class-info="chosedClass.summaryInfo"
+              :class-title="classTitle"
+            />
           </div>
 
           <div id="class-goals" class="class-goals pt-16">
-            <ClassGoals :class-goals="chosedClass.goals" />
+            <ClassGoals
+              :class-goals="chosedClass.goals"
+              :class-title="classTitle"
+            />
           </div>
 
           <div id="class-types" class="class-type pt-16">
-            <ClassType :class-types="chosedClass.classTypes" />
+            <ClassType
+              :class-types="chosedClass.classTypes"
+              :class-title="classTitle"
+            />
           </div>
 
           <div id="class-location" class="class-location pt-16">
-            <ClassLocation :class-locations="chosedClass.locations" />
+            <ClassLocation
+              :class-locations="chosedClass.locations"
+              :class-title="classTitle"
+            />
           </div>
 
           <div id="class-mentor" class="class-mentor pt-16">
@@ -56,15 +68,19 @@
               :active-tutor="shownTutor"
               @nextTutor="nextTutor"
               @prevTutor="prevTutor"
+              :class-title="classTitle"
             />
           </div>
 
           <div id="class-syllabus" class="class-syllabus pt-16">
-            <ClassSyllabus :class-syllabus="chosedClass.syllabus" />
+            <ClassSyllabus
+              :class-syllabus="chosedClass.syllabus"
+              :class-title="classTitle"
+            />
           </div>
 
           <div id="class-faq" class="class-faq pt-16">
-            <ClassFaq :class-faq="chosedClass.faq" />
+            <ClassFaq :class-faq="chosedClass.faq" :class-title="classTitle" />
           </div>
         </div>
       </div>
@@ -112,6 +128,7 @@ export default {
       classList,
       chosedClass: {},
       shownTutor: {},
+      typeClass: "",
       menu: [
         {
           id: 1,
@@ -151,8 +168,27 @@ export default {
       ],
     };
   },
+  computed: {
+    classTitle() {
+      switch (this.typeClass) {
+        case "web-basic":
+          return "Basic Modern Web";
+          break;
+        case "front-end":
+          return "Frontend";
+          break;
+        case "back-end":
+          return "Backend";
+          break;
+        case "full-stack":
+          return "Fullstack";
+          break;
+      }
+    },
+  },
   mounted() {
     const { paket_kelas } = this.$router.history.current.query;
+    this.typeClass = this.$route.query.paket_kelas;
     if (paket_kelas) {
       this.classList.forEach((element) => {
         if (element.slug === paket_kelas) {

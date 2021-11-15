@@ -1,9 +1,9 @@
 <template>
   <div v-if="activeTutor">
-    <h1 class="text-3xl font-bold leading-10">Tutor yang tersedia</h1>
-    <p class="dark-grey w-2/3 text-18">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga nam
-      eum eius cupiditate quidem nobis labore quasi dolor ipsa.
+    <h1 class="text-3xl font-bold leading-10">Mentor yang tersedia</h1>
+    <p class="dark-grey text-18 mt-4">
+      Berikut ini merupakan detail data dari mentor yang akan mengajar di kelas
+      {{ classTitle }}.
     </p>
     <div class="mt-10">
       <div class="p-12 grid grid-cols-3 bg-white rounded-xl shadow-lg">
@@ -80,6 +80,10 @@ export default {
     activeTutor: {
       type: Object,
       default: () => {},
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

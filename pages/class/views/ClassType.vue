@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold leading-10">Tipe Kelas</h1>
-    <p class="dark-grey text-18">
-      Tipe kelas yang tersedia yaitu sebagai berikut.
+    <h1 class="text-3xl font-bold leading-10">Biaya & Benefit</h1>
+    <p class="dark-grey mt-4 text-18">
+      Berikut ini merupakan biaya dan benefit dari kelas {{ classTitle }}.
     </p>
     <div class="my-8 space-y-6">
       <div
@@ -48,6 +48,10 @@ export default {
     classTypes: {
       type: Array,
       default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

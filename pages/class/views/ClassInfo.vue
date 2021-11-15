@@ -1,16 +1,19 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Informasi Kelas</h1>
-    <p class="dark-grey text-18">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, doloremque.
+    <p class="dark-grey mt-4 text-18">
+      Berikut merupakan informasi singkat terkait kelas {{ classTitle }}.
     </p>
     <div class="bg-white my-4 shadow-lg rounded-xl p-5 max-w-sm">
-      <h3 class="font-bold text-18">
+      <ul class="list-disc pl-4" v-for="(item, id) in classInfo" :key="id">
+        <li>{{ item }}</li>
+      </ul>
+      <!-- <h3 class="font-bold text-18">
         Training ({{ classInfo.classWeeks }} minggu)
       </h3>
       <p class="font-bold">{{ classInfo.classDays }}x pertemuan</p>
       <p class="dark-grey">22 Nov - 12 Jan 2022</p>
-      <p class="dark-grey">Wed & Sat | 14:00 - 16:00</p>
+      <p class="dark-grey">Wed & Sat | 14:00 - 16:00</p> -->
     </div>
   </div>
 </template>
@@ -19,8 +22,12 @@
 export default {
   props: {
     classInfo: {
-      type: Object,
-      default: () => {},
+      type: Array,
+      default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

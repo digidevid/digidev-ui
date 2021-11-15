@@ -1,8 +1,9 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">Lokasi belajar yang tersedia</h1>
-    <p class="dark-grey text-18">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, doloremque.
+    <p class="dark-grey mt-4 text-18">
+      Berikut ini adalah lokasi belajar yang dapat dilaksanakan oleh Digidev
+      untuk kelas {{ classTitle }}.
     </p>
     <div class="grid grid-cols-2 mt-8">
       <div
@@ -23,6 +24,10 @@ export default {
     classLocations: {
       type: Array,
       default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

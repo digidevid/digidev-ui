@@ -3,9 +3,8 @@
     <h1 class="text-3xl font-bold leading-10">
       Materi yang akan kamu pelajari
     </h1>
-    <p class="dark-grey w-1/2 text-18">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure fuga nam
-      eum eius cupiditate quidem nobis labore quasi dolor ipsa.
+    <p class="dark-grey mt-4 text-18">
+      Berikut ini silabus yang akan dipelajari di kelas {{ classTitle }}.
     </p>
     <div class="space-y-4 mt-6 w-3/4">
       <div
@@ -13,10 +12,10 @@
         :key="id"
         class="flex space-x-5 items-center"
       >
-        <p class="text-[20px] text-primary font-bold text-center">
+        <p class="text-[18px] text-primary font-semibold text-center">
           <span class="text-primary" v-if="id < 9">0</span>{{ id + 1 }}
         </p>
-        <p class="col-span-11 text-[20px] font-bold">
+        <p class="col-span-11 text-[18px] font-medium">
           {{ syllabus }}
         </p>
       </div>
@@ -33,6 +32,10 @@ export default {
     classSyllabus: {
       type: Array,
       default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };

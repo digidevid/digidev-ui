@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">FAQ Kelas</h1>
-    <div class="mt-12 space-y-8">
+    <div class="mt-10 space-y-8">
       <QnaChevron v-for="(faq, id) in classFaq" :key="id" :faq="faq" />
     </div>
   </div>
@@ -17,6 +17,10 @@ export default {
     classFaq: {
       type: Array,
       default: () => [],
+    },
+    classTitle: {
+      type: String,
+      default: "Basic Web",
     },
   },
 };
