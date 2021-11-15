@@ -1,0 +1,147 @@
+<template>
+  <div class="relative py-20 -mt-20 bg-white rounded-t-[55px] px-[163px]">
+    <div>
+      <img
+        class="absolute z-0 top-0 left-0"
+        src="/images/info-illust.png"
+        alt="info illustration"
+      />
+      <h1 class="relative z-20 text-40 font-bold">
+        Lowongan Pekerjaan Software Engineer
+        <span class="font-semibold">di Indonesia</span>
+      </h1>
+      <p class="dark-grey text-20">
+        Sebelum kamu mulai belajar, Yuk cek cakupan lowongan untuk posisi
+        software engineer yang tersedia saat ini. Berikut beberapa contoh
+        lowongan aktif yang tersedia di
+        <a
+          class="text-primary font-medium"
+          target="_blank"
+          href="http://kalibrr.com"
+          >Kalibrr</a
+        >
+        dan
+        <a
+          class="text-primary font-medium"
+          target="_blank"
+          href="http://jobstreet.co.id"
+          >Jobstreet</a
+        >.
+      </p>
+    </div>
+    <div class="flex space-x-8 justify-center mt-20">
+      <div
+        v-for="(list, id) in firstList"
+        :key="id"
+        class="
+          w-60
+          h-40
+          overflow-hidden
+          rounded-xl
+          shadow-lg
+          cursor-pointer
+          transition
+          duration-500
+          ease-in-out
+          hover:scale-110
+          flex
+          justify-center
+          items-center
+        "
+      >
+        <a target="_blank" :href="`${list.url}`">
+          <img
+            class="w-full"
+            :src="`${list.image}`"
+            alt="software engineer job vacancy"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="flex space-x-8 justify-center mt-8">
+      <div
+        v-for="(list, id) in secondList"
+        :key="id"
+        class="
+          w-60
+          h-40
+          overflow-hidden
+          rounded-xl
+          shadow-lg
+          cursor-pointer
+          transition
+          duration-500
+          ease-in-out
+          hover:scale-110
+          flex
+          justify-center
+          items-center
+        "
+      >
+        <a target="_blank" :href="`${list.url}`">
+          <img
+            class="w-full"
+            :src="`${list.image}`"
+            alt="software engineer job vacancy"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      isHovering: false,
+      firstList: [
+        {
+          image: "/images/vacancy/job1.png",
+          url: "https://jobseeker.kalibrr.com/c/pensieve/jobs/188313/frontend-developer-7?similar_job_code=&job_ref=&app_source=job-board-mobile-1-5-15-133",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job2.png",
+          url: "https://jobseeker.kalibrr.com/c/pt-majoo-teknologi-indonesia/jobs/181040/frontend-engineer-3?similar_job_code=&job_ref=&app_source=job-board-mobile-1-3-15-133",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job3.png",
+          url: "https://jobseeker.kalibrr.com/c/smd-ventures-ilc/jobs/182448/frontend-developer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-11-15-133",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job4.png",
+          url: "https://jobseeker.kalibrr.com/c/pt-kamoro-maxima-integra/jobs/187535/front-end-developer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-13-15-133",
+          isHovering: false,
+        },
+      ],
+      secondList: [
+        {
+          image: "/images/vacancy/job5.png",
+          url: "https://jobseeker.kalibrr.com/c/luwjistik/jobs/182013/frontend-engineer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-15-15-133",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job6.png",
+          url: "https://jobseeker.kalibrr.com/c/pt-majoo-teknologi-indonesia/jobs/184824/full-stack-developer-3?similar_job_code=&job_ref=&app_source=job-board-mobile-1-14-15-133",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job7.png",
+          url: "https://jobseeker.kalibrr.com/c/mitramas-infosys-global/jobs/145304/software-engineer-backend?source=job-board-mobile-1-1-15-201&similar_job_code=&user_ref=www.kalibrr.com_organic_null_path&job_ref=",
+          isHovering: false,
+        },
+        {
+          image: "/images/vacancy/job8.png",
+          url: "https://jobseeker.kalibrr.com/c/pt-telkom-indonesia-persero-tbk/jobs/180674/back-end-developer?similar_job_code=&app_source=job-board-mobile-2-15-15-201",
+          isHovering: false,
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style></style>

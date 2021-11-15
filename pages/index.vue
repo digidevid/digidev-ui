@@ -1,7 +1,8 @@
 <template>
   <div>
     <Navigation />
-    <Info />
+    <!-- <Info /> -->
+    <Vacancy />
     <Benefit />
     <Partner />
     <!-- <Service /> -->
@@ -17,6 +18,7 @@
 
 <script>
 import Navigation from "~/components/organisms/Navigation";
+import Vacancy from "~/components/organisms/Vacancy";
 import Hero from "~/components/organisms/Hero";
 import Partner from "~/components/organisms/Partner";
 import Benefit from "~/components/organisms/Benefit";
@@ -33,6 +35,7 @@ import PortofolioAlumni from "../components/organisms/PortofolioAlumni.vue";
 export default {
   components: {
     Navigation,
+    Vacancy,
     Hero,
     Partner,
     Benefit,
