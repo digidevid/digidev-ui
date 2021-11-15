@@ -68,7 +68,7 @@
         class="grid w-full grid-cols-3 gap-0 sm:grid-cols-3 lg:grid-cols-4 mt-4"
       >
         <div v-for="(item, id) in activeClassList" :key="id">
-          <ClassPrice :packet="item" />
+          <ClassPrice :packet="item" :id="id" />
         </div>
       </div>
     </div>

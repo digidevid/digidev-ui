@@ -32,7 +32,11 @@
             <Button
               content="Daftar Sekarang"
               class="text-16 mt-6 w-full"
-              @click="$router.push(`/register`)"
+              @click="
+                $router.push(
+                  `/register?packet-class=${typeClass}&id-class=${idClass}`
+                )
+              "
             />
           </div>
         </div>
@@ -133,6 +137,7 @@ export default {
       chosedClass: {},
       shownTutor: {},
       typeClass: "",
+      idClass: "",
       menu: [
         {
           id: 1,
@@ -193,6 +198,7 @@ export default {
   mounted() {
     const { paket_kelas } = this.$router.history.current.query;
     this.typeClass = this.$route.query.paket_kelas;
+    this.idClass = this.$route.query.id_kelas;
     if (paket_kelas) {
       this.classList.forEach((element) => {
         if (element.slug === paket_kelas) {

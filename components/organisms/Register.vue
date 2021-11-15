@@ -63,7 +63,7 @@
             "
             type="text"
             placeholder="Masukkan Nama Lengkap"
-            id="name"
+            v-model="fullname"
           />
         </div>
 
@@ -74,7 +74,7 @@
           <div class="relative inline-block text-left w-[720px]">
             <div class="">
               <button
-                @click="dropDownKelas"
+                @click="dropdownClass"
                 type="button"
                 class="
                   inline-flex
@@ -103,7 +103,7 @@
                 aria-expanded="true"
                 aria-haspopup="true"
               >
-                Private
+                {{ typeClass }}
                 <!-- Heroicon name: solid/chevron-down -->
                 <svg
                   class="-mr-1 ml-2 h-5 w-5"
@@ -121,18 +121,8 @@
               </button>
             </div>
 
-            <!--
-    Dropdown menu, show/hide based on menu state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
             <div
-              v-if="kelas"
+              v-if="isOpenClass"
               class="
                 origin-top-right
                 absolute
@@ -149,23 +139,14 @@
               tabindex="-1"
             >
               <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  >Private</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  >Group</a
-                >
+                <div v-for="(item, idClass) in typeClasses" :key="idClass">
+                  <p
+                    class="text-gray-700 block px-4 py-2 text-sm cursor-pointer"
+                    @click="chooseClass(item)"
+                  >
+                    {{ item }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -185,7 +166,7 @@
             "
             type="text"
             placeholder="Masukkan Nomor Whatsapp"
-            id="NoWhatsapp"
+            v-model="whatsapp"
           />
         </div>
 
@@ -201,7 +182,7 @@
             "
             type="text"
             placeholder="Masukkan Email"
-            id="email"
+            v-model="email"
           />
         </div>
 
@@ -212,7 +193,7 @@
           <div class="relative inline-block text-left w-[720px]">
             <div>
               <button
-                @click="dropDownKota"
+                @click="dropdownCity"
                 type="button"
                 class="
                   inline-flex
@@ -242,8 +223,7 @@
                 aria-expanded="true"
                 aria-haspopup="true"
               >
-                Pilih Kota
-                <!-- Heroicon name: solid/chevron-down -->
+                {{ city }}
                 <svg
                   class="-mr-1 ml-2 h-5 w-5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -260,18 +240,8 @@
               </button>
             </div>
 
-            <!--
-    Dropdown menu, show/hide based on menu state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
             <div
-              v-if="kota"
+              v-if="isOpenCity"
               class="
                 origin-top-right
                 absolute
@@ -288,50 +258,14 @@
               tabindex="-1"
             >
               <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  >Medan</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  >Jakarta</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-2"
-                  >Bogor</a
-                >
-                <form method="POST" action="#" role="none">
-                  <button
-                    type="submit"
-                    class="
-                      text-gray-700
-                      block
-                      w-full
-                      text-left
-                      px-4
-                      py-2
-                      text-sm
-                    "
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-3"
+                <div v-for="(item, idCity) in cities" :key="idCity">
+                  <p
+                    class="text-gray-700 block px-4 py-2 text-sm cursor-pointer"
+                    @click="chooseCity(item)"
                   >
-                    Bandung
-                  </button>
-                </form>
+                    {{ item }}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -351,7 +285,7 @@
             "
             type="text"
             placeholder="Masukkan Alamat Lengkap"
-            id="address"
+            v-model="address"
           />
         </div>
       </div>
@@ -367,18 +301,32 @@
         lg:float-right
       "
       content="Next"
+      @click="submitRegisterClass"
     />
   </div>
 </template>
 
 <script>
 import Button from "../atoms/Button.vue";
+import axios from "axios";
+import { classList } from "~/constants/class-list.js";
 export default {
   components: { Button },
   data() {
     return {
-      kelas: false,
-      kota: false,
+      fullname: "",
+      className: "",
+      typeClass: "Tipe Kelas",
+      email: "",
+      whatsapp: "",
+      city: "Pilih Kota",
+      address: "",
+      price: "750000",
+      date: "",
+      isOpenClass: false,
+      isOpenCity: false,
+      cities: ["Medan", "Jakarta", "Bandung", "Malang"],
+      typeClasses: ["Group", "Private"],
     };
   },
   props: {
@@ -390,23 +338,58 @@ export default {
       type: String,
       default: "Kelas Frontend (Vue Js)",
     },
-    price: {
-      type: String,
-      default: "Rp1.500.000,-",
-    },
+    // price: {
+    //   type: String,
+    //   default: "Rp1.500.000,-",
+    // },
     description: {
       type: String,
       default:
         "Mentor dengan segudang pengalaman yang berkarir di startup ternama lorem ipsum.",
     },
   },
-
+  mounted() {
+    this.className = this.$route.query["packet-class"];
+    console.log(this.className);
+  },
   methods: {
-    dropDownKelas() {
-      this.kelas = !this.kelas;
+    dropdownClass() {
+      this.isOpenClass = !this.isOpenClass;
     },
-    dropDownKota() {
-      this.kota = !this.kota;
+    dropdownCity() {
+      this.isOpenCity = !this.isOpenCity;
+    },
+    chooseClass(param) {
+      this.typeClass = param;
+      this.isOpenClass = false;
+    },
+    chooseCity(param) {
+      this.city = param;
+      this.isOpenCity = false;
+    },
+    async submitRegisterClass() {
+      const payload = {
+        fullname: this.fullname,
+        class: this.className,
+        class_type: this.typeClass,
+        price: this.price,
+        whatsapp: this.whatsapp,
+        email: this.email,
+        city: this.city,
+        address: this.address,
+        date: `${new Date().getDate()}/${
+          new Date().getMonth() + 1
+        }/${new Date().getFullYear()}`,
+      };
+      try {
+        const res = await axios.post(
+          "https://digidev-api.herokuapp.com",
+          payload
+        );
+        if (res) this.$router.push(`/thankyou`);
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };

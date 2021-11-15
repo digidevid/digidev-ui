@@ -76,7 +76,9 @@
       <Button
         content="Lihat Detail Kelas"
         class="mt-8 text-16 py-[14px] px-[36px]"
-        @click="$router.push(`/class?paket_kelas=${packet.slug}`)"
+        @click="
+          $router.push(`/class?paket_kelas=${packet.slug}&id_kelas=${id}`)
+        "
       />
     </div>
     <p
@@ -93,8 +95,8 @@
         text-16
         font-medium
       "
-      v-for="(item, id) in packet.scheduling"
-      :key="id"
+      v-for="(item, idx) in packet.scheduling"
+      :key="idx"
     >
       {{ item }}
     </p>
@@ -110,6 +112,10 @@ export default {
     packet: {
       type: Object,
       default: () => {},
+    },
+    id: {
+      type: Number | String,
+      default: 0,
     },
   },
 };
