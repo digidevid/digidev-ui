@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="`btn-${type} px-6 py-3 text-20 rounded-full font-bold`"
+    :class="`btn-${type} px-6 py-3 text-${textSize} rounded-full font-bold`"
     @click="$emit('click')"
   >
     {{ content }}
@@ -17,6 +17,10 @@ export default {
     type: {
       type: String,
       default: "primary",
+    },
+    textSize: {
+      type: String,
+      default: "20",
     },
   },
 };

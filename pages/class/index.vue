@@ -29,7 +29,11 @@
                 {{ item.name }}
               </li>
             </ul>
-            <Button class="text-16 mt-6 w-full" />
+            <Button
+              content="Daftar Sekarang"
+              class="text-16 mt-6 w-full"
+              @click="$router.push(`/register`)"
+            />
           </div>
         </div>
 

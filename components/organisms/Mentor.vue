@@ -1,6 +1,6 @@
 <template>
   <section id="mentor" class="relative py-20 overflow-hidden bg-main">
-    <div class="relative px-16 mx-auto max-w-7xl">
+    <div class="relative px-16 mx-auto max-w-7xl sm:w-full">
       <h2
         class="
           relative
@@ -8,14 +8,25 @@
           text-center
           mt-5
           mb-10
-          text-40
+          text-20
+          lg:text-40
           leading-tight
           font-semibold
         "
       >
         <span class="font-bold">Mentor</span> yang Tersedia
       </h2>
-      <div class="grid w-full grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-4">
+      <div
+        class="
+          grid
+          w-full
+          grid-cols-1
+          gap-10
+          lg:grid-cols-3
+          md:grid-cols-4
+          sm:grid-cols-1
+        "
+      >
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <MentorCard :mentor="mentor" />
         </div>
@@ -34,15 +45,15 @@
         "
       >
         <div class="relative z-50">
-          <h1 class="font-bold text-[40px] pb-4">
+          <h1 class="font-bold text-20 lg:text-40 pb-4">
             Ingin jadi mentor? Daftar yuk!
           </h1>
-          <p class="text-[#2D2D2D] text-[20px]">
+          <p class="text-[#2D2D2D] lg:text-20 text-14">
             Dapatkan penghasilan tambahan sekaligus memberikan bantuan kepada
             mereka yang sedang mempersiapkan skill untuk berkari sebagai
             profesional.
           </p>
-          <Button content="Daftar jadi mentor" class="mt-5 text-18" />
+          <Button content="Daftar jadi mentor" class="mt-5 text-18 text-14" />
         </div>
         <div class="absolute top-0 right-0 z-0">
           <img src="/images/vector/vector736.png" alt="" />
