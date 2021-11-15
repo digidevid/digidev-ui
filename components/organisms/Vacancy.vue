@@ -1,16 +1,31 @@
 <template>
-  <div class="relative py-20 -mt-20 bg-white rounded-t-[55px] px-[163px]">
+  <div
+    class="
+      relative
+      py-10
+      md:py-14
+      lg:py-20
+      -mt-20
+      bg-white
+      md:rounded-t-[55px]
+      rounded-t-[25px]
+      px-6
+      md:px-8
+      lg:px-20
+      xl:px-[163px]
+    "
+  >
     <div>
       <img
-        class="absolute z-0 top-0 left-0"
+        class="absolute w-40 md:w-1/5 z-0 top-0 left-0"
         src="/images/info-illust.png"
         alt="info illustration"
       />
-      <h1 class="relative z-20 text-40 font-bold">
+      <h1 class="relative z-20 text-20 md:text-40 font-bold">
         Lowongan Pekerjaan Software Engineer
         <span class="font-semibold">di Indonesia</span>
       </h1>
-      <p class="dark-grey text-20">
+      <p class="dark-grey text-14 md:text-20 mt-4 xl:mt-0">
         Sebelum kamu mulai belajar, Yuk cek cakupan lowongan untuk posisi
         software engineer yang tersedia saat ini. Berikut beberapa contoh
         lowongan aktif yang tersedia di
@@ -29,11 +44,28 @@
         >.
       </p>
     </div>
-    <div class="flex space-x-8 justify-center mt-20">
+    <div
+      class="
+        relative
+        z-20
+        flex
+        space-x-8
+        xl:justify-center
+        mt-4
+        lg:mt-8
+        xl:mt-20
+        overflow-x-scroll
+        xl:overflow-x-visible
+        p-4
+        xl:p-0
+      "
+    >
       <div
         v-for="(list, id) in firstList"
         :key="id"
         class="
+          relative
+          bg-white
           w-60
           h-40
           overflow-hidden
@@ -44,25 +76,39 @@
           duration-500
           ease-in-out
           hover:scale-110
-          flex
-          justify-center
-          items-center
+          flex-none
         "
       >
-        <a target="_blank" :href="`${list.url}`">
+        <a class="" target="_blank" :href="`${list.url}`">
           <img
-            class="w-full"
+            class="w-full center-content"
             :src="`${list.image}`"
             alt="software engineer job vacancy"
           />
         </a>
       </div>
     </div>
-    <div class="flex space-x-8 justify-center mt-8">
+    <div
+      class="
+        relative
+        z-20
+        flex
+        space-x-8
+        xl:justify-center
+        mt-3
+        xl:mt-8
+        overflow-x-scroll
+        xl:overflow-x-visible
+        p-4
+        xl:p-0
+      "
+    >
       <div
         v-for="(list, id) in secondList"
         :key="id"
         class="
+          relative
+          bg-white
           w-60
           h-40
           overflow-hidden
@@ -73,14 +119,12 @@
           duration-500
           ease-in-out
           hover:scale-110
-          flex
-          justify-center
-          items-center
+          flex-none
         "
       >
-        <a target="_blank" :href="`${list.url}`">
+        <a class="" target="_blank" :href="`${list.url}`">
           <img
-            class="w-full"
+            class="w-full center-content"
             :src="`${list.image}`"
             alt="software engineer job vacancy"
           />
@@ -144,4 +188,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.center-content {
+  position: absolute;
+  z-index: 40;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
