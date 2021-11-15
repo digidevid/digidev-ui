@@ -16,17 +16,7 @@
       >
         <span class="font-bold">Mentor</span> yang Tersedia
       </h2>
-      <div
-        class="
-          grid
-          w-full
-          grid-cols-1
-          gap-10
-          lg:grid-cols-3
-          md:grid-cols-4
-          sm:grid-cols-1
-        "
-      >
+      <div class="flex w-full justify-center space-x-8">
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <MentorCard :mentor="mentor" />
         </div>

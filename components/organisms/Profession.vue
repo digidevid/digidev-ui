@@ -51,7 +51,7 @@ export default {
         {
           bgProfessionCard: "[#FCFDFE]",
           skill: "Mobile Developer",
-          vectorProfession: "Development",
+          vectorProfession: "development",
           detail: "Setelah mengikuti kelas Mobile Apps Digidev",
         },
       ],
