@@ -12,8 +12,8 @@
       <div class="max-w-md md:row-span-3 lg:col-span-2 md:pr-10 xl:pr-16">
         <img class="w-[60px] mb-8" src="logo-bw.png" alt="digidev logo" />
         <p class="tn:text-sm md:text-base my-2 space-y-1">
-          Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc
-          quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
+          Digidev merupakan platform digital penyedia mentor berpengalaman untuk
+          pembelajaran Modern Web Development secara privat dan ekslusif.
         </p>
         <div class="flex space-x-2 xl:space-x-3 my-3">
           <a href="" target="_blank"
@@ -43,15 +43,15 @@
           Services
         </h1>
         <ul class="tn:text-sm md:text-base my-2 space-y-4 xl:space-y-4">
-          <li><a class="hover:no-underline" href="#">Mobile Developer</a></li>
-          <li>
-            <a class="hover:no-underline" href="#">Full Stack Developer</a>
-          </li>
+          <li><a class="hover:no-underline" href="#">Basic Modern Web</a></li>
           <li>
             <a class="hover:no-underline" href="#">Front End Developer</a>
           </li>
           <li>
             <a class="hover:no-underline" href="#">BackEnd Developer</a>
+          </li>
+          <li>
+            <a class="hover:no-underline" href="#">Full Stack Developer</a>
           </li>
         </ul>
       </div>
@@ -62,14 +62,14 @@
         <div class="tn:text-sm md:text-base my-2 space-y-4 xl:space-y-4">
           <div class="flex space-x-2">
             <img src="/images/icons/contact/email-icon.svg" alt="mail icon" />
-            <a href="mailto:hello@digidev.co">
-              <p>hello@digidev.co</p>
+            <a href="mailto:digidev.id@gmail.com">
+              <p>digidev.id@gmail.com</p>
             </a>
           </div>
           <div class="flex space-x-2">
             <img src="/images/icons/contact/phone-icon.svg" alt="phone icon" />
-            <a href="https://api.whatsapp.com/send?phone=6285765324321"
-              >+62 857 6532 4321</a
+            <a href="https://api.whatsapp.com/send?phone=6281264562826"
+              >+62 812 6456 2826</a
             >
           </div>
           <div class="flex space-x-2">
@@ -77,7 +77,7 @@
               src="/images/icons/contact/location-icon.svg"
               alt="location icon"
             />
-            <a href="">Jakarta Selatan, DKI Jakarta, 12022</a>
+            <a href="">Medan - Jakarta Selatan, Indonesia, 20371</a>
           </div>
         </div>
       </div>
