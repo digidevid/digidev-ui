@@ -6,13 +6,16 @@
       bg-white
       rounded-t-[25px]
       md:rounded-t-[55px]
-      pb-[161px]
+      pb-[0px]
+      md:pb-[161px]
       px-[24px]
       sm:px-[24px]
       md:px-[380px]
       top-[-130px]
       sm:top-[-130px]
       md:-top-16
+      -mb-16
+      md:-mb-0
     "
   >
     <div class="lg:pt-[72px] md:pt-[72px] sm:pt-[32px] pt-[32px]">
@@ -157,7 +160,7 @@
         lg:w-[240px]
         mt-[40px]
         md:mb-[57px]
-        mb-[41px]
+        mb-[0px]
         lg:float-right
       "
       content="Next"
