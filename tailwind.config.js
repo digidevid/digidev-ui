@@ -42,41 +42,31 @@ module.exports = {
       addComponents({
         ".container": {
           width: "100%",
+          paddingLeft: "24px",
+          paddingRight: "24px",
           marginLeft: "auto",
           marginRight: "auto",
-          // "@screen tn": {
-          //   maxWidth: "400px",
-          //   paddingLeft: "0.5rem",
-          //   paddingRight: "0.5rem",
-          // },
           "@screen sm": {
             width: "600px",
-            // maxWidth: "640px",
-            // paddingLeft: "1rem",
-            // paddingRight: "1rem",
+            paddingLeft: "0px",
+            paddingRight: "0px",
           },
           "@screen md": {
             width: "700px",
-            // maxWidth: "768px",
-            // paddingLeft: "2rem",
-            // paddingRight: "2rem",
+            paddingLeft: "0px",
+            paddingRight: "0px",
           },
           "@screen lg": {
             width: "900px",
-            // maxWidth: "1024px",
-            // paddingLeft: "2rem",
-            // paddingRight: "2rem",
+            paddingLeft: "0px",
+            paddingRight: "0px",
           },
           "@screen xl": {
             width: "1120px",
-            // maxWidth: "1440px",
-            // paddingLeft: "10rem",
-            // paddingRight: "10rem",
+            paddingLeft: "0px",
+            paddingRight: "0px",
           },
         },
-        // ".bg-primary": {
-        //   backgroundColor: "#86d0c1",
-        // },
       });
     },
   ],

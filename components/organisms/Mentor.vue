@@ -21,7 +21,6 @@
           <MentorCard :mentor="mentor" />
         </div>
       </div>
-      <div></div>
       <div
         class="
           relative

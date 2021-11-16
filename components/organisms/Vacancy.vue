@@ -30,18 +30,12 @@
           target="_blank"
           href="http://kalibrr.com"
           >Kalibrr</a
-        >
-        dan
-        <a
-          class="text-primary font-medium"
-          target="_blank"
-          href="http://jobstreet.co.id"
-          >Jobstreet</a
         >.
       </p>
     </div>
     <div
       class="
+        scroll-vacancy
         relative
         z-20
         flex
@@ -86,6 +80,7 @@
     </div>
     <div
       class="
+        scroll-vacancy
         relative
         z-20
         flex
@@ -191,5 +186,12 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.scroll-vacancy::-webkit-scrollbar {
+  display: none;
+}
+.scroll-vacancy {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 </style>
