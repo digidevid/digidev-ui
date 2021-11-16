@@ -80,7 +80,7 @@
     </div>
     <div
       class="
-        scroll-vacancy
+        hide-scroll-bar
         relative
         z-20
         flex
@@ -186,12 +186,5 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.scroll-vacancy::-webkit-scrollbar {
-  display: none;
-}
-.scroll-vacancy {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 </style>
