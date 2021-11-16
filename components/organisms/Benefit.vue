@@ -1,85 +1,80 @@
 <template>
-  <div id="benefit" class="py-20 relative w-full">
-    <div class="absolute w-full top-40 left-0 -z-10">
-      <img class="w-full" src="/images/vector/Vector123.png" alt="" />
+  <div id="benefit" class="py-10 md:py-14 lg:py-20 relative w-full">
+    <div class="absolute w-full bottom-4 xl:top-40 left-0 -z-10">
+      <img
+        class="w-full"
+        src="/images/vector/Vector123.png"
+        alt="background benefit"
+      />
     </div>
 
     <div class="container">
-      <h2 class="text-40 font-semibold tracking-tight text-center">
+      <h2 class="text-24 lg:text-40 font-semibold tracking-tight text-center">
         <span class="font-bold">Keunggulan</span> Digidev
       </h2>
-      <div class="relative pt-[72px] flex space-x-4 z-50">
-        <div
-          class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white"
-        >
-          <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
-            <img class="vector" src="/images/vector/rating.png" alt="rating" />
-          </div>
-          <h4 class="text-[22px] mt-5 font-bold text-start">Berpengalaman</h4>
-          <p class="text-start pt-2 text-[18px]">
-            Mentor dengan segudang <span class="font-bold">pengalaman</span>
-            yang berkarir di startup ternama.
-          </p>
-        </div>
-
-        <div
-          class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white"
-        >
-          <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
-            <img
-              class="vector"
-              src="/images/vector/exclusive.png"
-              alt="exclusive"
-            />
-          </div>
-          <h4 class="text-[22px] mt-5 font-bold text-start">
-            Privat dan Ekslusif
-          </h4>
-          <p class="text-start pt-2 text-[18px]">
-            Kelas dilaksanakan secara <span class="font-bold">offline</span>,
-            privat dan eksklusif dengan mengikuti prokes.
-          </p>
-        </div>
-
-        <div
-          class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white"
-        >
-          <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
-            <img
-              class="vector"
-              src="/images/vector/curriculum.png"
-              alt="curriculum"
-            />
-          </div>
-          <h4 class="text-[22px] mt-5 font-bold text-start">
-            Kurikulum Sesuai Dunia Kerja
-          </h4>
-          <p class="text-start pt-2 text-[18px]">
-            Kurikulum yang dipelajari disesuaikan dengan
-            <span class="font-bold">kebutuhan dunia kerja</span> saat ini.
-          </p>
-        </div>
-        <div
-          class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white"
-        >
-          <div class="absolute w-6 h-6 p-8 bg-primary rounded-full top-[-25px]">
-            <img class="vector" src="/images/vector/money.png" alt="money" />
-          </div>
-          <h4 class="text-[22px] mt-5 font-bold text-start">
-            Relatif Terjangkau
-          </h4>
-          <p class="text-start pt-2 text-[18px]">
-            Dengan asas saling tolong menolong membuat kelas
-            <span class="font-bold">lebih terjangkau</span>
-          </p>
-        </div>
+      <div
+        class="
+          relative
+          pt-[72px]
+          grid grid-cols-1
+          md:grid-cols-2
+          xl:grid-cols-4
+          gap-12
+          xl:gap-4
+          z-50
+        "
+      >
+        <BenefitCard
+          v-for="(benefit, id) in dataBenefits"
+          :key="id"
+          :benefit="benefit"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import BenefitCard from "~/components/mollecules/BenefitCard";
+export default {
+  components: {
+    BenefitCard,
+  },
+  data() {
+    return {
+      dataBenefits: [
+        {
+          title: "Berpengalaman",
+          icon: "/images/vector/rating.png",
+          start: "Mentor dengan segudang",
+          bold: "pengalaman",
+          end: "yang berkarir di startup ternama.",
+        },
+        {
+          title: "Privat dan Ekslusif",
+          icon: "/images/vector/exclusive.png",
+          start: "Kelas dilaksanakan secara",
+          bold: "offline",
+          end: "privat dan eksklusif dengan mengikuti prokes.",
+        },
+        {
+          title: "Kurikulum Sesuai Dunia Kerja",
+          icon: "/images/vector/curriculum.png",
+          start: "Kurikulum yang dipelajari disesuaikan dengan",
+          bold: "kebutuhan dunia kerja",
+          end: "saat ini.",
+        },
+        {
+          title: "Relatif Terjangkau",
+          icon: "/images/vector/money.png",
+          start: "Dengan asas saling tolong menolong membuat kelas",
+          bold: "lebih terjangkau.",
+          end: "",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
