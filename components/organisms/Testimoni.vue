@@ -1,6 +1,6 @@
 <template>
-  <section class="py-20 bg-white container">
-    <h2 class="text-center text-40 font-semibold">
+  <section class="relative z-50 lg:py-20 py-[92px] bg-white container">
+    <h2 class="text-center lg:text-40 text-24 font-semibold">
       <span class="font-bold">Apa Kata </span> Mereka
     </h2>
     <TestimonyCard
@@ -26,6 +26,7 @@ export default {
         {
           id: 1,
           name: "Faishal",
+          fullName: "Faishal Arif",
           job: "Vice President",
           photo: "/images/quotes/faishal.png",
           testi:
@@ -33,27 +34,30 @@ export default {
         },
         {
           id: 2,
-          name: "Ibnu",
-          job: "Vice President",
-          photo: "/images/quotes/ibnu.jpg",
+          name: "Ichsan ",
+          fullName: "Ichsan Rafisyah",
+          job: "Mahasiswa Kelas Basic Modern Web",
+          photo: "/images/quotes/Ichsan.jpg",
           testi:
-            "We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improv.",
+            "Kelas Basic Modern Web sangat recommended, dari saya yang kurang mengerti coding, hingga saya dapat memahami coding, mentornya sangat pengalaman, sabar dan friendly. Mentor nya sering berbagi pengalam di dunia kerja, saya jadi semangat terus mengembangkan ilmu di dunia programming, terima kasih untuk ilmu nya kepada mentor Digidev.",
         },
         {
           id: 3,
-          name: "Uncu",
-          job: "Vice President",
-          photo: "/images/quotes/uncu.png",
+          name: "Ridho ",
+          fullName: "Ridho Zuhriyal Lubis",
+          job: "Mahasiswa Kelas Basic Modern Web",
+          photo: "/images/quotes/Ridho.jpg",
           testi:
-            "We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickl.",
+            "Alhamdulillah selama belajar di Digidev mentornya selalu baik  dan ramah, pembawaan materinya juga cukup mudah dipahami, ditambah kuis kuis yang diberikan dapat melatih dan lebih memahami materi. Pokoknya cocok buat yang lagi belajar jadi web developer.",
         },
         {
           id: 4,
-          name: "Irwan",
-          job: "Vice President",
-          photo: "/images/quotes/irwan.jpg",
+          name: "Rahdiansyah",
+          fullName: "Rahdiansyah",
+          job: "Mahasiswa Kelas Basic Modern Web",
+          photo: "/images/quotes/Rahdiansyah.jpg",
           testi:
-            "We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.",
+            "Digidev ini benar-benar memberikan pemahaman yang baik tentang pemrograman. Dengan bahasa yang menarik, mudah dipahami, saya selaku orang non-IT dapat memahami kelas ini dengan baik. Terima kasih Digidev.",
         },
       ],
     };
