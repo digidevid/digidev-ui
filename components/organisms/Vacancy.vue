@@ -9,13 +9,9 @@
       bg-white
       md:rounded-t-[55px]
       rounded-t-[25px]
-      px-6
-      md:px-8
-      lg:px-20
-      xl:px-[163px]
     "
   >
-    <div>
+    <div class="container">
       <img
         class="absolute w-40 md:w-1/5 z-0 top-0 left-0"
         src="/images/info-illust.png"
@@ -34,18 +30,12 @@
           target="_blank"
           href="http://kalibrr.com"
           >Kalibrr</a
-        >
-        dan
-        <a
-          class="text-primary font-medium"
-          target="_blank"
-          href="http://jobstreet.co.id"
-          >Jobstreet</a
         >.
       </p>
     </div>
     <div
       class="
+        scroll-vacancy
         relative
         z-20
         flex
@@ -90,6 +80,7 @@
     </div>
     <div
       class="
+        scroll-vacancy
         relative
         z-20
         flex
@@ -195,5 +186,12 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.scroll-vacancy::-webkit-scrollbar {
+  display: none;
+}
+.scroll-vacancy {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 </style>

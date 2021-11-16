@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 gap-8 items-end mt-[78px] px-8">
+  <div class="grid grid-cols-4 gap-8 items-end mt-[78px]">
     <div class="flex space-x-4 items-center">
       <div class="w-[56px] h-[56px]">
         <img

@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white min-w-screen px-[165px]">
+  <section class="py-20 bg-white container">
     <h2 class="text-center text-40 font-semibold">
       <span class="font-bold">Apa Kata </span> Mereka
     </h2>

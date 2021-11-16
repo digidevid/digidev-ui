@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-[1120px] mx-auto py-20">
-    <h1 class="leading-relaxed text-start font-bold text-40 pb-3">
+  <div class="container py-20">
+    <h1 class="leading-snug text-start font-bold text-40 pb-3">
       Profesi yang bisa ditempati setelah lulus dari kelas belajar modern Web
       Development
     </h1>
