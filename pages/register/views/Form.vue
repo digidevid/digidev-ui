@@ -156,7 +156,8 @@
         w-full
         lg:w-[240px]
         mt-[40px]
-        mb-[57px]
+        md:mb-[57px]
+        mb-[41px]
         lg:float-right
       "
       content="Next"
