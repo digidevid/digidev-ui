@@ -8,7 +8,7 @@
       <h2 class="text-40 font-semibold tracking-tight text-center">
         <span class="font-bold">Keunggulan</span> Digidev
       </h2>
-      <div class="relative pt-[72px] m-auto flex space-x-4 z-50">
+      <div class="relative pt-[72px] flex space-x-4 z-50">
         <div
           class="relative w-2/5 px-[30px] py-10 rounded-xl shadow-xl bg-white"
         >

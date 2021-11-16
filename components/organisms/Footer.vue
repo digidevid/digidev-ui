@@ -1,10 +1,9 @@
 <template>
-  <div class="footer px-40 lg:pt-6 xl:pt-12 rounded-t-[55px]">
+  <div class="footer px-40 lg:pt-6 xl:pt-16 rounded-t-[55px]">
     <div
       class="
         container
         text-white
-        p-4
         md:grid md:grid-cols-2 md:justify-between
         lg:grid-cols-4 lg:gap-8 lg:justify-center
       "

@@ -1,6 +1,6 @@
 <template>
   <section id="mentor" class="relative py-20 overflow-hidden bg-main">
-    <div class="relative px-16 mx-auto max-w-7xl sm:w-full">
+    <div class="relative container">
       <h2
         class="
           relative
@@ -16,7 +16,7 @@
       >
         <span class="font-bold">Mentor</span> yang Tersedia
       </h2>
-      <div class="flex w-full justify-center space-x-8">
+      <div class="flex justify-center space-x-8">
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <MentorCard :mentor="mentor" />
         </div>

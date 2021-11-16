@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1200px] mx-auto py-20">
+  <div class="container py-20">
     <h2
       class="
         relative

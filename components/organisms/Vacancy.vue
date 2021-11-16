@@ -9,13 +9,9 @@
       bg-white
       md:rounded-t-[55px]
       rounded-t-[25px]
-      px-6
-      md:px-8
-      lg:px-20
-      xl:px-[163px]
     "
   >
-    <div>
+    <div class="container">
       <img
         class="absolute w-40 md:w-1/5 z-0 top-0 left-0"
         src="/images/info-illust.png"
