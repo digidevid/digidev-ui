@@ -1,47 +1,62 @@
 <template>
-  <section id="partner" class="bg-white py-20 container">
-    <h2 class="relative text-40 pb-20 z-10 font-semibold text-center">
+  <section id="partner" class="bg-white py-10 md:py-14 lg:py-20 container">
+    <h2
+      class="
+        relative
+        text-24
+        lg:text-40
+        pb-10
+        xl:pb-20
+        z-10
+        font-semibold
+        text-center
+      "
+    >
       <span class="font-bold">Perusahaan</span> Rekanan
     </h2>
     <div
       class="
-        flex flex-wrap
-        bg-color-white
-        px-44
-        py-5
+        grid grid-cols-2
+        lg:grid-cols-4
+        bg-white
+        lg:py-8
+        md:px-24
+        lg:px-32
         w-full
-        space-x-14
+        gap-4
+        md:gap-8
+        lg:gap-14
         items-center
-        justify-center
-        rounded-full
+        lg:rounded-full lg:shadow-xl
       "
-      style="box-shadow: 0px 29px 62px -22px rgba(10, 125, 250, 0.04)"
     >
-      <div v-for="(partner, id) in partnerList" :key="id">
-        <PartnerList :partnerName="partner.partnerName" />
-      </div>
+      <img
+        v-for="(partner, id) in partnerList"
+        :key="id"
+        class="w-[100px] mx-auto"
+        :src="`/images/partner/${partner.name}.png`"
+        alt=""
+      />
     </div>
   </section>
 </template>
 
 <script>
-import PartnerList from "../mollecules/PartnerList.vue";
 export default {
-  components: { PartnerList },
   data() {
     return {
       partnerList: [
         {
-          partnerName: "SEAKUN",
+          name: "SEAKUN",
         },
         {
-          partnerName: "IQRA",
+          name: "IQRA",
         },
         {
-          partnerName: "CODEBOX",
+          name: "CODEBOX",
         },
         {
-          partnerName: "IREDIUM",
+          name: "IREDIUM",
         },
       ],
     };

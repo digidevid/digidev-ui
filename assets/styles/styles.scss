@@ -17,6 +17,7 @@ html {
 }
 .btn-secondary {
   background-color: white;
+  border: 1px solid #0a7dfa;
   color: #0a7dfa;
   &:focus,
   &:active,
@@ -37,4 +38,11 @@ html {
 }
 .bg-light-grey {
   background-color: #ebeaed;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
