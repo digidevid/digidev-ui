@@ -1,8 +1,6 @@
 <template>
   <div
-    :class="`bg-${bgProfessionCard} py-20 px-6 mt-20 max-w-[280px] ${setBackground(
-      id
-    )}`"
+    :class="`bg-${bgProfessionCard} py-6 md:py-12 px-6 ${setBackground(id)}`"
   >
     <div>
       <img
@@ -10,8 +8,8 @@
         :src="`/images/vector/${vectorProfession}.png`"
         :alt="`${vectorProfession}`"
       />
-      <h1 class="font-bold text-xl pb-2">{{ skill }}</h1>
-      <p>
+      <h1 class="font-bold text-18 lg:text-20 pb-2">{{ skill }}</h1>
+      <p class="text-14 lg:text-16">
         {{ detail }}
       </p>
     </div>

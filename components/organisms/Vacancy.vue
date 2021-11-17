@@ -17,7 +17,7 @@
         src="/images/info-illust.png"
         alt="info illustration"
       />
-      <h1 class="relative z-20 text-20 md:text-40 font-bold">
+      <h1 class="relative z-20 text-24 md:text-40 font-bold">
         Lowongan Pekerjaan Software Engineer
         <span class="font-semibold">di Indonesia</span>
       </h1>

@@ -1,23 +1,33 @@
 <template>
-  <div class="container py-20">
-    <h1 class="leading-snug text-start font-bold text-40 pb-3">
+  <div class="container py-10 md:py-14 lg:py-20">
+    <h1 class="leading-snug font-bold text-24 lg:text-40 pb-3">
       Profesi yang bisa ditempati setelah lulus dari kelas belajar modern Web
       Development
     </h1>
-    <p class="text-20 dark-grey">
+    <p class="text-14 md:text-20 dark-grey">
       Berikut ini merupakan beberapa profesi yang bisa digeluti alumni yang
       sudah mengikuti program kelas yang diadakan oleh Digidev.
     </p>
-    <div class="flex justify-center">
-      <div v-for="(item, id) in items" :key="id">
-        <ProfessionCard
-          :bgProfessionCard="item.bgProfessionCard"
-          :skill="item.skill"
-          :vectorProfession="item.vectorProfession"
-          :detail="item.detail"
-          :id="id"
-        />
-      </div>
+    <div
+      class="
+        grid grid-cols-1
+        md:grid-cols-2
+        xl:grid-cols-4
+        md:gap-6
+        xl:gap-0
+        mt-8
+        lg:mt-20
+      "
+    >
+      <ProfessionCard
+        v-for="(item, id) in items"
+        :key="id"
+        :bgProfessionCard="item.bgProfessionCard"
+        :skill="item.skill"
+        :vectorProfession="item.vectorProfession"
+        :detail="item.detail"
+        :id="id"
+      />
     </div>
   </div>
 </template>
