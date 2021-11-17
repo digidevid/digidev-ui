@@ -98,7 +98,7 @@
               src="/images/icons/contact/location-icon.svg"
               alt="location icon"
             />
-            <a href="">Medan - Jakarta Selatan, Indonesia, 20371</a>
+            <a href="">Medan - Jakarta Selatan, Indonesia</a>
           </div>
         </div>
       </div>
