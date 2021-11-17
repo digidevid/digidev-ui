@@ -19,7 +19,7 @@ export default {
       {
         rel: "stylesheet",
         type: "text/css",
-        href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300&family=Rubik+Beastly&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik+Beastly&display=swap",
       },
     ],
   },

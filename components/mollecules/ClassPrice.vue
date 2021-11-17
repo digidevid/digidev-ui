@@ -36,7 +36,8 @@
       class="
         relative
         z-10
-        p-4
+        py-4
+        px-2
         text-center
         shadow
         rounded-sm

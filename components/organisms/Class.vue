@@ -57,6 +57,7 @@
       </div>
       <div
         class="
+          hide-scroll-bar
           flex
           xl:flex-none xl:grid xl:grid-cols-4
           mt-8

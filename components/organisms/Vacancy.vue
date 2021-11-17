@@ -35,7 +35,7 @@
     </div>
     <div
       class="
-        scroll-vacancy
+        hide-scroll-bar
         relative
         z-20
         flex
