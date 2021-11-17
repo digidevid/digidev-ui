@@ -1,81 +1,32 @@
 <template>
-  <div
-    class="
-      leading-7
-      border-0 border-gray-200
-      sm:mt-6 sm:gap-6
-      md:mt-8 md:gap-0
-      bg-white
-    "
-  >
+  <div class="w-[240px] xl:w-auto shadow-sm rounded-sm bg-white text-center">
     <div
       class="
+        w-[240px]
+        xl:w-auto
         relative
         z-10
-        flex flex-col
-        items-center
-        max-w-[280px] max-h-[350px]
         px-4
-        py-8
-        mx-auto
-        my-0
+        py-5
+        lg:py-8
         shadow
         rounded-sm
       "
     >
-      <h3
-        class="
-          m-0
-          text-20
-          font-bold
-          leading-tight
-          tracking-tight
-          border-0 border-gray-200
-        "
-      >
+      <h3 class="text-16 lg:text-20 font-bold leading-tight tracking-tight">
         {{ packet.classType }}
       </h3>
-      <p class="font-medium">{{ packet.className }}</p>
-      <div
-        class="
-          relative
-          flex
-          items-end
-          mt-6
-          leading-7
-          text-gray-900
-          border-0 border-gray-200
-        "
-      >
-        <p
-          class="box-border m-0 border-solid absolute top-0 left-[-20px]"
-          style="border-image: initial"
-        >
-          Rp
-        </p>
-        <p
-          class="
-            box-border
-            m-0
-            text-6xl
-            font-semibold
-            leading-none
-            border-solid
-          "
-        >
-          {{ packet.price }}
-        </p>
-        <p
-          class="box-border font-bold m-0 border-solid text-xl"
-          style="border-image: initial"
-        >
-          {{ packet.priceType }}
+      <p class="font-medium text-16 lg:text-20">{{ packet.className }}</p>
+      <div class="flex justify-center items-start my-8 lg:my-12 mx-auto">
+        <p class="font-medium leading-3">Rp</p>
+        <p class="text-[58px] font-bold leading-8">
+          {{ packet.price }}<span class="text-26">{{ packet.priceType }}</span>
         </p>
       </div>
 
       <Button
         content="Lihat Detail Kelas"
-        class="mt-8 text-16 py-[14px] px-[36px]"
+        class="!text-14 lg:!text-16 py-2 lg:py-3"
         @click="
           $router.push(`/class?paket_kelas=${packet.slug}&id_kelas=${id}`)
         "
@@ -85,14 +36,12 @@
       class="
         relative
         z-10
-        flex flex-col
-        items-center
-        max-w-[280px]
         p-4
-        mx-auto
+        text-center
         shadow
         rounded-sm
-        text-16
+        text-14
+        lg:text-16
         font-medium
       "
       v-for="(item, idx) in packet.scheduling"
