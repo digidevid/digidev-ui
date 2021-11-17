@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-3xl font-bold leading-10">
-      Materi yang akan kamu pelajari
+      Materi yang Akan Kamu Pelajari
     </h1>
     <p class="dark-grey mt-4 text-18">
       Berikut ini silabus yang akan dipelajari di kelas {{ classTitle }}.

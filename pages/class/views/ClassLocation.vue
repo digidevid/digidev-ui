@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold leading-10">Lokasi belajar yang tersedia</h1>
+    <h1 class="text-3xl font-bold leading-10">Lokasi Belajar yang Tersedia</h1>
     <p class="dark-grey mt-4 text-18">
       Berikut ini adalah lokasi belajar yang dapat dilaksanakan oleh Digidev
       untuk kelas {{ classTitle }}.

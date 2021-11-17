@@ -1,6 +1,6 @@
 <template>
   <div v-if="activeTutor">
-    <h1 class="text-3xl font-bold leading-10">Mentor yang tersedia</h1>
+    <h1 class="text-3xl font-bold leading-10">Mentor yang Tersedia</h1>
     <p class="dark-grey text-18 mt-4">
       Berikut ini merupakan detail data dari mentor yang akan mengajar di kelas
       {{ classTitle }}.

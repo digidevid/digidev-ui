@@ -95,7 +95,7 @@
     </div>
     <div>
       <div id="class-banner" class="class-banner pt-8">
-        <ClassBanner />
+        <ClassBanner :class-title="classTitle" />
       </div>
       <div class="relative z-50">
         <Footer />

@@ -25,15 +25,6 @@ export default {
       dataTestimonies: [
         {
           id: 1,
-          name: "Faishal",
-          fullName: "Faishal Arif",
-          job: "Vice President",
-          photo: "/images/quotes/faishal.png",
-          testi:
-            "We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.",
-        },
-        {
-          id: 2,
           name: "Ichsan ",
           fullName: "Ichsan Rafisyah",
           job: "Mahasiswa Kelas Basic Modern Web",
@@ -42,7 +33,7 @@ export default {
             "Kelas Basic Modern Web sangat recommended, dari saya yang kurang mengerti coding, hingga saya dapat memahami coding, mentornya sangat pengalaman, sabar dan friendly. Mentor nya sering berbagi pengalam di dunia kerja, saya jadi semangat terus mengembangkan ilmu di dunia programming, terima kasih untuk ilmu nya kepada mentor Digidev.",
         },
         {
-          id: 3,
+          id: 2,
           name: "Ridho ",
           fullName: "Ridho Zuhriyal Lubis",
           job: "Mahasiswa Kelas Basic Modern Web",
@@ -51,7 +42,7 @@ export default {
             "Alhamdulillah selama belajar di Digidev mentornya selalu baik  dan ramah, pembawaan materinya juga cukup mudah dipahami, ditambah kuis kuis yang diberikan dapat melatih dan lebih memahami materi. Pokoknya cocok buat yang lagi belajar jadi web developer.",
         },
         {
-          id: 4,
+          id: 3,
           name: "Rahdiansyah",
           fullName: "Rahdiansyah",
           job: "Mahasiswa Kelas Basic Modern Web",

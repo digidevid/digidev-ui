@@ -12,11 +12,17 @@
     "
   >
     <div class="text-center pt-[128px]">
-      <h1 class="text-40 font-bold">Tunggu apalagi? Daftar yuk!</h1>
-      <p class="dark-grey text-20 w-1/2 mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
-        semper aliquam vel ipsum id urna enim, duis.
+      <h1 class="text-40 font-bold">Tunggu apa lagi? Daftar yuk!</h1>
+      <p class="dark-grey text-20 w-1/2 mx-auto mt-4">
+        Yuk daftar kelas {{ classTitle }} untuk mempersiapkan dirimu dalam
+        berkarir di dunia profesional. Jika kamu berminat jadi mentor, silahkan
+        klik button Jadi Mentor di bawah.
       </p>
+      <Button
+        type="secondary"
+        content="Jadi Mentor"
+        class="text-18 mt-8 mr-4"
+      />
       <Button class="text-18 mt-8" />
     </div>
 
@@ -40,6 +46,12 @@ import Button from "~/components/atoms/Button";
 export default {
   components: {
     Button,
+  },
+  props: {
+    classTitle: {
+      type: String,
+      default: "Basic Web",
+    },
   },
 };
 </script>
