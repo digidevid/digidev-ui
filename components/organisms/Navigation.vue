@@ -2,23 +2,29 @@
   <div :class="`relative navigation ${heroBackground} ${setHeight}`">
     <div
       v-if="isShowMenu"
+      @click="closeMenu"
+      class="w-screen h-screen absolute z-30 top-0 left-0"
+    ></div>
+    <div
+      v-if="isShowMenu"
       class="
         lg:hidden
         absolute
-        z-70
+        z-40
         top-2
         right-2
         w-2/3
-        md:w-1/3
+        md:w-1/2
         rounded-xl
         p-6
         md:p-7
         bg-white
+        shadow-xl
       "
     >
       <ul
         v-if="typeClass"
-        class="space-y-8 text-18 mt-14 text-right tracking-wide"
+        class="space-y-5 text-18 mt-14 text-right tracking-wide"
       >
         <li
           v-for="(menu, id) in classMenu"
@@ -59,7 +65,7 @@
           ><img class="w-14" src="~/static/digidev-bw.png" alt="digidev brand"
         /></nuxt-link>
       </div>
-      <div class="lg:hidden relative z-100">
+      <div class="lg:hidden relative z-50">
         <button
           id="menu"
           class="menu"
@@ -232,6 +238,11 @@ export default {
       const icon = document.getElementById("menu");
       icon.classList.toggle("opened");
     },
+    closeMenu() {
+      this.isShowMenu = false;
+      const icon = document.getElementById("menu");
+      icon.classList.toggle("opened");
+    },
   },
 };
 </script>
@@ -288,18 +299,18 @@ export default {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 .opened .line2 {
   stroke-dasharray: 1 60;
   stroke-dashoffset: -30;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 .opened .line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 </style>
