@@ -1,12 +1,24 @@
 <template>
-  <section class="py-20 bg-main">
+  <section class="py-10 md:py-14 lg:py-20 bg-main">
     <div class="leading-7 container">
-      <div class="flex justify-between items-center leading-7">
-        <h2 class="text-40 leading-tight tracking-tight font-semibold">
+      <div class="lg:flex lg:justify-between lg:items-center leading-7">
+        <h2
+          class="
+            text-24
+            lg:text-40
+            leading-tight
+            tracking-tight
+            font-semibold
+            text-center
+            lg:text-left
+          "
+        >
           <span class="font-bold">Kelas</span> yang tersedia
         </h2>
 
-        <div class="flex h-[55px]">
+        <div
+          class="flex mx-auto lg:mx-0 h-[55px] w-full md:max-w-max mt-8 lg:mt-0"
+        >
           <button
             class="
               font-semibold
@@ -14,7 +26,7 @@
               text-18
               w-full
               rounded-l-[10px]
-              px-14
+              md:px-14
               border-2 border-primary
             "
             :class="{
@@ -32,7 +44,7 @@
               font-semibold
               border-2 border-primary
               rounded-r-[10px]
-              px-14
+              md:px-14
             "
             :class="{
               'bg-primary text-white': activeClassList === privateClass,
@@ -44,11 +56,24 @@
         </div>
       </div>
       <div
-        class="grid w-full grid-cols-3 gap-0 sm:grid-cols-3 lg:grid-cols-4 mt-4"
+        class="
+          hide-scroll-bar
+          flex
+          xl:flex-none xl:grid xl:grid-cols-4
+          mt-8
+          lg:mt-14
+          overflow-x-scroll
+          xl:overflow-x-visible
+          p-2
+          xl:p-0
+        "
       >
-        <div v-for="(item, id) in activeClassList" :key="id">
-          <ClassPrice :packet="item" :id="id" />
-        </div>
+        <ClassPrice
+          v-for="(item, id) in activeClassList"
+          :key="id"
+          :packet="item"
+          :id="id"
+        />
       </div>
     </div>
   </section>

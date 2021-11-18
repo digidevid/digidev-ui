@@ -1,19 +1,11 @@
 <template>
-  <div class="mt-4 leading-7 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0">
+  <div class="leading-7">
     <div
-      class="
-        relative
-        z-10
-        flex flex-col
-        items-center
-        max-w-[300px] max-h-[350px]
-        mx-auto
-        my-0
-        sm:my-0 sm:p-6
-        md:my-8 md:p-3
-      "
+      class="relative z-10 lg:text-center mx-auto my-2 xl:my-4 xl:my-8 xl:p-3"
     >
-      <div class="relative w-[56px] h-[56px] rounded-full bg-[#F0F6FF]">
+      <div
+        class="relative w-[56px] h-[56px] rounded-full bg-[#F0F6FF] lg:mx-auto"
+      >
         <div class="vector">
           <img
             :src="`/images/vector/${vectorElement}.png`"
@@ -23,18 +15,19 @@
       </div>
       <h3
         class="
-          mt-[29px]
-          text-center
-          m-0
-          font-semibold
+          mt-4
+          xl:mt-7
+          font-bold
+          xl:font-semibold
           leading-tight
           tracking-tight
-          text-black text-24
+          text-18
+          lg:text-24
         "
       >
         {{ headerContent }}
       </h3>
-      <p class="text-center text-16 mt-2">{{ paragraphContent }}</p>
+      <p class="text-14 lg:text-16 mt-2">{{ paragraphContent }}</p>
     </div>
   </div>
 </template>

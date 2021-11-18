@@ -1,13 +1,16 @@
 <template>
-  <div class="container py-20">
+  <div class="container py-10 md:py-14 lg:py-20">
     <h2
       class="
         relative
-        w-full
-        text-center
+        w-3/4
+        md:w-full
+        lg:text-center
         mt-5
-        mb-10
-        text-40
+        mb-8
+        md:mb-10
+        text-24
+        lg:text-40
         leading-tight
         font-semibold
       "
@@ -19,10 +22,10 @@
         relative
         grid
         w-full
-        grid-cols-3
-        gap-0
-        sm:grid-cols-3
-        lg:grid-cols-4
+        grid-cols-1
+        md:grid-cols-2
+        xl:grid-cols-4
+        md:gap-4
       "
     >
       <div v-for="item in elemenContent" :key="item.id">
@@ -32,7 +35,9 @@
           :paragraphContent="item.paragraphContent"
         />
       </div>
-      <div class="w-full absolute flex justify-center space-x-28 top-12">
+      <div
+        class="w-full absolute hidden xl:flex justify-center space-x-28 top-12"
+      >
         <div>
           <img src="/images/vector/Vector-a.png" alt="Vector-a" />
         </div>
