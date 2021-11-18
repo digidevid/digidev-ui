@@ -1,8 +1,17 @@
 <template>
-  <section id="portofolio" class="container my-10 md:my-20 w-full">
-    <div class="absolute w-full -bottom-32 left-0 -z-10">
-      <img class="w-full" src="/images/vector/Vector.png" alt="lower-theme" />
-    </div>
+  <section
+    id="portofolio"
+    class="
+      portfolio
+      container
+      my-16
+      md:my-20
+      w-full
+      pb-[80px]
+      !mb-[-40px]
+      md:pb-[200px] md:!mb-[-100px]
+    "
+  >
     <h2
       class="
         relative
@@ -20,14 +29,13 @@
     >
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
-    <div class="relative z-50 mx-auto pl-0 md: pl-[250px]">
-      <div class="flex overflow-x-scroll">
+    <div class="relative z-50 mx-auto">
+      <div class="flex overflow-x-scroll pl-0 md:pl-[250px]">
         <div v-for="(portfolio, id) in portFolios" :key="id">
           <PortofolioCard :portfolio="portfolio" />
         </div>
       </div>
-
-      <div class="flex space-x-8 pt-8">
+      <div class="flex space-x-8 pt-8 pl-0 md:pl-[250px]">
         <button class="">
           <svg
             style="transform: rotateY(180deg)"
@@ -103,5 +111,17 @@ export default {
       rgba(255, 255, 255, 0) 250%
     ),
     #2e89ff;
+}
+.portfolio {
+  background-image: url("~/static/images/vector/Vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center -250px;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    background-position: center 10px;
+  }
 }
 </style>
