@@ -1,5 +1,5 @@
 <template>
-  <div :class="`relative ${heroBackground} ${setHeight}`">
+  <div :class="`relative navigation ${heroBackground} ${setHeight}`">
     <div
       v-if="isShowMenu"
       class="
@@ -164,15 +164,15 @@ export default {
     },
     heroBackground() {
       if (this.typeClass === "web-basic") {
-        return "navigation-web-basic";
+        return "hero-web-basic";
       } else if (this.typeClass === "front-end") {
-        return "navigation-front-end";
+        return "hero-front-end";
       } else if (this.typeClass === "back-end") {
-        return "navigation-back-end";
+        return "hero-back-end";
       } else if (this.typeClass === "full-stack") {
-        return "navigation-full-stack";
+        return "hero-full-stack";
       } else {
-        return "navigation";
+        return "hero-home";
       }
     },
   },
@@ -197,39 +197,25 @@ export default {
 
 <style lang="scss" scoped>
 .navigation {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+}
+.hero-home {
   background-image: url("~/static/images/hero/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: center center;
 }
-.navigation-web-basic {
+.hero-web-basic {
   background-image: url("~/static/images/hero/hero2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: center center;
 }
-.navigation-front-end {
+.hero-front-end {
   background-image: url("~/static/images/hero/hero3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: center center;
 }
-.navigation-back-end {
+.hero-back-end {
   background-image: url("~/static/images/hero/hero4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: center center;
 }
-.navigation-full-stack {
+.hero-full-stack {
   background-image: url("~/static/images/hero/hero5.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: center center;
 }
 .menu {
   background-color: transparent;
