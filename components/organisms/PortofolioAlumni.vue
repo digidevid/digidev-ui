@@ -1,26 +1,29 @@
 <template>
-  <section id="portofolio" class="relative py-20 w-full">
+  <section id="portofolio" class="container my-10 md:my-20 w-full">
     <div class="absolute w-full -bottom-32 left-0 -z-10">
       <img class="w-full" src="/images/vector/Vector.png" alt="lower-theme" />
     </div>
     <h2
       class="
         relative
-        w-full
-        text-center
+        w-3/4
+        md:w-full
+        lg:text-center
         mt-5
-        mb-10
-        text-40
+        mb-8
+        md:mb-10
+        text-24
+        lg:text-40
         leading-tight
         font-semibold
       "
     >
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
-    <div class="relative z-50 mx-auto pl-[250px]">
+    <div class="relative z-50 mx-auto pl-0 md: pl-[250px]">
       <div class="flex overflow-x-scroll">
-        <div v-for="(mentor, id) in mentorlist" :key="id">
-          <PortofolioCard :alumni="mentor" />
+        <div v-for="(portfolio, id) in portFolios" :key="id">
+          <PortofolioCard :portfolio="portfolio" />
         </div>
       </div>
 
@@ -68,26 +71,22 @@ export default {
   components: { PortofolioCard, Button },
   data() {
     return {
-      mentorlist: [
+      portFolios: [
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "violet",
+          name: "pp-1",
+          url: "https://ibnuhazar101.github.io/movie-tv-now/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "bg-light-grey",
+          name: "pp-2",
+          url: "https://faishal-pokedex.herokuapp.com/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "violet",
+          name: "pp-3",
+          url: "https://todolist-faishal.herokuapp.com/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "bg-light-grey",
+          name: "pp-4",
+          url: "https://fshlarf.github.io/niagahoster-landing-page/",
         },
       ],
     };
