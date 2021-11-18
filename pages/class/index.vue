@@ -2,10 +2,22 @@
   <div class="bg-main">
     <Navigation />
     <div
-      class="p-20 relative rounded-t-[55px] -mt-14 relative z-20 bg-[#fdfdfd]"
+      class="
+        py-8
+        md:py-14
+        lg:py-16
+        xl:py-20 xl:px-20
+        relative
+        rounded-t-[25px]
+        md:rounded-t-[55px]
+        -mt-14
+        relative
+        z-20
+        bg-[#fdfdfd]
+      "
     >
-      <div class="grid grid-cols-7 gap-14">
-        <div class="col-span-2 px-8">
+      <div class="xl:grid xl:grid-cols-7 xl:gap-14">
+        <div class="hidden xl:block xl:col-span-2 px-8">
           <div
             class="
               bg-white
@@ -41,7 +53,7 @@
           </div>
         </div>
 
-        <div class="col-span-5 p-8">
+        <div class="container xl:col-span-5 xl:p-8 xl:w-full">
           <div id="class-info" class="class-info">
             <ClassInfo
               :class-info="chosedClass.summaryInfo"
@@ -49,28 +61,31 @@
             />
           </div>
 
-          <div id="class-goals" class="class-goals pt-16">
+          <div id="class-goals" class="class-goals pt-10 md:pt-12 xl:pt-16">
             <ClassGoals
               :class-goals="chosedClass.goals"
               :class-title="classTitle"
             />
           </div>
 
-          <div id="class-types" class="class-type pt-16">
+          <div id="class-types" class="class-type pt-10 md:pt-12 xl:pt-16">
             <ClassType
               :class-types="chosedClass.classTypes"
               :class-title="classTitle"
             />
           </div>
 
-          <div id="class-location" class="class-location pt-16">
+          <div
+            id="class-location"
+            class="class-location pt-10 md:pt-12 xl:pt-16"
+          >
             <ClassLocation
               :class-locations="chosedClass.locations"
               :class-title="classTitle"
             />
           </div>
 
-          <div id="class-mentor" class="class-mentor pt-16">
+          <div id="class-mentor" class="class-mentor pt-10 md:pt-12 xl:pt-16">
             <ClassMentor
               :class-tutors="chosedClass.tutors"
               :active-tutor="shownTutor"
@@ -80,14 +95,17 @@
             />
           </div>
 
-          <div id="class-syllabus" class="class-syllabus pt-16">
+          <div
+            id="class-syllabus"
+            class="class-syllabus pt-10 md:pt-12 xl:pt-16"
+          >
             <ClassSyllabus
               :class-syllabus="chosedClass.syllabus"
               :class-title="classTitle"
             />
           </div>
 
-          <div id="class-faq" class="class-faq pt-16">
+          <div id="class-faq" class="class-faq pt-10 md:pt-12 xl:pt-16">
             <ClassFaq :class-faq="chosedClass.faq" :class-title="classTitle" />
           </div>
         </div>

@@ -16,30 +16,27 @@
         bg-white
       "
     >
-      <ul class="space-y-8 text-18 mt-14 text-right tracking-wide">
+      <ul
+        v-if="typeClass"
+        class="space-y-8 text-18 mt-14 text-right tracking-wide"
+      >
         <li
+          v-for="(menu, id) in classMenu"
+          :key="id"
           class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('benefit')"
+          @click="scrollToSection(menu.slug)"
         >
-          Keunggulan
+          {{ menu.name }}
         </li>
+      </ul>
+      <ul v-else class="space-y-8 text-18 mt-14 text-right tracking-wide">
         <li
+          v-for="(menu, id) in listMenu"
+          :key="id"
           class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('mentor')"
+          @click="scrollToSection(menu.slug)"
         >
-          Mentor
-        </li>
-        <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('partner')"
-        >
-          Rekanan
-        </li>
-        <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('portofolio')"
-        >
-          Portofolio Alumni
+          {{ menu.name }}
         </li>
       </ul>
     </div>
@@ -87,17 +84,13 @@
         class="hidden lg:flex space-x-14 text-white text-16"
         v-if="!typeClass"
       >
-        <li class="cursor-pointer" @click="scrollToSection('benefit')">
-          Keunggulan
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('mentor')">
-          Mentor
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('partner')">
-          Rekanan
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('portofolio')">
-          Portofolio Alumni
+        <li
+          v-for="(menu, id) in listMenu"
+          :key="id"
+          class="cursor-pointer"
+          @click="scrollToSection(menu.slug)"
+        >
+          {{ menu.name }}
         </li>
       </ul>
     </div>
@@ -142,6 +135,54 @@ export default {
     return {
       typeClass: "",
       isShowMenu: false,
+      listMenu: [
+        {
+          name: "Keunggulan",
+          slug: "benefit",
+        },
+        {
+          name: "Mentor",
+          slug: "mentor",
+        },
+        {
+          name: "Rekanan",
+          slug: "partner",
+        },
+        {
+          name: "Portofolio Alumni",
+          slug: "portofolio",
+        },
+      ],
+      classMenu: [
+        {
+          slug: "class-info",
+          name: "Informasi Kelas",
+        },
+        {
+          slug: "class-goals",
+          name: "Tujuan Kelas",
+        },
+        {
+          slug: "class-types",
+          name: "Tipe Kelas",
+        },
+        {
+          slug: "class-location",
+          name: "Lokasi Belajar",
+        },
+        {
+          slug: "class-mentor",
+          name: "Tutor",
+        },
+        {
+          slug: "class-syllabus",
+          name: "Silabus/Materi",
+        },
+        {
+          slug: "class-faq",
+          name: "FAQ Kelas",
+        },
+      ],
     };
   },
   computed: {
