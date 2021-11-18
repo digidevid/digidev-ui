@@ -1,5 +1,5 @@
 <template>
-  <div :class="`relative navigation ${setHeight}`">
+  <div :class="`relative ${heroBackground} ${setHeight}`">
     <div
       v-if="isShowMenu"
       class="
@@ -162,6 +162,19 @@ export default {
     setPaddingTop() {
       return this.typeClass ? "pt-[90px] pb-[130px]" : "py-24 lg:py-32";
     },
+    heroBackground() {
+      if (this.typeClass === "web-basic") {
+        return "navigation-web-basic";
+      } else if (this.typeClass === "front-end") {
+        return "navigation-front-end";
+      } else if (this.typeClass === "back-end") {
+        return "navigation-back-end";
+      } else if (this.typeClass === "full-stack") {
+        return "navigation-full-stack";
+      } else {
+        return "navigation";
+      }
+    },
   },
   mounted() {
     this.typeClass = this.$route.query.paket_kelas;
@@ -184,7 +197,35 @@ export default {
 
 <style lang="scss" scoped>
 .navigation {
-  background-image: url("~/static/images/hero.png");
+  background-image: url("~/static/images/hero/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+}
+.navigation-web-basic {
+  background-image: url("~/static/images/hero/hero2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+}
+.navigation-front-end {
+  background-image: url("~/static/images/hero/hero3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+}
+.navigation-back-end {
+  background-image: url("~/static/images/hero/hero4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+}
+.navigation-full-stack {
+  background-image: url("~/static/images/hero/hero5.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
