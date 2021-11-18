@@ -29,7 +29,7 @@
         <li
           v-for="(menu, id) in classMenu"
           :key="id"
-          class="cursor-pointer uppercase font-semibold"
+          class="cursor-pointer uppercase font-medium"
           @click="scrollToSection(menu.slug)"
         >
           {{ menu.name }}
@@ -39,7 +39,7 @@
         <li
           v-for="(menu, id) in listMenu"
           :key="id"
-          class="cursor-pointer uppercase font-semibold"
+          class="cursor-pointer uppercase font-medium"
           @click="scrollToSection(menu.slug)"
         >
           {{ menu.name }}
