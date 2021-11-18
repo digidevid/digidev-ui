@@ -1,16 +1,29 @@
 <template>
-  <section id="portofolio" class="relative w-full">
-    <div class="absolute w-full -bottom-32 left-0 -z-10">
-      <img class="w-full" src="/images/vector/Vector.png" alt="lower-theme" />
-    </div>
+  <section
+    id="portofolio"
+    class="
+      portfolio
+      container
+      my-16
+      md:my-20
+      w-full
+      pb-[80px]
+      !mb-[-40px]
+      md:pb-[200px] md:!mb-[-100px]
+    "
+  >
     <h2
       class="
         container
         relative
-        w-full
-        text-center
-        lg:text-40
+        w-3/4
+        md:w-full
+        lg:text-center
+        mt-5
+        mb-8
+        md:mb-10
         text-24
+        lg:text-40
         leading-tight
         font-semibold
         lg:py-20
@@ -19,14 +32,13 @@
     >
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
-    <div class="relative z-50 mx-auto px-[24px] xl:px-[250px]">
-      <div class="flex space-x-8 overflow-x-scroll hide-scroll-bar">
-        <div v-for="(mentor, id) in mentorlist" :key="id">
-          <PortofolioCard :alumni="mentor" />
+    <div class="relative z-50 mx-auto">
+      <div class="flex overflow-x-scroll pl-0 md:pl-[250px]">
+        <div v-for="(portfolio, id) in portFolios" :key="id">
+          <PortofolioCard :portfolio="portfolio" />
         </div>
       </div>
-
-      <div class="flex lg:space-x-14 space-x-7 pt-8">
+      <div class="flex space-x-8 pt-8 pl-0 md:pl-[250px]">
         <button class="">
           <svg
             style="transform: rotateY(180deg)"
@@ -70,26 +82,22 @@ export default {
   components: { PortofolioCard, Button },
   data() {
     return {
-      mentorlist: [
+      portFolios: [
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "violet",
+          name: "pp-1",
+          url: "https://ibnuhazar101.github.io/movie-tv-now/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "bg-light-grey",
+          name: "pp-2",
+          url: "https://faishal-pokedex.herokuapp.com/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "violet",
+          name: "pp-3",
+          url: "https://todolist-faishal.herokuapp.com/",
         },
         {
-          alumniName: "Faishal Arif",
-          skill: "Full Stack Develover",
-          bgColor: "bg-light-grey",
+          name: "pp-4",
+          url: "https://fshlarf.github.io/niagahoster-landing-page/",
         },
       ],
     };
@@ -106,5 +114,17 @@ export default {
       rgba(255, 255, 255, 0) 250%
     ),
     #2e89ff;
+}
+.portfolio {
+  background-image: url("~/static/images/vector/Vector.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center -250px;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    background-position: center 10px;
+  }
 }
 </style>
