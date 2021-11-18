@@ -1,6 +1,7 @@
 <template>
   <button
     :class="`btn-${type} px-6 py-3 text-${textSize} rounded-full font-bold`"
+    :disabled="disabled"
     @click="$emit('click')"
   >
     {{ content }}
@@ -21,6 +22,10 @@ export default {
     textSize: {
       type: String,
       default: "20",
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
 };

@@ -95,6 +95,7 @@ export default {
           className: "Modern Web",
           scheduling: ["Sebulan 8x pertemuan"],
           slug: "web-basic",
+          isActive: true,
         },
         {
           price: "2,8",
@@ -103,6 +104,7 @@ export default {
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan"],
           slug: "front-end",
+          isActive: false,
         },
         {
           price: "2,8",
@@ -111,6 +113,7 @@ export default {
           className: "(Node JS)",
           scheduling: ["Sebulan 8x pertemuan"],
           slug: "back-end",
+          isActive: false,
         },
         {
           price: "4",
@@ -119,6 +122,7 @@ export default {
           className: "(Vue JS + Node JS)",
           scheduling: ["2 bulan 16x pertemuan"],
           slug: "full-stack",
+          isActive: false,
         },
       ],
       groupClass: [
@@ -129,6 +133,7 @@ export default {
           className: "Modern Web",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "web-basic",
+          isActive: true,
         },
         {
           price: "950",
@@ -137,6 +142,7 @@ export default {
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "front-end",
+          isActive: false,
         },
         {
           price: "950",
@@ -145,6 +151,7 @@ export default {
           className: "(Node JS)",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "back-end",
+          isActive: false,
         },
         {
           price: "1,8",
@@ -153,6 +160,7 @@ export default {
           className: "(Vue JS + Node JS)",
           scheduling: ["2 bulan 16x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "full-stack",
+          isActive: false,
         },
       ],
     };
