@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold leading-10">Informasi Kelas</h1>
-    <p class="dark-grey mt-4 text-18">
+    <h1 class="text-20 lg:text-32 font-bold leading-10">Informasi Kelas</h1>
+    <p class="dark-grey lg:mt-4 text-14 lg:text-18">
       Berikut merupakan informasi singkat terkait kelas {{ classTitle }}.
     </p>
-    <div class="bg-white my-4 shadow-lg rounded-xl p-5 max-w-sm">
+    <div
+      class="bg-white text-14 lg:text-16 my-4 shadow-lg rounded-xl p-5 max-w-sm"
+    >
       <ul class="list-disc pl-4" v-for="(item, id) in classInfo" :key="id">
         <li>{{ item }}</li>
       </ul>
