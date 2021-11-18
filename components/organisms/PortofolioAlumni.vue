@@ -5,6 +5,7 @@
     </div>
     <h2
       class="
+        container
         relative
         w-full
         text-center
@@ -17,8 +18,8 @@
     >
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
-    <div class="relative z-50 mx-auto pl-[250px]">
-      <div class="flex overflow-x-scroll">
+    <div class="relative z-50 mx-auto pl-[24px] md:pl-[] xl:pl-[250px]">
+      <div class="flex space-x-8 overflow-x-scroll hide-scroll-bar">
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <PortofolioCard :alumni="mentor" />
         </div>
