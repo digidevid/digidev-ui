@@ -30,7 +30,7 @@
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
     <div class="relative z-50 mx-auto">
-      <div class="flex overflow-x-scroll pl-0 md:pl-[250px]">
+      <div class="hide-scroll-bar flex overflow-x-scroll pl-0 md:pl-[250px]">
         <div v-for="(portfolio, id) in portFolios" :key="id">
           <PortofolioCard :portfolio="portfolio" />
         </div>
