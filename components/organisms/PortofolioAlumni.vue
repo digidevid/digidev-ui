@@ -1,30 +1,32 @@
 <template>
-  <section id="portofolio" class="relative py-20 w-full">
+  <section id="portofolio" class="relative w-full">
     <div class="absolute w-full -bottom-32 left-0 -z-10">
       <img class="w-full" src="/images/vector/Vector.png" alt="lower-theme" />
     </div>
     <h2
       class="
+        container
         relative
         w-full
         text-center
-        mt-5
-        mb-10
-        text-40
+        lg:text-40
+        text-24
         leading-tight
         font-semibold
+        lg:py-20
+        py-16
       "
     >
       <span class="font-bold">Portofolio</span> Alumni
     </h2>
-    <div class="relative z-50 mx-auto pl-[250px]">
-      <div class="flex overflow-x-scroll">
+    <div class="relative z-50 mx-auto px-[24px] xl:px-[250px]">
+      <div class="flex space-x-8 overflow-x-scroll hide-scroll-bar">
         <div v-for="(mentor, id) in mentorlist" :key="id">
           <PortofolioCard :alumni="mentor" />
         </div>
       </div>
 
-      <div class="flex space-x-8 pt-8">
+      <div class="flex lg:space-x-14 space-x-7 pt-8">
         <button class="">
           <svg
             style="transform: rotateY(180deg)"

@@ -4,10 +4,11 @@
       ${alumni.bgColor}
       rounded-3xl
       flex flex-col
-      w-[360px]
-      h-[360px]
-      mx-4
-      py-9
+      lg:w-[360px]
+      lg:h-[360px]
+      w-[312px]
+      h-[312px]
+     
       items-center
       text-center`"
   >
