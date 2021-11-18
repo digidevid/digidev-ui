@@ -25,11 +25,12 @@
       </div>
 
       <Button
-        content="Lihat Detail Kelas"
+        :content="`${packet.isActive ? 'Lihat Detail Kelas' : 'Coming Soon'} `"
         class="!text-14 lg:!text-16 py-2 lg:py-3"
         @click="
           $router.push(`/class?paket_kelas=${packet.slug}&id_kelas=${id}`)
         "
+        :disabled="!packet.isActive"
       />
     </div>
     <p
