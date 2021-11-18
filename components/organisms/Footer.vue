@@ -3,8 +3,8 @@
     class="
       footer
       px-[24px]
-      lg:px-40
-      py-[28px]
+      xl:px-40
+      pt-[28px]
       xl:pt-16
       rounded-t-[25px]
       lg:rounded-t-[55px]
@@ -38,7 +38,7 @@
           Digidev merupakan platform digital penyedia mentor berpengalaman untuk
           pembelajaran Modern Web Development secara privat dan ekslusif.
         </p>
-        <div class="lg:flex flex-row space-x-4 hidden">
+        <div class="md:flex flex-row space-x-4 hidden">
           <div v-for="(social, id) in SocialContact" :key="id">
             <Contact
               :linkImage="social.linkImage"
@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <hr class="bg-[#484848] md:mt-0 mt-[40px] mx-[24px] lg:hidden" />
+    <hr class="bg-[#484848] md:mt-0 mt-[40px] mx-[24px] md:hidden" />
     <div
       class="
         md:hidden
@@ -121,7 +121,7 @@
         <Contact :linkImage="social.linkImage" :imageFile="social.imageFile" />
       </div>
     </div>
-    <div class="text-center text-white tn:py-2 lg:py-4">
+    <div class="text-center text-white md:mt-4 py-2 lg:py-4">
       <p>&copy; 2021 Digidev.id. All rights reserved</p>
     </div>
   </div>
