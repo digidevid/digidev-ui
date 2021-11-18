@@ -1,26 +1,23 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold leading-10">
+    <h1 class="text-20 lg:text-32 font-bold lg:leading-10">
       Materi yang Akan Kamu Pelajari
     </h1>
-    <p class="dark-grey mt-4 text-18">
+    <p class="dark-grey mt-2 lg:mt-4 text-14 lg:text-18">
       Berikut ini silabus yang akan dipelajari di kelas {{ classTitle }}.
     </p>
-    <div class="space-y-4 mt-6 w-3/4">
+    <div class="space-y-2 lg:space-y-4 mt-6 lg:w-3/4">
       <div
         v-for="(syllabus, id) in classSyllabus"
         :key="id"
-        class="flex space-x-5 items-center"
+        class="flex space-x-4 lg:space-x-5 items-center"
       >
-        <p class="text-[18px] text-primary font-semibold text-center">
+        <p class="text-14 lg:text-18 text-primary font-semibold text-center">
           <span class="text-primary" v-if="id < 9">0</span>{{ id + 1 }}
         </p>
-        <p class="col-span-11 text-[18px] font-medium">
+        <p class="col-span-11 text-14 lg:text-18 font-medium">
           {{ syllabus }}
         </p>
-      </div>
-      <div class="grid grid-cols-12 items-start">
-        <p></p>
       </div>
     </div>
   </div>
