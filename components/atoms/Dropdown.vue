@@ -22,7 +22,7 @@
             lg:w-full lg:h-[64px]
             border-solid border-2
             bg-white
-            text-sm
+            text-[18px]
             font-medium
             text-gray-400
             hover:bg-gray-50
