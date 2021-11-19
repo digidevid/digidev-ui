@@ -65,23 +65,11 @@
       </div>
 
       <div class="space-y-[16px] lg:space-y-[40px]">
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Nama Lengkap
-          </p>
-          <input
-            class="
-              w-[720px]
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Nama Lengkap"
-            v-model="fullname"
-          />
-        </div>
+        <Input
+          label="Nama Lengkap"
+          v-model="fullname"
+          placeholder="Masukkan Nama Lengkap"
+        />
 
         <Dropdown
           title="Pilihan Kelas"
@@ -92,39 +80,13 @@
           @click-list="chooseClass"
         />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Nomor Whatsapp
-          </p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Nomor Whatsapp"
-            v-model="whatsapp"
-          />
-        </div>
+        <Input
+          label="Nomor Whatsapp"
+          v-model="whatsapp"
+          placeholder="Masukkan Nomor Whatsapp"
+        />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block">Email</p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Email"
-            v-model="email"
-          />
-        </div>
+        <Input label="Email" v-model="email" placeholder="Masukkan Email" />
 
         <Dropdown
           title="Kota Domisili"
@@ -135,23 +97,11 @@
           @click-list="chooseCity"
         />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Alamat Lengkap
-          </p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Alamat Lengkap"
-            v-model="address"
-          />
-        </div>
+        <Input
+          label="Alamat Lengkap"
+          v-model="address"
+          placeholder="Masukkan Alamat Lengkap"
+        />
       </div>
     </div>
     <Button
@@ -173,11 +123,12 @@
 
 <script>
 import Button from "~/components/atoms/Button";
+import Input from "~/components/atoms/Input";
 import Dropdown from "~/components/atoms/Dropdown";
 import axios from "axios";
 import { classList } from "~/constants/class-list.js";
 export default {
-  components: { Button, Dropdown },
+  components: { Button, Dropdown, Input },
   data() {
     return {
       classList,
@@ -275,15 +226,16 @@ export default {
           new Date().getMonth() + 1
         }/${new Date().getFullYear()}`,
       };
-      try {
-        const res = await axios.post(
-          "https://digidev-api.herokuapp.com",
-          payload
-        );
-        if (res) this.routeToThankyouPage();
-      } catch (err) {
-        console.log(err);
-      }
+      console.log(payload.fullname);
+      // try {
+      //   const res = await axios.post(
+      //     "https://digidev-api.herokuapp.com",
+      //     payload
+      //   );
+      //   if (res) this.routeToThankyouPage();
+      // } catch (err) {
+      //   console.log(err);
+      // }
     },
   },
 };

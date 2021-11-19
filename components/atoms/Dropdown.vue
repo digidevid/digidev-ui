@@ -1,7 +1,9 @@
 <template>
-  <div class="flex justify-between items-center text-20px">
-    <p class="font-bold hidden lg:block md:block sm:hidden">{{ title }}</p>
-    <div class="relative inline-block text-left w-[720px]">
+  <div class="flex justify-between items-center text-[20px]">
+    <p class="font-bold hidden lg:block md:block sm:hidden min-w-[180px]">
+      {{ title }}
+    </p>
+    <div class="relative inline-block w-full">
       <div class="">
         <button
           @click="$emit('click')"
@@ -16,8 +18,8 @@
             w-full
             h-[48px]
             sm:w-[312px] sm:h-[48px]
-            md:w-[720px] md:h-[64px]
-            lg:w-[720px] lg:h-[64px]
+            md:w-full md:h-[64px]
+            lg:w-full lg:h-[64px]
             border-solid border-2
             bg-white
             text-sm
