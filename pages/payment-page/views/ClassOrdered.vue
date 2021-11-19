@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center w-full">
+  <div class="flex justify-center items-center w-full">
     <div
       class="
         flex
@@ -12,6 +12,7 @@
         rounded-[20px]
         shadow-md
         space-x-[32px]
+        bg-white
       "
     >
       <div>
