@@ -37,6 +37,7 @@
         "
       />
       <Button
+        @click="$emit('click-register-mentee')"
         class="
           py-2
           lg:py-3

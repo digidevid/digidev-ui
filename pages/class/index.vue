@@ -1,6 +1,10 @@
 <template>
   <div class="bg-main">
-    <Navigation />
+    <Navigation
+      @click-nav="
+        $router.push(`/register?packet-class=${typeClass}&id-class=${idClass}`)
+      "
+    />
     <div
       class="
         py-8
@@ -113,7 +117,14 @@
     </div>
     <div>
       <div id="class-banner" class="class-banner pt-8">
-        <ClassBanner :class-title="classTitle" />
+        <ClassBanner
+          :class-title="classTitle"
+          @click-register-mentee="
+            $router.push(
+              `/register?packet-class=${typeClass}&id-class=${idClass}`
+            )
+          "
+        />
       </div>
       <div class="relative z-50">
         <Footer />
