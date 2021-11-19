@@ -22,7 +22,7 @@
       <div class="max-w-md md:row-span-3 lg:col-span-2 md:pr-10 xl:pr-16">
         <img
           class="lg:w-[60px] w-[56px] md:mb-8"
-          src="logo-bw.png"
+          src="/logo-bw.png"
           alt="digidev logo"
         />
         <p

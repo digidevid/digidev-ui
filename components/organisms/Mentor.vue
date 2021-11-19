@@ -86,23 +86,18 @@ export default {
       mentorlist: [
         {
           name: "Faishal Arif",
-          skill: "Frontend Develover",
+          skill: "Frontend Developer",
           photo: "/images/mentor/faishal.png",
         },
         {
-          name: "M. Ihsan Batubara",
-          skill: "Frontend Develover",
-          photo: "/images/mentor/uncu.png",
-        },
-        {
           name: "Ibnu Hazar",
-          skill: "Frontend Develover",
-          photo: "/images/mentor/ibnu.jpg",
+          skill: "Frontend Developer",
+          photo: "/images/mentor/ibnu.png",
         },
         {
-          name: "Irwan Soleh Siregar",
-          skill: "Frontend Develover",
-          photo: "/images/mentor/irwan.jpg",
+          name: "M. Ihsan Batubara",
+          skill: "Frontend Developer",
+          photo: "/images/mentor/ihsan.png",
         },
       ],
     };
