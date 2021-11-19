@@ -14,6 +14,7 @@
   >
     <h2
       class="
+        container
         relative
         w-3/4
         md:w-full

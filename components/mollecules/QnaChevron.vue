@@ -8,13 +8,17 @@
         rounded-t-xl
         bg-white
         border
-        p-7
+        p-4
+        lg:p-7
         cursor-pointer
       "
       :class="{ 'rounded-b-xl': !faq.isActive }"
       @click="faq.isActive = !faq.isActive"
     >
-      <p class="text-18 font-bold" :class="{ 'text-primary': faq.isActive }">
+      <p
+        class="text-14 lg:text-18 font-bold"
+        :class="{ 'text-primary': faq.isActive }"
+      >
         {{ faq.question }}
       </p>
       <img
@@ -24,8 +28,8 @@
       />
       <img v-else src="/images/icons/arrow-down.svg" alt="arrow down" />
     </div>
-    <div class="bg-[#fafafa] border p-7" v-if="faq.isActive">
-      <p class="dark-grey">{{ faq.answer }}</p>
+    <div class="bg-[#fafafa] border p-4 lg:p-7" v-if="faq.isActive">
+      <p class="dark-grey text-14 lg:text-16">{{ faq.answer }}</p>
     </div>
   </div>
 </template>
