@@ -191,6 +191,7 @@ export default {
       isOpenCity: false,
       cities: ["Medan", "Jakarta", "Bandung", "Malang"],
       typeClasses: ["Group", "Private"],
+      idClass: null,
     };
   },
   props: {
@@ -214,7 +215,7 @@ export default {
   },
   mounted() {
     this.className = this.$route.query["packet-class"];
-    console.log(this.className);
+    this.idClass = this.$route.query["id-class"];
   },
   methods: {
     dropdownClass() {
@@ -230,6 +231,11 @@ export default {
     chooseCity(param) {
       this.city = param;
       this.isOpenCity = false;
+    },
+    routeToThankyouPage() {
+      this.$router.push(
+        `/thankyou?class-name=${this.className}&class-id=${this.idClass}&city=${this.city}`
+      );
     },
     async submitRegisterClass() {
       const payload = {
@@ -250,7 +256,7 @@ export default {
           "https://digidev-api.herokuapp.com",
           payload
         );
-        if (res) this.$router.push(`/thankyou`);
+        if (res) this.routeToThankyouPage();
       } catch (err) {
         console.log(err);
       }
