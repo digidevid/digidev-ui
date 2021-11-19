@@ -4,7 +4,7 @@
       class="
         flex
         w-full
-        justify-between
+        justify-start
         items-center
         px-[24px]
         sm:px-[24px]
@@ -17,22 +17,6 @@
         <nuxt-link to="/"
           ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
         /></nuxt-link>
-      </div>
-      <div class="hidden lg:block md:block">
-        <ul class="flex space-x-14 text-white text-lg" v-if="!typeClass">
-          <li class="cursor-pointer" @click="scrollToSection('benefit')">
-            Keunggulan
-          </li>
-          <li class="cursor-pointer" @click="scrollToSection('mentor')">
-            Mentor
-          </li>
-          <li class="cursor-pointer" @click="scrollToSection('partner')">
-            Rekanan
-          </li>
-          <li class="cursor-pointer" @click="scrollToSection('portofolio')">
-            Portofolio Alumni
-          </li>
-        </ul>
       </div>
     </div>
     <div

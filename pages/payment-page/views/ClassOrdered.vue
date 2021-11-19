@@ -58,10 +58,10 @@ export default {
       type: String,
       default: "Kelas Frontend (Vue Js)",
     },
-    // price: {
-    //   type: String,
-    //   default: "Rp1.500.000,-",
-    // },
+    price: {
+      type: String,
+      default: "Rp1.500.000,-",
+    },
     description: {
       type: String,
       default:

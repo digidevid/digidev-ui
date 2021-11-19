@@ -100,11 +100,13 @@
           <p class="text-14 lg:text-20 font-bold lg:pt-2 pt-1">
             {{ bankInfo.noRekening }}
           </p>
-          <img
-            class="w-4 h-4 lg:w-6 lg:h-6"
-            src="/images/payment-page/Copy.png"
-            alt="copy"
-          />
+          <button>
+            <img
+              class="w-4 h-4 lg:w-6 lg:h-6"
+              src="/images/payment-page/Copy.png"
+              alt="copy"
+            />
+          </button>
         </div>
       </div>
       <div>
