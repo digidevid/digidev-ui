@@ -3,19 +3,24 @@
     <p class="font-bold hidden lg:block md:block sm:hidden min-w-[180px]">
       {{ label }}
     </p>
-    <input
-      class="
-        w-full
-        lg:py-[17px] lg:px-[24px]
-        py-[13px]
-        px-[16px]
-        border-solid border-2
-      "
-      type="text"
-      :placeholder="placeholder"
-      :value="value"
-      @input="$emit('input', $event.target.value)"
-    />
+    <div class="w-full">
+      <input
+        class="
+          w-full
+          lg:py-[17px] lg:px-[24px]
+          py-[13px]
+          px-[16px]
+          border-solid border-2
+        "
+        type="text"
+        :placeholder="placeholder"
+        :value="value"
+        @input="onInput"
+      />
+      <p class="text-red-500 text-16 mt-2" v-if="error && !value">
+        {{ errorMessage }}
+      </p>
+    </div>
   </div>
 </template>
 
@@ -37,6 +42,19 @@ export default {
     value: {
       type: String,
       default: "",
+    },
+    error: {
+      type: Boolean,
+      default: false,
+    },
+    errorMessage: {
+      type: String,
+      default: "Harus diisi",
+    },
+  },
+  methods: {
+    onInput(event) {
+      this.$emit("input", event.target.value);
     },
   },
 };

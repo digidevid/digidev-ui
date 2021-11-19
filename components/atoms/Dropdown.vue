@@ -51,6 +51,9 @@
             />
           </svg>
         </button>
+        <p class="text-red-500 text-16 mt-2" v-if="error && !value">
+          {{ errorMessage }}
+        </p>
       </div>
 
       <div
@@ -99,6 +102,24 @@ export default {
     listDropdown: {
       type: Array,
       default: ["list 1", "list 2"],
+    },
+    error: {
+      type: Boolean,
+      default: false,
+    },
+    errorMessage: {
+      type: String,
+      default: "Harus diisi",
+    },
+  },
+  data() {
+    return {
+      value: "",
+    };
+  },
+  watch: {
+    choosedList() {
+      this.value = this.choosedList;
     },
   },
 };

@@ -69,6 +69,7 @@
           label="Nama Lengkap"
           v-model="fullname"
           placeholder="Masukkan Nama Lengkap"
+          :error="isErrorForm"
         />
 
         <Dropdown
@@ -78,15 +79,22 @@
           :isOpen="isOpenClass"
           :listDropdown="typeClasses"
           @click-list="chooseClass"
+          :error="isErrorForm"
         />
 
         <Input
           label="Nomor Whatsapp"
           v-model="whatsapp"
           placeholder="Masukkan Nomor Whatsapp"
+          :error="isErrorForm"
         />
 
-        <Input label="Email" v-model="email" placeholder="Masukkan Email" />
+        <Input
+          label="Email"
+          v-model="email"
+          placeholder="Masukkan Email"
+          :error="isErrorForm"
+        />
 
         <Dropdown
           title="Kota Domisili"
@@ -95,12 +103,14 @@
           :isOpen="isOpenCity"
           :listDropdown="cities"
           @click-list="chooseCity"
+          :error="isErrorForm"
         />
 
         <Input
           label="Alamat Lengkap"
           v-model="address"
           placeholder="Masukkan Alamat Lengkap"
+          :error="isErrorForm"
         />
       </div>
     </div>
@@ -116,7 +126,7 @@
         lg:float-right
       "
       content="Next"
-      @click="submitRegisterClass"
+      @click="submit"
     />
   </div>
 </template>
@@ -146,6 +156,7 @@ export default {
       cities: ["Medan", "Jakarta", "Bandung", "Malang"],
       typeClasses: ["Group", "Private"],
       idClass: null,
+      isErrorForm: false,
     };
   },
   props: {
@@ -212,6 +223,26 @@ export default {
         `/thankyou?class-name=${this.className}&class-id=${this.idClass}&city=${this.city}`
       );
     },
+    submit() {
+      this.validate();
+    },
+    validate() {
+      if (
+        !this.fullname ||
+        !this.className ||
+        this.typeClass === "Tipe Kelas" ||
+        !this.price ||
+        !this.email ||
+        !this.whatsapp ||
+        this.city === "Pilih Kota" ||
+        !this.address
+      ) {
+        this.isErrorForm = true;
+        return;
+      } else {
+        this.submitRegisterClass();
+      }
+    },
     async submitRegisterClass() {
       const payload = {
         fullname: this.fullname,
@@ -226,16 +257,15 @@ export default {
           new Date().getMonth() + 1
         }/${new Date().getFullYear()}`,
       };
-      console.log(payload.fullname);
-      // try {
-      //   const res = await axios.post(
-      //     "https://digidev-api.herokuapp.com",
-      //     payload
-      //   );
-      //   if (res) this.routeToThankyouPage();
-      // } catch (err) {
-      //   console.log(err);
-      // }
+      try {
+        const res = await axios.post(
+          "https://digidev-api.herokuapp.com",
+          payload
+        );
+        if (res) this.routeToThankyouPage();
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };
