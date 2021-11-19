@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import NavDoneTransaction from "../../components/organisms/NavDoneTransaction.vue";
-import ClassOrdered from "../payment-page/views/ClassOrdered.vue";
-import PaymentMethods from "../payment-page/views/PaymentMethods.vue";
+import NavDoneTransaction from "~/components/organisms/NavDoneTransaction.vue";
+import ClassOrdered from "./views/ClassOrdered.vue";
+import PaymentMethods from "./views/PaymentMethods.vue";
 export default {
   components: { NavDoneTransaction, ClassOrdered, PaymentMethods },
 };
