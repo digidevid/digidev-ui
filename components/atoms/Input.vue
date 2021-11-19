@@ -17,7 +17,7 @@
         :value="value"
         @input="onInput"
       />
-      <p class="text-red-500 text-16 mt-2" v-if="error && !value">
+      <p class="text-red-500 text-sm md:text-16 mt-2" v-if="error && !value">
         {{ errorMessage }}
       </p>
     </div>
