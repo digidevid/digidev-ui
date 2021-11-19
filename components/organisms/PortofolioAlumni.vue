@@ -26,6 +26,8 @@
         lg:text-40
         leading-tight
         font-semibold
+        lg:py-20
+        py-16
       "
     >
       <span class="font-bold">Portofolio</span> Alumni
