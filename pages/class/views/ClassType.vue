@@ -1,23 +1,23 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold leading-10">Biaya & Benefit</h1>
-    <p class="dark-grey mt-4 text-18">
+    <h1 class="text-20 lg:text-32 font-bold leading-10">Biaya & Benefit</h1>
+    <p class="dark-grey lg:mt-4 text-14 lg:text-18">
       Berikut ini merupakan biaya dan benefit dari kelas {{ classTitle }}.
     </p>
-    <div class="my-8 space-y-6">
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div
         v-for="(type, id) in classTypes"
         :key="id"
-        class="grid grid-cols-2 rounded-xl shadow-lg overflow-hidden max-w-3xl"
+        class="rounded-xl shadow-lg overflow-hidden max-w-md"
       >
         <div>
           <img
             class="w-full h-auto image-cover"
-            src="/images/class/class-type.png"
+            :src="`${type.image}`"
             alt="private class"
           />
         </div>
-        <div class="p-6">
+        <div class="p-4 md:p-6">
           <p class="font-bold text-lg">{{ type.name }}</p>
           <div class="flex items-start my-5">
             <p class="text-xs font-medium">Rp</p>

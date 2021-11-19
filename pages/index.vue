@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation />
+    <Navigation @click-nav="scrollToSection" />
     <!-- <Info /> -->
     <Vacancy />
     <Benefit />
@@ -8,7 +8,9 @@
     <!-- <Service /> -->
     <Mentor />
     <Profession />
-    <Class />
+    <div id="available-class">
+      <Class />
+    </div>
     <Flow />
     <PortofolioAlumni />
     <Testimoni />
@@ -48,6 +50,16 @@ export default {
     Profession,
     Flow,
     PortofolioAlumni,
+  },
+  methods: {
+    scrollToSection(slug) {
+      const section = document.getElementById("available-class");
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    },
   },
 };
 </script>

@@ -1,45 +1,48 @@
 <template>
-  <div :class="`relative navigation ${setHeight}`">
+  <div :class="`relative navigation ${heroBackground} ${setHeight}`">
+    <div
+      v-if="isShowMenu"
+      @click="closeMenu"
+      class="w-screen h-screen absolute z-30 top-0 left-0"
+    ></div>
     <div
       v-if="isShowMenu"
       class="
         lg:hidden
         absolute
-        z-70
+        z-40
         top-2
         right-2
         w-2/3
-        md:w-1/3
+        md:w-1/2
         rounded-xl
         p-6
         md:p-7
         bg-white
+        shadow-xl
       "
     >
-      <ul class="space-y-8 text-18 mt-14 text-right tracking-wide">
+      <ul
+        v-if="typeClass"
+        class="space-y-5 text-18 mt-14 text-right tracking-wide"
+      >
         <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('benefit')"
+          v-for="(menu, id) in classMenu"
+          :key="id"
+          class="cursor-pointer uppercase font-medium"
+          @click="scrollToSection(menu.slug)"
         >
-          Keunggulan
+          {{ menu.name }}
         </li>
+      </ul>
+      <ul v-else class="space-y-8 text-18 mt-14 text-right tracking-wide">
         <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('mentor')"
+          v-for="(menu, id) in listMenu"
+          :key="id"
+          class="cursor-pointer uppercase font-medium"
+          @click="scrollToSection(menu.slug)"
         >
-          Mentor
-        </li>
-        <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('partner')"
-        >
-          Rekanan
-        </li>
-        <li
-          class="cursor-pointer uppercase font-semibold"
-          @click="scrollToSection('portofolio')"
-        >
-          Portofolio Alumni
+          {{ menu.name }}
         </li>
       </ul>
     </div>
@@ -62,7 +65,7 @@
           ><img class="w-14" src="~/static/digidev-bw.png" alt="digidev brand"
         /></nuxt-link>
       </div>
-      <div class="lg:hidden relative z-100">
+      <div class="lg:hidden relative z-50">
         <button
           id="menu"
           class="menu"
@@ -87,17 +90,13 @@
         class="hidden lg:flex space-x-14 text-white text-16"
         v-if="!typeClass"
       >
-        <li class="cursor-pointer" @click="scrollToSection('benefit')">
-          Keunggulan
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('mentor')">
-          Mentor
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('partner')">
-          Rekanan
-        </li>
-        <li class="cursor-pointer" @click="scrollToSection('portofolio')">
-          Portofolio Alumni
+        <li
+          v-for="(menu, id) in listMenu"
+          :key="id"
+          class="cursor-pointer"
+          @click="scrollToSection(menu.slug)"
+        >
+          {{ menu.name }}
         </li>
       </ul>
     </div>
@@ -129,7 +128,7 @@
       >
         {{ titleClass }}
       </p>
-      <Button class="mt-5" />
+      <Button class="mt-5" @click="$emit('click-nav')" />
     </div>
   </div>
 </template>
@@ -142,6 +141,54 @@ export default {
     return {
       typeClass: "",
       isShowMenu: false,
+      listMenu: [
+        {
+          name: "Keunggulan",
+          slug: "benefit",
+        },
+        {
+          name: "Mentor",
+          slug: "mentor",
+        },
+        {
+          name: "Rekanan",
+          slug: "partner",
+        },
+        {
+          name: "Portofolio Alumni",
+          slug: "portofolio",
+        },
+      ],
+      classMenu: [
+        {
+          slug: "class-info",
+          name: "Informasi Kelas",
+        },
+        {
+          slug: "class-goals",
+          name: "Tujuan Kelas",
+        },
+        {
+          slug: "class-types",
+          name: "Tipe Kelas",
+        },
+        {
+          slug: "class-location",
+          name: "Lokasi Belajar",
+        },
+        {
+          slug: "class-mentor",
+          name: "Tutor",
+        },
+        {
+          slug: "class-syllabus",
+          name: "Silabus/Materi",
+        },
+        {
+          slug: "class-faq",
+          name: "FAQ Kelas",
+        },
+      ],
     };
   },
   computed: {
@@ -162,6 +209,19 @@ export default {
     setPaddingTop() {
       return this.typeClass ? "pt-[90px] pb-[130px]" : "py-24 lg:py-32";
     },
+    heroBackground() {
+      if (this.typeClass === "web-basic") {
+        return "hero-web-basic";
+      } else if (this.typeClass === "front-end") {
+        return "hero-front-end";
+      } else if (this.typeClass === "back-end") {
+        return "hero-back-end";
+      } else if (this.typeClass === "full-stack") {
+        return "hero-full-stack";
+      } else {
+        return "hero-home";
+      }
+    },
   },
   mounted() {
     this.typeClass = this.$route.query.paket_kelas;
@@ -178,17 +238,36 @@ export default {
       const icon = document.getElementById("menu");
       icon.classList.toggle("opened");
     },
+    closeMenu() {
+      this.isShowMenu = false;
+      const icon = document.getElementById("menu");
+      icon.classList.toggle("opened");
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .navigation {
-  background-image: url("~/static/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   background-position: center center;
+}
+.hero-home {
+  background-image: url("~/static/images/hero/hero.png");
+}
+.hero-web-basic {
+  background-image: url("~/static/images/hero/hero2.png");
+}
+.hero-front-end {
+  background-image: url("~/static/images/hero/hero3.png");
+}
+.hero-back-end {
+  background-image: url("~/static/images/hero/hero4.png");
+}
+.hero-full-stack {
+  background-image: url("~/static/images/hero/hero5.png");
 }
 .menu {
   background-color: transparent;
@@ -220,18 +299,18 @@ export default {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 .opened .line2 {
   stroke-dasharray: 1 60;
   stroke-dashoffset: -30;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 .opened .line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
-  stroke: #2d2d2d;
+  stroke: #0a7dfa;
 }
 </style>

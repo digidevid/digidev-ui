@@ -32,6 +32,7 @@ export const classList = [
       {
         id: 1,
         name: "Kelas Grup",
+        image: "/images/class/group.jpg",
         price: 750,
         priceType: "ribu",
         realPrice: 750000,
@@ -49,6 +50,7 @@ export const classList = [
       {
         id: 2,
         name: "Kelas Privat",
+        image: "/images/class/private.jpg",
         price: 2,
         priceType: "jt",
         realPrice: 2000000,
@@ -193,6 +195,7 @@ export const classList = [
       {
         id: 1,
         name: "Kelas Privat",
+        image: "/images/class/private.jpg",
         price: 1.5,
         priceType: "jt",
         isPreOrder: false,
@@ -208,6 +211,7 @@ export const classList = [
       {
         id: 2,
         name: "Kelas Grup",
+        image: "/images/class/group.jpg",
         price: 800,
         priceType: "ribu",
         isPreOrder: true,
@@ -321,6 +325,7 @@ export const classList = [
       {
         id: 1,
         name: "Kelas Privat",
+        image: "/images/class/private.jpg",
         price: 1.5,
         priceType: "jt",
         isPreOrder: false,
@@ -336,6 +341,7 @@ export const classList = [
       {
         id: 2,
         name: "Kelas Grup",
+        image: "/images/class/group.jpg",
         price: 800,
         priceType: "ribu",
         isPreOrder: true,
@@ -449,6 +455,7 @@ export const classList = [
       {
         id: 1,
         name: "Kelas Privat",
+        image: "/images/class/private.jpg",
         price: 2.8,
         priceType: "jt",
         isPreOrder: false,
@@ -464,6 +471,7 @@ export const classList = [
       {
         id: 2,
         name: "Kelas Grup",
+        image: "/images/class/group.jpg",
         price: 1.7,
         priceType: "jt",
         isPreOrder: true,
