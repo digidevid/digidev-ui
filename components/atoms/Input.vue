@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center text-[18px]">
+  <div class="flex justify-between items-center text-sm md:text-[18px]">
     <p class="font-bold hidden lg:block md:block sm:hidden min-w-[180px]">
       {{ label }}
     </p>

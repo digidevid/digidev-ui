@@ -125,7 +125,7 @@
         mb-[0px]
         lg:float-right
       "
-      content="Next"
+      content="Daftar"
       @click="submit"
     />
   </div>

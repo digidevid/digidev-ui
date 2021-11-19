@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center text-[18px]">
+  <div class="flex justify-between items-center text-sm md:text-[18px]">
     <p class="font-bold hidden lg:block md:block sm:hidden min-w-[180px]">
       {{ title }}
     </p>
@@ -22,7 +22,8 @@
             lg:w-full lg:h-[64px]
             border-solid border-2
             bg-white
-            text-[18px]
+            text-sm
+            md:text-[18px]
             font-medium
             text-gray-400
             hover:bg-gray-50
