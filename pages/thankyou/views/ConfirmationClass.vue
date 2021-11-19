@@ -7,6 +7,7 @@
       bg-white
       rounded-t-[25px]
       lg:rounded-t-[55px]
+      pb-[164px]
     "
   >
     <div class="grid justify-center items-center">
@@ -22,17 +23,16 @@
         Pendaftaran kamu berhasil!
       </h1>
       <p class="text-center lg:text-24 text-16 pt-2 lg:pb-8 pb-6">
-        Terima kasih atas pesanan kamu
+        Terima kasih atas kepercayaan kamu
       </p>
 
       <div class="flex items-center justify-center">
         <div
           class="
             space-y-2
-            p-6
-            lg:w-[432px] lg:h-[180px]
+            p-5
+            lg:w-[432px]
             w-[312px]
-            h-[174px]
             bg-white
             shadow-md
             rounded-[15px]
@@ -40,24 +40,32 @@
         >
           <p class="text-gray-400 text-14 lg:text-16">Kelas</p>
           <p class="font-bold text-14 lg:text-16 text-[#363636]">
-            Kelas Private Frontend Developer
+            {{ titleClass }}
           </p>
           <hr />
-          <p class="text-gray-400 text-14 lg:text-16">Jadwal Kelas</p>
-          <p class="font-bold text-14 lg:text-16 text-[#363636]">
-            25 Desember 2021
-          </p>
+          <p class="text-gray-400 text-14 lg:text-16">Lokasi Kelas</p>
+          <p class="font-bold text-14 lg:text-16 text-[#363636]">{{ city }}</p>
         </div>
       </div>
 
-      <p class="text-12 lg:text-16 lg:pb-6 lg:pt-11 pt-6 pb-4 text-center mx-6">
-        Silakan menyelesaikan pembayaran menggunakan
-        <span class="font-bold">ATM Transfer - Mandiri</span>
-        sesuai batas waktu yang ditentukan.
+      <p
+        class="
+          text-12
+          lg:text-16 lg:pb-6 lg:pt-11
+          pt-6
+          pb-4
+          text-center
+          mx-6
+          md:w-[658px]
+        "
+      >
+        Untuk proses pembayaran akan dilakukan setelah selesai proses briefing
+        dengan Digidev. Kamu akan segera dihubungi admin Digidev dalam 1 x 24
+        jam.
       </p>
-      <p class="text-12 lg:text-16 text-gray-400 text-center mx-6">
-        Hubungi langsung admin DigiDev dengan menekan button dibawah untuk
-        melakukan konfirmasi pembayaran.
+      <p class="text-12 lg:text-16 text-gray-400 text-center mx-6 md:w-[622px]">
+        Atau kamu bisa langsung menghubungi admin Digidev dengan menekan tombol
+        di bawah untuk konfirmasi pendaftaran.
       </p>
       <div class="w-full flex justify-center items-center">
         <Button
@@ -72,6 +80,7 @@
             px-2
           "
           content="Konfirmasi ke Whatsapp"
+          @click="clickConfirm"
         />
       </div>
     </div>
@@ -79,9 +88,37 @@
 </template>
 
 <script>
-import Button from "../../../components/atoms/Button.vue";
+import Button from "~/components/atoms/Button.vue";
 export default {
   components: { Button },
+  data() {
+    return {
+      typeClass: "",
+      city: "",
+    };
+  },
+  mounted() {
+    this.typeClass = this.$route.query["class-name"];
+    this.city = this.$route.query["city"];
+  },
+  methods: {
+    clickConfirm() {
+      window.open("https://api.whatsapp.com/send?phone=6281264562826");
+    },
+  },
+  computed: {
+    titleClass() {
+      if (this.typeClass === "web-basic") {
+        return "Kelas Basic Modern Web";
+      } else if (this.typeClass === "front-end") {
+        return "Kelas Basic Frontend";
+      } else if (this.typeClass === "back-end") {
+        return "Kelas Basic Backend";
+      } else if (this.typeClass === "full-stack") {
+        return "Kelas Basic Fullstack";
+      }
+    },
+  },
 };
 </script>
 
