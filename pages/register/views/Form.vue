@@ -52,34 +52,25 @@
                 md:pt-0
               "
             >
-              {{ nameClass }}
+              {{ titleClass }}
             </h1>
             <h3 class="md:text-20 lg:text-20 sm:text-12 text-12 font-semibold">
-              {{ price }}
+              {{ formatCurrency(parseInt(price)) }}
             </h3>
-            <p class="md:block sm:hidden lg:block hidden">{{ description }}</p>
+            <p class="md:block sm:hidden lg:block hidden mt-2">
+              {{ description }}
+            </p>
           </div>
         </div>
       </div>
 
       <div class="space-y-[16px] lg:space-y-[40px]">
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Nama Lengkap
-          </p>
-          <input
-            class="
-              w-[720px]
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Nama Lengkap"
-            v-model="fullname"
-          />
-        </div>
+        <Input
+          label="Nama Lengkap"
+          v-model="fullname"
+          placeholder="Masukkan Nama Lengkap"
+          :error="isErrorForm"
+        />
 
         <Dropdown
           title="Pilihan Kelas"
@@ -88,41 +79,22 @@
           :isOpen="isOpenClass"
           :listDropdown="typeClasses"
           @click-list="chooseClass"
+          :error="isErrorForm"
         />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Nomor Whatsapp
-          </p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Nomor Whatsapp"
-            v-model="whatsapp"
-          />
-        </div>
+        <Input
+          label="Nomor Whatsapp"
+          v-model="whatsapp"
+          placeholder="Masukkan Nomor Whatsapp"
+          :error="isErrorForm"
+        />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block">Email</p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Email"
-            v-model="email"
-          />
-        </div>
+        <Input
+          label="Email"
+          v-model="email"
+          placeholder="Masukkan Email"
+          :error="isErrorForm"
+        />
 
         <Dropdown
           title="Kota Domisili"
@@ -131,25 +103,15 @@
           :isOpen="isOpenCity"
           :listDropdown="cities"
           @click-list="chooseCity"
+          :error="isErrorForm"
         />
 
-        <div class="flex justify-between items-center text-20px">
-          <p class="font-bold hidden lg:block md:block sm:hidden">
-            Alamat Lengkap
-          </p>
-          <input
-            class="
-              lg:py-[17px] lg:px-[24px]
-              py-[13px]
-              px-[16px]
-              w-[720px]
-              border-solid border-2
-            "
-            type="text"
-            placeholder="Masukkan Alamat Lengkap"
-            v-model="address"
-          />
-        </div>
+        <Input
+          label="Alamat Lengkap"
+          v-model="address"
+          placeholder="Masukkan Alamat Lengkap"
+          :error="isErrorForm"
+        />
       </div>
     </div>
     <Button
@@ -163,21 +125,23 @@
         mb-[0px]
         lg:float-right
       "
-      content="Next"
-      @click="submitRegisterClass"
+      content="Daftar"
+      @click="submit"
     />
   </div>
 </template>
 
 <script>
 import Button from "~/components/atoms/Button";
+import Input from "~/components/atoms/Input";
 import Dropdown from "~/components/atoms/Dropdown";
 import axios from "axios";
 import { classList } from "~/constants/class-list.js";
 export default {
-  components: { Button, Dropdown },
+  components: { Button, Dropdown, Input },
   data() {
     return {
+      classList,
       fullname: "",
       className: "",
       typeClass: "Tipe Kelas",
@@ -185,12 +149,14 @@ export default {
       whatsapp: "",
       city: "Pilih Kota",
       address: "",
-      price: "750000",
+      price: "",
       date: "",
       isOpenClass: false,
       isOpenCity: false,
       cities: ["Medan", "Jakarta", "Bandung", "Malang"],
       typeClasses: ["Group", "Private"],
+      idClass: null,
+      isErrorForm: false,
     };
   },
   props: {
@@ -198,25 +164,41 @@ export default {
       type: String,
       default: "register",
     },
-    nameClass: {
-      type: String,
-      default: "Kelas Frontend (Vue Js)",
-    },
-    // price: {
-    //   type: String,
-    //   default: "Rp1.500.000,-",
-    // },
-    description: {
-      type: String,
-      default:
-        "Mentor dengan segudang pengalaman yang berkarir di startup ternama lorem ipsum.",
-    },
   },
   mounted() {
     this.className = this.$route.query["packet-class"];
-    console.log(this.className);
+    this.idClass = this.$route.query["id-class"];
+  },
+  computed: {
+    titleClass() {
+      if (this.className === "web-basic") {
+        return "Kelas Basic Modern Web";
+      } else if (this.className === "front-end") {
+        return "Kelas Basic Frontend";
+      } else if (this.className === "back-end") {
+        return "Kelas Basic Backend";
+      } else if (this.className === "full-stack") {
+        return "Kelas Basic Fullstack";
+      }
+    },
+    description() {
+      if (this.typeClass.toLowerCase() === "group") {
+        return "Pilihan kelas group memiliki konsep pre-order, yang artinya menunggu sampai grup belajar mencapai minimal 3 orang.";
+      } else if (this.typeClass.toLowerCase() === "private") {
+        return "Pilihan kelas private, 1 siswa akan diajarkan langsung oleh 1 mentor";
+      } else {
+        return "Silahkan lengkapi data di bawah";
+      }
+    },
   },
   methods: {
+    formatCurrency(num) {
+      if (num) {
+        return `Rp${num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}`;
+      } else if (num == 0) {
+        return `Rp${num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}`;
+      }
+    },
     dropdownClass() {
       this.isOpenClass = !this.isOpenClass;
     },
@@ -224,12 +206,42 @@ export default {
       this.isOpenCity = !this.isOpenCity;
     },
     chooseClass(param) {
+      //0 for group, 1 fro private
+      this.price =
+        this.classList[this.idClass].classTypes[
+          param.toLowerCase() === "group" ? 0 : 1
+        ].realPrice;
       this.typeClass = param;
       this.isOpenClass = false;
     },
     chooseCity(param) {
       this.city = param;
       this.isOpenCity = false;
+    },
+    routeToThankyouPage() {
+      this.$router.push(
+        `/thankyou?class-name=${this.className}&class-id=${this.idClass}&city=${this.city}`
+      );
+    },
+    submit() {
+      this.validate();
+    },
+    validate() {
+      if (
+        !this.fullname ||
+        !this.className ||
+        this.typeClass === "Tipe Kelas" ||
+        !this.price ||
+        !this.email ||
+        !this.whatsapp ||
+        this.city === "Pilih Kota" ||
+        !this.address
+      ) {
+        this.isErrorForm = true;
+        return;
+      } else {
+        this.submitRegisterClass();
+      }
     },
     async submitRegisterClass() {
       const payload = {
@@ -250,7 +262,7 @@ export default {
           "https://digidev-api.herokuapp.com",
           payload
         );
-        if (res) this.$router.push(`/thankyou`);
+        if (res) this.routeToThankyouPage();
       } catch (err) {
         console.log(err);
       }

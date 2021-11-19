@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NavDoneTransaction from "../../components/organisms/NavDoneTransaction.vue";
+import NavDoneTransaction from "~/components/organisms/NavDoneTransaction.vue";
 import ConfirmationClass from "./views/ConfirmationClass.vue";
 export default {
   components: { NavDoneTransaction, ConfirmationClass },
