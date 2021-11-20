@@ -40,6 +40,7 @@ export const classList = [
         details: [
           "Eksklusif tatap muka",
           "8x pertemuan",
+          "Grup belajar (maksimum 5 siswa)",
           "Mentor berpengalaman",
           "Kurikulum terupdate dunia kerja",
           "Pertemuan offline (wajib)",
@@ -147,7 +148,7 @@ export const classList = [
         job: "CEO & Founder",
         linkedin: "https://www.linkedin.com/in/fshlarf/",
         github: "https://github.com/fshlarf",
-        company: "ex-Blanja.com, ex-Elevenia, Seakun.id",
+        company: "ex-Blanja.com, ex-Elevenia, ex-Bonza, Seakun.id",
         bio: "Faishal Arif adalah seorang Software Engineer dengan pengalaman di dunia profesional selama 4 tahun. Saat ini sedang berkarir sebagai CEO di startup yang dibangunnya yaitu Seakun.id. Memiliki skill dan pengalaman di dunia modern web development untuk frontend, backend maupun mobile apps development.",
       },
       {

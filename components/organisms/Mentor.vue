@@ -86,7 +86,7 @@ export default {
       mentorlist: [
         {
           name: "Faishal Arif",
-          skill: "Frontend Developer",
+          skill: "Software Engineer",
           photo: "/images/mentor/faishal.png",
         },
         {
