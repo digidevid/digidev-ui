@@ -15,7 +15,6 @@
         rounded-t-[25px]
         md:rounded-t-[55px]
         -mt-14
-        relative
         z-20
         bg-[#fdfdfd]
       "
