@@ -15,9 +15,7 @@
     >
       <p
         class="
-          text-[#2D2D2D]
-          font-bold
-          text-10
+          text-[#2D2D2D] text-10
           lg:text-16 lg:px-11
           px-2
           lg:text-center
@@ -36,9 +34,9 @@
         flex
         items-center
         space-x-[17px]
-        lg:space-x-11
-        space-y-4
-        lg:space-y-8
+        lg:space-x-11 lg:mt-4 lg:mb-4
+        mt-0
+        mb-0
       "
     >
       <div
@@ -52,21 +50,24 @@
           lg:w-[144px] lg:h-[80px]
           w-[96px]
           h-[56px]
-          border-solid border-1
+          border-solid border-2
         "
         v-for="(item, id) in bankName"
         :key="id"
       >
         <img
-          :src="`/images/payment-page/${item.bank}.png`"
-          :alt="`${item.bank}`"
-        />
-
-        <img
+          id="click-bank"
           class="absolute top-0 lg:w-6 w-3"
+          :class="{ hidden: item.id !== choosedBank.id }"
           src="/images/payment-page/CheckCircle.png"
           alt=""
         />
+        <button @click="checkBank(item)">
+          <img
+            :src="`/images/payment-page/${item.bank}.png`"
+            :alt="`${item.bank}`"
+          />
+        </button>
       </div>
     </div>
 
@@ -98,9 +99,9 @@
         </p>
         <div class="flex space-x-1 lg:space-x-2">
           <p class="text-14 lg:text-20 font-bold lg:pt-2 pt-1">
-            {{ bankInfo.noRekening }}
+            {{ choosedBank.noRekening }}
           </p>
-          <button>
+          <button @click="copyToClipBoard(choosedBank.noRekening)">
             <img
               class="w-4 h-4 lg:w-6 lg:h-6"
               src="/images/payment-page/Copy.png"
@@ -114,7 +115,7 @@
           Nama Pemilik Bank
         </p>
         <p class="text-14 lg:text-20 font-bold lg:pt-2 pt-1">
-          {{ bankInfo.infoBank }}
+          {{ choosedBank.infoBank }}
         </p>
       </div>
     </div>
@@ -183,28 +184,54 @@ export default {
       default: 0,
     },
   },
+
+  mounted() {
+    this.className = this.$route.query["packet-class"];
+    this.idClass = this.$route.query["id-class"];
+  },
   data() {
     return {
-      bankInfo: {
-        noRekening: "8891 8107 7871 7412",
-        infoBank: "PT Digital Indonesia",
-      },
+      choosedBank: {},
+      statusClick: "hidden",
 
       bankName: [
         {
+          isClicked: false,
           id: 1,
-          bank: "Mandiri",
+          bank: "BCA",
+          noRekening: "8891 ",
+          infoBank: "BCA",
         },
         {
           id: 2,
-          bank: "BCA",
+          bank: "Mandiri",
+          isClicked: false,
+          noRekening: "8107",
+          infoBank: "Mandiri",
         },
         {
+          isClicked: false,
           id: 3,
           bank: "BNI",
+          noRekening: "7871",
+          infoBank: "BNI",
         },
       ],
     };
+  },
+
+  methods: {
+    copyToClipBoard(noRekening) {
+      try {
+        navigator.clipboard.writeText(noRekening);
+      } catch (e) {
+        throw e;
+      }
+    },
+
+    checkBank(item) {
+      this.choosedBank = item;
+    },
   },
 };
 </script>
