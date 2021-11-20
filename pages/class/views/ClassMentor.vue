@@ -39,13 +39,13 @@
 
           <div class="flex md:hidden mt-4 justify-between items-center">
             <div class="flex space-x-3 items-center md:hidden">
-              <a href="">
+              <a target="_blank" :href="`${activeTutor.github}`">
                 <img
                   src="/images/icons/social-media/Github.svg"
                   alt="github icon"
                 />
               </a>
-              <a href="">
+              <a target="_blank" :href="`${activeTutor.linkedin}`">
                 <img
                   src="/images/icons/social-media/Linkedin.svg"
                   alt="github icon"
@@ -91,9 +91,17 @@
             <div class="relative z-0 w-20 md:w-40 mb-2 md:mb-0">
               <img src="/images/mentor/ellipse.png" alt="ellipse border" />
               <div
-                class="overflow-hidden rounded-full w-16 md:w-32 mentor-image"
+                class="
+                  overflow-hidden
+                  rounded-full
+                  w-16
+                  h-16
+                  md:w-32 md:h-32
+                  mentor-image
+                "
               >
                 <img
+                  class="w-full h-auto object-cover object-center"
                   :src="`${activeTutor.photo}`"
                   :alt="`${activeTutor.name}`"
                 />
@@ -102,13 +110,13 @@
             <div
               class="md:flex justify-center space-x-3 items-center mt-4 hidden"
             >
-              <a href="">
+              <a target="_blank" :href="`${activeTutor.github}`">
                 <img
                   src="/images/icons/social-media/Github.svg"
                   alt="github icon"
                 />
               </a>
-              <a href="">
+              <a target="_blank" :href="`${activeTutor.linkedin}`">
                 <img
                   src="/images/icons/social-media/Linkedin.svg"
                   alt="github icon"

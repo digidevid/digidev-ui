@@ -4,15 +4,27 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "digidev-ui",
+    title: "Digidev - Belajar Eksklusif Software Engineering",
     htmlAttrs: {
-      lang: "en",
+      lang: "id",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Digidev merupakan platform digital penyedia mentor berpengalaman untuk pembelajaran Modern Web Development secara privat dan ekslusif.",
+      },
       { name: "format-detection", content: "telephone=no" },
+      { hid: "image", property: "og:image", content: "/images/favicon.ico" },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "digidev, digidev.id, digidev id, belajar, les, privat, kursus, course, software engineer, programming, les programming, belajar programming, belajar web, belajar software",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
