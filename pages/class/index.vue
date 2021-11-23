@@ -105,7 +105,16 @@
             <ClassSyllabus
               :class-syllabus="chosedClass.syllabus"
               :class-title="classTitle"
-              @toggleSubSyllabus="toggleSubSyllabus"
+            />
+          </div>
+
+          <div
+            id="class-requirement"
+            class="class-syllabus pt-10 md:pt-12 xl:pt-16"
+          >
+            <ClassRequirements
+              :class-requirements="chosedClass.requirements"
+              :class-title="classTitle"
             />
           </div>
 
@@ -142,6 +151,7 @@ import ClassType from "./views/ClassType.vue";
 import ClassLocation from "./views/ClassLocation.vue";
 import ClassMentor from "./views/ClassMentor.vue";
 import ClassSyllabus from "./views/ClassSyllabus.vue";
+import ClassRequirements from "./views/ClassRequirements";
 import ClassFaq from "./views/ClassFaq.vue";
 import ClassBanner from "./views/ClassBanner.vue";
 import Footer from "~/components/organisms/Footer.vue";
@@ -156,6 +166,7 @@ export default {
     ClassLocation,
     ClassMentor,
     ClassSyllabus,
+    ClassRequirements,
     ClassFaq,
     ClassBanner,
     Footer,
@@ -200,6 +211,11 @@ export default {
         },
         {
           id: 7,
+          slug: "class-requirement",
+          name: "Syarat & Ketentuan",
+        },
+        {
+          id: 8,
           slug: "class-faq",
           name: "FAQ Kelas",
         },
@@ -251,11 +267,6 @@ export default {
         block: "start",
         inline: "nearest",
       });
-    },
-    toggleSubSyllabus(id) {
-      this.chosedClass.syllabus[id].isOpen =
-        !this.chosedClass.syllabus[id].isOpen;
-      // syllabus.isOpen = !syllabus.isOpen;
     },
   },
 };

@@ -185,6 +185,10 @@ export default {
           name: "Silabus/Materi",
         },
         {
+          slug: "class-requirement",
+          name: "Syarat & Ketentuan",
+        },
+        {
           slug: "class-faq",
           name: "FAQ Kelas",
         },
