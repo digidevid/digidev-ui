@@ -73,11 +73,11 @@
 
     <div class="hidden lg:block">
       <p class="text-16 font-semibold">
-        Bank Transfer - {{ bankName[0].bank }}
+        Bank Transfer - {{ choosedBank.infoBank }}
       </p>
       <p class="text-14 pt-1 lg:pt-2 pb-1 lg:pb-2">
         Silahkan transfer ke rekening
-        <span class="font-bold"> {{ bankName[0].bank }}</span> berikut:
+        <span class="font-bold"> {{ choosedBank.infoBank }}</span> berikut:
       </p>
     </div>
 
@@ -128,7 +128,7 @@
           Kelas Frontend Engineer - Grup
         </p>
         <p class="text-[12px] lg:text-[16px] text-[#2D2D2D] opacity-[60%]">
-          Rp {{ classPrice }}
+          {{ totalHarga }}
         </p>
       </div>
       <div class="flex justify-between">
@@ -167,6 +167,7 @@
 </template>
 
 <script>
+import { classList } from "~/constants/class-list.js";
 import Button from "../../../components/atoms/Button.vue";
 export default {
   components: { Button },
@@ -186,11 +187,12 @@ export default {
   },
 
   mounted() {
-    this.className = this.$route.query["packet-class"];
-    this.idClass = this.$route.query["id-class"];
+    this.typeClass = this.$route.query["class-name"];
   },
   data() {
     return {
+      classList,
+      typeClass: "",
       choosedBank: {},
       statusClick: "hidden",
 
