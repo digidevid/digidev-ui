@@ -232,7 +232,13 @@ export default {
       classList,
       price: "",
       className: "",
-      choosedBank: {},
+      choosedBank: {
+        isClicked: false,
+        id: 1,
+        bank: "BCA",
+        noRekening: "8891 ",
+        infoBank: "BCA",
+      },
       statusClick: "hidden",
 
       bankName: [
