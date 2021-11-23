@@ -271,6 +271,11 @@ export const classList = [
         bio: "Menjadi salah satu siswa lulusan digidev di kelas basic modern web dan frontend, Ihsan bergabung dengan digidev sebagai frontend engineer sekaligus mentor untuk membagikan ilmu nya ke siswa digidev selanjutnya.",
       },
     ],
+    requirements: [
+      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
+      "Mengerti dasar-dasar penggunaan laptop dan browser (seperti instalasi software, dsb).",
+      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
+    ],
   },
   {
     id: 2,
@@ -504,6 +509,11 @@ export const classList = [
         company: "Digidev.id",
         bio: "Menjadi salah satu siswa lulusan digidev di kelas basic modern web dan frontend, Ihsan bergabung dengan digidev sebagai frontend engineer sekaligus mentor untuk membagikan ilmu nya ke siswa digidev selanjutnya.",
       },
+    ],
+    requirements: [
+      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
+      "Mengerti dasar-dasar penggunaan laptop dan browser (seperti instalasi software, dsb).",
+      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
     ],
   },
   {
@@ -739,6 +749,11 @@ export const classList = [
         bio: "Menjadi salah satu siswa lulusan digidev di kelas basic modern web dan frontend, Ihsan bergabung dengan digidev sebagai frontend engineer sekaligus mentor untuk membagikan ilmu nya ke siswa digidev selanjutnya.",
       },
     ],
+    requirements: [
+      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
+      "Mengerti dasar-dasar penggunaan laptop dan browser (seperti instalasi software, dsb).",
+      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
+    ],
   },
   {
     id: 4,
@@ -972,6 +987,11 @@ export const classList = [
         company: "Digidev.id",
         bio: "Menjadi salah satu siswa lulusan digidev di kelas basic modern web dan frontend, Ihsan bergabung dengan digidev sebagai frontend engineer sekaligus mentor untuk membagikan ilmu nya ke siswa digidev selanjutnya.",
       },
+    ],
+    requirements: [
+      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
+      "Mengerti dasar-dasar penggunaan laptop dan browser (seperti instalasi software, dsb).",
+      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
     ],
   },
 ];
