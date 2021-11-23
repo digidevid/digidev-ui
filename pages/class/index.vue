@@ -105,6 +105,7 @@
             <ClassSyllabus
               :class-syllabus="chosedClass.syllabus"
               :class-title="classTitle"
+              @toggleSubSyllabus="toggleSubSyllabus"
             />
           </div>
 
@@ -250,6 +251,11 @@ export default {
         block: "start",
         inline: "nearest",
       });
+    },
+    toggleSubSyllabus(id) {
+      this.chosedClass.syllabus[id].isOpen =
+        !this.chosedClass.syllabus[id].isOpen;
+      // syllabus.isOpen = !syllabus.isOpen;
     },
   },
 };
