@@ -232,6 +232,7 @@ export default {
       classList,
       price: "",
       className: "",
+<<<<<<< HEAD
       choosedBank: {
         isClicked: false,
         id: 1,
@@ -239,6 +240,9 @@ export default {
         noRekening: "8891 ",
         infoBank: "BCA",
       },
+=======
+      choosedBank: {},
+>>>>>>> 44062aa28aea9ae7cd68b34c46ecfc7468dd6bac
       statusClick: "hidden",
 
       bankName: [
