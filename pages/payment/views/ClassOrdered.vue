@@ -276,6 +276,7 @@ export default {
   },
 
   mounted() {
+    this.choosedBank = this.bankName[0];
     this.choosedClass = this.$route.query["choosed-class"];
     this.idClass = this.$route.query["id-class"];
     this.typeClass = this.$route.query["type-class"];
