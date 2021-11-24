@@ -232,13 +232,7 @@ export default {
       classList,
       price: "",
       className: "",
-      choosedBank: {
-        isClicked: false,
-        id: 1,
-        bank: "BCA",
-        noRekening: "8891 ",
-        infoBank: "BCA",
-      },
+      choosedBank: {},
       statusClick: "hidden",
 
       bankName: [
@@ -282,6 +276,7 @@ export default {
   },
 
   mounted() {
+    this.choosedBank = this.bankName[0];
     this.choosedClass = this.$route.query["choosed-class"];
     this.idClass = this.$route.query["id-class"];
     this.typeClass = this.$route.query["type-class"];
