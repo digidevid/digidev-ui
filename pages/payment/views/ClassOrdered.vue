@@ -1,47 +1,23 @@
 <template>
-  <div>
-    <div class="flex justify-center items-center w-full">
-      <div
-        class="
-          flex
-          md:w-[1000px] md:h-[200px]
-          w-[312px]
-          h-[96px]
-          items-start
-          md:items-center
-          mb-[40px]
-          rounded-[20px]
-          shadow-md
-          space-x-[32px]
-          bg-white
-        "
-      >
+  <div class="container max-w-[1000px] mx-auto">
+    <div class="w-full">
+      <div class="flex items-center rounded-[20px] shadow-md bg-white">
         <div>
           <img
-            class="max-w-[200] min-w-[96px] h-[96px] md:h-[200px]"
+            class="lg:w-[200px] w-[96px] md:w-[140px]"
             src="/images/vector/register.png"
             alt="register"
           />
         </div>
-        <div class="grid place-items-center">
+        <div class="flex items-center px-3 md:px-8 max-w-[80%]">
           <div>
-            <h1
-              class="
-                text-14
-                sm:text-14
-                md:text-32
-                lg:text-32
-                font-bold
-                pt-4
-                md:pt-0
-              "
-            >
+            <h1 class="text-14 md:text-26 font-bold">
               {{ titleClass }}
             </h1>
-            <h3 class="md:text-20 lg:text-20 sm:text-12 text-12 font-semibold">
+            <h3 class="md:text-20 text-12 font-semibold my-1 lg:my-2">
               {{ formatCurrency(parseInt(price)) }}
             </h3>
-            <p class="md:block sm:hidden lg:block hidden">
+            <p class="lg:block hidden dark-grey">
               {{ description }}
             </p>
           </div>
@@ -49,29 +25,28 @@
       </div>
     </div>
 
-    <div class="grid justify-center w-full items-center bg-white pb-28">
+    <div class="w-full items-center bg-white pb-12 lg:pb-28">
       <div
         class="
           bg-[#E8F2FF]
-          lg:w-[1000px]
-          w-[312px]
           flex
           justify-center
           items-center
-          mb-7
-          lg:mb-8
           py-2
           md:py-4
-          rounded
+          rounded-lg
+          px-3
+          my-6
+          lg:my-8
         "
       >
         <p
           class="
-            text-[#2D2D2D] text-sm
+            text-[10px]
             opacity-60
-            lg:text-16 lg:px-11
-            px-2
-            lg:text-center
+            md:text-14
+            lg:text-16
+            md:text-center
             text-start
           "
         >
@@ -82,20 +57,12 @@
 
       <p class="font-bold lg:text-20 my-2">Metode Pembayaran</p>
       <div
-        class="
-          bg-white
-          flex
-          items-center
-          space-x-[17px]
-          lg:space-x-11 lg:mt-4 lg:mb-4
-          mt-0
-          mb-0
-        "
+        class="bg-white flex items-center space-x-4 lg:mt-4 lg:mb-4 mt-4 mb-0"
       >
         <div
           class="
             relative
-            grid
+            flex
             items-center
             justify-center
             bg-white
@@ -112,7 +79,16 @@
         >
           <img
             id="click-bank"
-            class="absolute top-0 lg:w-6 w-5 -mt-1 -ml-1 md:-mt-2 md:-ml-2)"
+            class="
+              absolute
+              top-0
+              left-0
+              lg:w-6
+              w-5
+              -mt-2
+              -ml-2
+              md:-mt-3 md:-ml-3
+            "
             :class="{ hidden: item.id !== choosedBank.id }"
             src="/images/payment-page/CheckCircle.png"
             alt=""
@@ -124,11 +100,11 @@
         </div>
       </div>
 
-      <div class="hidden lg:block">
-        <p class="text-16 font-semibold">
+      <div class="hidden lg:block mt-4">
+        <p class="text-16 font-semibold opacity-90">
           Bank Transfer - {{ choosedBank.bank }}
         </p>
-        <p class="text-14 pt-1 lg:pt-2 pb-1 lg:pb-2">
+        <p class="text-14 pt-1 lg:pt-2 pb-1 lg:pb-2 opacity-70">
           Silahkan transfer ke rekening
           <span class="font-bold"> {{ choosedBank.bank }}</span> berikut:
         </p>
@@ -140,81 +116,72 @@
           lg:flex-row lg:space-x-[107px]
           space-x-0 space-y-2.5
           lg:space-y-0
-          pt-1
+          pt-4
           lg:pt-2
           pb-4
-          lg:pb-14
         "
       >
         <div>
-          <p class="text-12 lg:text-14 text-[#2D2D2D] opacity-[60%]">
-            Nomor Rekening
-          </p>
-          <div class="flex space-x-1 lg:space-x-2">
-            <p class="text-14 lg:text-20 font-bold lg:pt-2 pt-1">
+          <p class="text-12 lg:text-14 opacity-70">Nomor Rekening</p>
+          <div class="flex space-x-2 items-center">
+            <p class="text-14 lg:text-20 font-semibold lg:pt-2 pt-1">
               {{ choosedBank.noRekening }}
             </p>
             <img
-              class="w-4 h-4 lg:w-6 lg:h-6"
-              src="/images/payment-page/Copy.png"
+              class="w-5 h-5 lg:w-6 lg:h-6 cursor-pointer"
+              src="/images/icons/copy.svg"
               alt="copy"
               @click="copyToClipBoard(choosedBank.noRekening)"
             />
           </div>
         </div>
         <div>
-          <p class="text-12 lg:text-14 text-[#2D2D2D] opacity-[60%]">
-            Nama Pemilik Bank
-          </p>
-          <p class="text-14 lg:text-20 font-bold lg:pt-2 pt-1">
-            {{ choosedBank.infoBank }}
+          <p class="text-12 lg:text-14 opacity-70">Nama Pemilik Bank</p>
+          <p class="text-14 lg:text-20 font-semibold lg:pt-2 pt-1">
+            {{ choosedBank.holderName }}
           </p>
         </div>
       </div>
+      <hr />
 
-      <p class="font-bold text-16 lg:text-20">Pembelian Kamu</p>
+      <div class="pt-6">
+        <p class="font-bold text-16 lg:text-20">Pembelian Kamu</p>
 
-      <div class="pt-4 lg:pt-6 grid space-y-4">
-        <div class="flex justify-between">
-          <p class="text-[12px] lg:text-[16px] text-[#2D2D2D] opacity-[60%]">
-            Kelas Frontend Engineer - Grup
-          </p>
-          <p class="text-[12px] lg:text-[16px] text-[#2D2D2D] opacity-[60%]">
-            {{ formatCurrency(parseInt(price)) }}
-          </p>
-        </div>
-        <div class="flex justify-between">
-          <p class="text-[12px] lg:text-[16px] text-[#2D2D2D] opacity-[60%]">
-            Biaya Pendaftaran
-          </p>
-          <p class="text-[12px] lg:text-[16px] text-[#2D2D2D] opacity-[60%]">
-            Rp{{ formatCurrency(convenienceFee) }}
-          </p>
-        </div>
-        <hr />
-        <div class="flex justify-between font-bold text-14 lg:text-18">
-          <p>Total Pembayaran</p>
-          {{ formatCurrency(parseInt(sumPrice)) }}
+        <div class="pt-4 lg:pt-6 grid space-y-4">
+          <div class="flex justify-between">
+            <p class="text-12 lg:text-16 opacity-60">
+              Kelas Frontend Engineer - Grup
+            </p>
+            <p class="text-12 lg:text-16 opacity-60">
+              {{ formatCurrency(parseInt(price)) }}
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-12 lg:text-16 opacity-60">Biaya Pendaftaran</p>
+            <p class="text-12 lg:text-16 opacity-60">
+              {{ formatCurrency(convenienceFee) }}
+            </p>
+          </div>
+          <hr />
+          <div class="flex justify-between font-bold text-14 lg:text-18">
+            <p>Total Pembayaran</p>
+            {{ formatCurrency(parseInt(totalPrice)) }}
+          </div>
         </div>
       </div>
-      <p
-        class="
-          text-[10px]
-          lg:text-14
-          pt-4
-          pb-4
-          lg:pt-6 lg:pb-8
-          text-[#2D2D2D]
-          opacity-[60%]
-        "
-      >
+      <p class="text-[10px] lg:text-14 pt-4 pb-4 lg:pt-6 lg:pb-8 opacity-60">
         Pastikan untuk cek kembali kelas yang akan kamu beli
       </p>
 
-      <Button
-        class="w-56 lg:w-72 lg:text-18 text-[14px] lg:py-4 py-3 px-2"
-        content="Konfirmasi ke Whatsapp"
-      />
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=6281264562826"
+      >
+        <Button
+          class="lg:!text-18 !text-14 lg:py-4 py-3 px-4 md:px-8"
+          content="Konfirmasi ke Whatsapp"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -231,34 +198,29 @@ export default {
       typeClass: "",
       idClass: "",
       typeClass: "",
-      classList,
       price: "",
       className: "",
       choosedBank: {},
-      statusClick: "hidden",
       totalPrice: 0,
       convenienceFee: 25000,
       dataBank: [
         {
-          isClicked: false,
           id: 1,
           bank: "BCA",
           noRekening: "1280427531",
-          infoBank: "Faishal Arif",
+          holderName: "Faishal Arif",
         },
         // {
         //   id: 2,
         //   bank: "Mandiri",
-        //   isClicked: false,
         //   noRekening: "8107",
-        //   infoBank: "Mandiri",
+        //   holderName: "Mandiri",
         // },
         {
-          isClicked: false,
           id: 2,
           bank: "BNI",
           noRekening: "0288036211",
-          infoBank: "Faishal Arif",
+          holderName: "Faishal Arif",
         },
       ],
     };
@@ -272,6 +234,7 @@ export default {
       this.classList[this.idClass].classTypes[
         this.typeClass.toLowerCase() === "group" ? 0 : 1
       ].realPrice;
+    this.totalPrice = this.convenienceFee + this.price;
   },
   computed: {
     titleClass() {
@@ -293,9 +256,6 @@ export default {
       } else {
         return "Silahkan lengkapi data di bawah";
       }
-    },
-    sumPrice() {
-      return (this.totalPrice = this.convenienceFee + this.price);
     },
   },
   methods: {

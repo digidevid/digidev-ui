@@ -2,7 +2,8 @@
   <div
     class="
       w-full
-      h-[168px]
+      h-[150px]
+      md:h-[168px]
       lg:h-[200px]
       container-nav
       rounded-b-[25px]
