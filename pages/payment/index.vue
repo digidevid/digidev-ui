@@ -2,7 +2,7 @@
   <div class="relative -z-1">
     <NavDoneTransaction />
     <div class="absolute z-30 lg:px-[220px] px-6 w-full top-36 md:top-28">
-      <ClassOrdered />
+      <ClassOrdered class="lg:-mt-0 -mt-8" />
     </div>
   </div>
 </template>
