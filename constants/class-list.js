@@ -267,7 +267,7 @@ export const classList = [
         job: "Software Engineer",
         linkedin: "https://www.linkedin.com/in/harry-kurniawan-71533665/",
         github: "https://github.com/mzhar91",
-        company: "EDTS",
+        company: "ex Berrybenka, ex Elevenia Biz",
         bio: "Harry adalah seorang Software Engineer dengan pengalaman di dunia profesional selama lebih dari 5 tahun khususnya di dunia Back End Engineering. Menguasai beberapa bahasa pemrograman seperti PHP, Javascript, Go, JAVA.",
       },
       {
