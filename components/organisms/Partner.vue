@@ -27,7 +27,8 @@
         md:gap-8
         lg:gap-14
         items-center
-        lg:rounded-full lg:shadow-xl
+        lg:rounded-full
+        partner
       "
     >
       <img
@@ -64,4 +65,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.partner {
+  background: #ffffff;
+  box-shadow: 0px 29px 62px -22px rgba(10, 125, 250, 0.04);
+}
+</style>

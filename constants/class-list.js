@@ -261,6 +261,17 @@ export const classList = [
       },
       {
         id: 3,
+        name: "Harry Kurniawan",
+        location: "Jakarta",
+        photo: "/images/mentor/harry.png",
+        job: "Software Engineer",
+        linkedin: "https://www.linkedin.com/in/harry-kurniawan-71533665/",
+        github: "https://github.com/mzhar91",
+        company: "EDTS",
+        bio: "Harry adalah seorang Software Engineer dengan pengalaman di dunia profesional selama lebih dari 5 tahun khususnya di dunia Back End Engineering. Menguasai beberapa bahasa pemrograman seperti PHP, Javascript, Go, JAVA.",
+      },
+      {
+        id: 4,
         name: "M. Ihsan Batubara",
         location: "Medan",
         photo: "/images/mentor/ihsan.png",
