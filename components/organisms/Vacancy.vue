@@ -133,12 +133,12 @@ export default {
       firstList: [
         {
           image: "/images/vacancy/job1.png",
-          url: "https://jobseeker.kalibrr.com/c/pensieve/jobs/188313/frontend-developer-7?similar_job_code=&job_ref=&app_source=job-board-mobile-1-5-15-133",
+          url: "https://jobseeker.kalibrr.com/c/nomura-research-institute/jobs/165772/frontend-engineer?similar_job_code=&app_source=job-board-mobile-3-7-15-2709",
           isHovering: false,
         },
         {
           image: "/images/vacancy/job2.png",
-          url: "https://jobseeker.kalibrr.com/c/pt-majoo-teknologi-indonesia/jobs/181040/frontend-engineer-3?similar_job_code=&job_ref=&app_source=job-board-mobile-1-3-15-133",
+          url: "https://jobseeker.kalibrr.com/c/asani/jobs/188089/software-engineer-front-end?similar_job_code=&app_source=job-board-mobile-2-15-15-2709",
           isHovering: false,
         },
         {
@@ -148,24 +148,24 @@ export default {
         },
         {
           image: "/images/vacancy/job4.png",
-          url: "https://jobseeker.kalibrr.com/c/pt-kamoro-maxima-integra/jobs/187535/front-end-developer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-13-15-133",
+          url: "https://jobseeker.kalibrr.com/c/prosehat/jobs/186858/full-stack-developer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-15-15-2709",
           isHovering: false,
         },
       ],
       secondList: [
         {
           image: "/images/vacancy/job5.png",
-          url: "https://jobseeker.kalibrr.com/c/luwjistik/jobs/182013/frontend-engineer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-15-15-133",
+          url: "https://jobseeker.kalibrr.com/c/paket-id/jobs/184353/software-engineer?similar_job_code=&job_ref=&app_source=job-board-mobile-1-4-15-2709",
           isHovering: false,
         },
         {
           image: "/images/vacancy/job6.png",
-          url: "https://jobseeker.kalibrr.com/c/pt-majoo-teknologi-indonesia/jobs/184824/full-stack-developer-3?similar_job_code=&job_ref=&app_source=job-board-mobile-1-14-15-133",
+          url: "https://jobseeker.kalibrr.com/c/mitramas-infosys-global/jobs/145304/software-engineer-backend?similar_job_code=&job_ref=&app_source=job-board-mobile-1-3-15-2709",
           isHovering: false,
         },
         {
           image: "/images/vacancy/job7.png",
-          url: "https://jobseeker.kalibrr.com/c/mitramas-infosys-global/jobs/145304/software-engineer-backend?source=job-board-mobile-1-1-15-201&similar_job_code=&user_ref=www.kalibrr.com_organic_null_path&job_ref=",
+          url: "https://jobseeker.kalibrr.com/c/pintap/jobs/171952/frontend-engineer?similar_job_code=&app_source=job-board-mobile-4-15-15-2537",
           isHovering: false,
         },
         {
