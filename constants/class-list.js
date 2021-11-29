@@ -296,7 +296,12 @@ export const classList = [
     slug: "front-end-1",
     classDays: 8,
     classWeeks: 4,
-    locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
+    locations: [
+      "Medan",
+      "Jakarta (coming soon)",
+      "Yogyakarta (coming soon)",
+      "Bandung (coming soon)",
+    ],
     requirements: [
       "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
       "Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript.",
@@ -507,7 +512,12 @@ export const classList = [
     slug: "front-end-2",
     classDays: 8,
     classWeeks: 4,
-    locations: ["Medan", "Jakarta", "Yogyakarta", "Bandung"],
+    locations: [
+      "Medan",
+      "Jakarta (coming soon)",
+      "Yogyakarta (coming soon)",
+      "Bandung (coming soon)",
+    ],
     requirements: [
       "Sudah mengikuti kelas Frontend tahap 1",
       "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
