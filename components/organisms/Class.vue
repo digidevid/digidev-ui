@@ -1,55 +1,85 @@
 <template>
   <section class="py-10 md:py-14 lg:py-20 bg-main">
     <div class="leading-7 container">
-      <div class="lg:flex lg:justify-between lg:items-center leading-7">
-        <h2
-          class="
-            text-24
-            lg:text-40
-            leading-tight
-            tracking-tight
-            font-semibold
-            text-center
-            lg:text-left
-          "
-        >
-          <span class="font-bold">Kelas</span> yang tersedia
-        </h2>
+      <h2
+        class="
+          text-24
+          lg:text-40
+          leading-tight
+          tracking-tight
+          font-semibold
+          text-center
+          lg:text-left
+        "
+      >
+        <span class="font-bold">Kelas</span> yang tersedia
+      </h2>
 
-        <div
-          class="flex mx-auto lg:mx-0 h-[55px] w-full md:max-w-max mt-8 lg:mt-0"
-        >
+      <div class="lg:flex lg:justify-between items-center mt-8">
+        <p class="md:text-20 font-semibold dark-grey text-center md:text-left">
+          Kelas <span class="font-bold text-primary">group</span> yang tersedia
+          sebagai berikut
+        </p>
+        <div>
           <button
             class="
-              font-semibold
+              hidden
+              lg:block
               h-full
               text-18
               w-full
-              rounded-l-[10px]
-              md:px-14
+              font-semibold
               border-2 border-primary
+              rounded-[10px]
+              md:px-14
             "
-            :class="{
-              'bg-primary text-white': activeClassList === groupClass,
-            }"
-            @click="activeClassList = groupClass"
           >
             Group
           </button>
+        </div>
+      </div>
+
+      <div
+        class="
+          hide-scroll-bar
+          flex
+          xl:flex-none xl:grid xl:grid-cols-4
+          mt-4
+          md:mt-8
+          lg:mt-14
+          overflow-x-scroll
+          xl:overflow-x-visible
+          p-2
+          xl:p-0
+        "
+      >
+        <ClassPrice
+          v-for="(item, id) in groupClass"
+          :key="id"
+          :packet="item"
+          :id="id"
+        />
+      </div>
+    </div>
+    <div class="leading-7 container mt-16">
+      <div class="lg:flex lg:justify-between items-center mt-8">
+        <p class="md:text-20 font-semibold dark-grey text-center md:text-left">
+          Kelas <span class="font-bold text-primary">full private</span> yang
+          tersedia sebagai berikut
+        </p>
+        <div>
           <button
             class="
+              hidden
+              lg:block
               h-full
               text-18
               w-full
               font-semibold
               border-2 border-primary
-              rounded-r-[10px]
+              rounded-[10px]
               md:px-14
             "
-            :class="{
-              'bg-primary text-white': activeClassList === privateClass,
-            }"
-            @click="activeClassList = privateClass"
           >
             Private
           </button>
@@ -60,7 +90,8 @@
           hide-scroll-bar
           flex
           xl:flex-none xl:grid xl:grid-cols-4
-          mt-8
+          mt-4
+          md:mt-8
           lg:mt-14
           overflow-x-scroll
           xl:overflow-x-visible
@@ -69,7 +100,7 @@
         "
       >
         <ClassPrice
-          v-for="(item, id) in activeClassList"
+          v-for="(item, id) in privateClass"
           :key="id"
           :packet="item"
           :id="id"
@@ -124,15 +155,6 @@ export default {
           slug: "back-end",
           isActive: false,
         },
-        {
-          price: "4",
-          priceType: "jt",
-          classType: "Kelas Fullstack",
-          className: "(Vue JS + Node JS)",
-          scheduling: ["2 bulan 16x pertemuan", "Eksklusif untuk 1 orang"],
-          slug: "full-stack",
-          isActive: false,
-        },
       ],
       groupClass: [
         {
@@ -169,15 +191,6 @@ export default {
           className: "(Node JS)",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "back-end",
-          isActive: false,
-        },
-        {
-          price: "1,8",
-          priceType: "jt",
-          classType: "Kelas Fullstack",
-          className: "(Vue JS + Node JS)",
-          scheduling: ["2 bulan 16x pertemuan", "Grup berisi maksimum 5 orang"],
-          slug: "full-stack",
           isActive: false,
         },
       ],

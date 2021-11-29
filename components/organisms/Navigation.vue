@@ -213,7 +213,7 @@ export default {
       return this.typeClass ? "" : "h-[640px] lg:h-[887px]";
     },
     setPaddingTop() {
-      return this.typeClass ? "pt-[90px] pb-[130px]" : "py-24 lg:py-32";
+      return this.typeClass ? "pt-[90px] pb-[130px]" : "py-24 xl:py-32";
     },
     heroBackground() {
       if (this.typeClass === "web-basic") {
