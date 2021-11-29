@@ -199,8 +199,10 @@ export default {
     titleClass() {
       if (this.typeClass === "web-basic") {
         return "Kelas Basic Modern Web bersama Digidev";
-      } else if (this.typeClass === "front-end") {
-        return "Kelas Basic Frontend bersama Digidev";
+      } else if (this.typeClass === "front-end-1") {
+        return "Kelas Frontend Tahap 1 bersama Digidev";
+      } else if (this.typeClass === "front-end-2") {
+        return "Kelas Frontend Tahap 2 bersama Digidev";
       } else if (this.typeClass === "back-end") {
         return "Kelas Basic Backend bersama Digidev";
       } else if (this.typeClass === "full-stack") {
@@ -216,7 +218,10 @@ export default {
     heroBackground() {
       if (this.typeClass === "web-basic") {
         return "hero-web-basic";
-      } else if (this.typeClass === "front-end") {
+      } else if (
+        this.typeClass === "front-end-1" ||
+        this.typeClass === "front-end-2"
+      ) {
         return "hero-front-end";
       } else if (this.typeClass === "back-end") {
         return "hero-back-end";
