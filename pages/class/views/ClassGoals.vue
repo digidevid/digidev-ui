@@ -18,12 +18,9 @@
           {{ item.content }}
         </p>
       </div>
-      <div class="grid grid-cols-12 items-start">
+      <!-- <div class="grid grid-cols-12 items-start">
         <p></p>
-        <p class="font-medium text-[12px] lg:text-16 col-span-11">
-          *syarat dan ketentuan berlaku
-        </p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

@@ -33,6 +33,7 @@ import Info from "../components/organisms/Info.vue";
 import Profession from "../components/organisms/Profession.vue";
 import Flow from "../components/organisms/Flow.vue";
 import PortofolioAlumni from "../components/organisms/PortofolioAlumni.vue";
+import axios from "axios";
 
 export default {
   components: {
@@ -51,6 +52,9 @@ export default {
     Flow,
     PortofolioAlumni,
   },
+  mounted() {
+    this.accessHeroku();
+  },
   methods: {
     scrollToSection(slug) {
       const section = document.getElementById("available-class");
@@ -59,6 +63,14 @@ export default {
         block: "start",
         inline: "nearest",
       });
+    },
+    async accessHeroku() {
+      try {
+        const res = await axios.get("https://digidev-api.herokuapp.com");
+        console.log(res);
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };
