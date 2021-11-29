@@ -16,7 +16,7 @@
       </h2>
 
       <div class="lg:flex lg:justify-between items-center mt-8">
-        <p class="md:text-20 font-semibold dark-grey text-center md:text-left">
+        <p class="md:text-20 font-semibold dark-grey text-left">
           Kelas <span class="font-bold text-primary">group</span> yang tersedia
           sebagai berikut
         </p>
@@ -63,7 +63,7 @@
     </div>
     <div class="leading-7 container mt-16">
       <div class="lg:flex lg:justify-between items-center mt-8">
-        <p class="md:text-20 font-semibold dark-grey text-center md:text-left">
+        <p class="md:text-20 font-semibold dark-grey text-left">
           Kelas <span class="font-bold text-primary">full private</span> yang
           tersedia sebagai berikut
         </p>
@@ -135,7 +135,7 @@ export default {
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Eksklusif untuk 1 orang"],
           slug: "front-end-1",
-          isActive: false,
+          isActive: true,
         },
         {
           price: "2,8",
@@ -144,7 +144,7 @@ export default {
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Eksklusif untuk 1 orang"],
           slug: "front-end-2",
-          isActive: false,
+          isActive: true,
         },
         {
           price: "2,8",

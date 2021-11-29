@@ -359,7 +359,7 @@ export const classList = [
       },
       {
         id: 5,
-        name: "Pindah page Nuxt (Routing)",
+        name: "Redirect page Nuxt (Routing)",
         subSyllabus: ["nuxt-link", "$router", "$route (query param link)"],
         isOpen: false,
       },
