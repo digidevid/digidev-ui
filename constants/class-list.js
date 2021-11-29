@@ -9,6 +9,7 @@ export const classList = [
     summaryInfo: [
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
+      "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
       "Kuota Terbatas",
       "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
     ],
@@ -305,6 +306,7 @@ export const classList = [
       "Mendalami Frontend Web Development Tahap 1",
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
+      "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
       "Kuota Terbatas",
       "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
     ],
@@ -516,6 +518,7 @@ export const classList = [
       "Kelas Lanjutan Frontend Web Development Tahap 2",
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
+      "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
       "Kuota Terbatas",
       "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
     ],
