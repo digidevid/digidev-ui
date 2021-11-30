@@ -48,7 +48,7 @@ export default {
           icon: "/images/vector/rating.png",
           start: "Mentor dengan segudang",
           bold: "pengalaman",
-          end: "yang berkarir di startup ternama.",
+          end: "yang berkarir di industri startup digital.",
         },
         {
           title: "Privat dan Ekslusif",
