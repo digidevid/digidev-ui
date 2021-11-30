@@ -31,7 +31,6 @@
           leading-relaxed
           max-w-[1116px]
         "
-        v-if="!typeClass"
       >
         DigiDev Career <br />
       </p>
@@ -41,41 +40,12 @@
 
 <script>
 export default {
-  data() {
-    return {
-      typeClass: "",
-    };
-  },
   computed: {
-    titleClass() {
-      if (this.typeClass === "web-basic") {
-        return "Kelas Basic Modern Web bersama Digidev";
-      } else if (this.typeClass === "front-end") {
-        return "Kelas Basic Frontend bersama Digidev";
-      } else if (this.typeClass === "back-end") {
-        return "Kelas Basic Backend bersama Digidev";
-      } else if (this.typeClass === "full-stack") {
-        return "Kelas Basic Fullstack bersama Digidev";
-      }
-    },
     setHeight() {
       return this.typeClass ? "" : "h-[350px]";
     },
     setPaddingTop() {
       return this.typeClass ? "pt-[40px] pb-[800px]" : "my-[40px]";
-    },
-  },
-  mounted() {
-    this.typeClass = this.$route.query.paket_kelas;
-  },
-  methods: {
-    scrollToSection(id) {
-      const section = document.getElementById(id);
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
     },
   },
 };
