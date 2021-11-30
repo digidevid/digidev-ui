@@ -447,13 +447,13 @@ export const classList = [
       {
         question: "Apa saja syarat untuk mengikuti kelas ini?",
         answer:
-          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Memahami basic penggunaan komputer, seperti install sebuah aplikasi, menggunakan file explorer dan browser, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
+          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
         isActive: false,
       },
       {
         question: "Apakah kelas ini bisa dilaksanakan secara online?",
         answer:
-          "Kelas Basic Modern Web ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
+          "Kelas Frontend Tahap 1 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {
@@ -638,13 +638,13 @@ export const classList = [
       {
         question: "Apa saja syarat untuk mengikuti kelas ini?",
         answer:
-          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Memahami basic penggunaan komputer, seperti install sebuah aplikasi, menggunakan file explorer dan browser, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
+          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Sudah mengikuti kelas Frontend tahap 1, Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
         isActive: false,
       },
       {
         question: "Apakah kelas ini bisa dilaksanakan secara online?",
         answer:
-          "Kelas Basic Modern Web ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
+          "Kelas Frontend Tahap 2 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {
