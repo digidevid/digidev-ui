@@ -441,7 +441,7 @@ export const classList = [
         question:
           "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
         answer:
-          "Kelas Frontend ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
+          "Kelas Frontend Tahap 1 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
         isActive: false,
       },
       {
@@ -632,7 +632,7 @@ export const classList = [
         question:
           "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
         answer:
-          "Kelas Frontend ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
+          "Kelas Frontend Tahap 2 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini. Siswa juga harus mengikuti kelas Frontend Tahap 1 sebelum mengikuti kelas ini.",
         isActive: false,
       },
       {
