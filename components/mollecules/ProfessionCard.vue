@@ -50,7 +50,7 @@ export default {
     detail: {
       type: String,
       default:
-        "Mentor dengan segudang pengalaman yang berkarir di startup ternama.",
+        "Mentor dengan segudang pengalaman yang berkarir di industri startup digital.",
     },
     id: {
       type: String | Number,
