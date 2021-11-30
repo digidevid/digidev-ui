@@ -24,6 +24,7 @@
       <Button
         type="secondary"
         content="Daftar Jadi Mentor"
+        @click="$router.push('/career')"
         class="
           py-2
           lg:py-3
@@ -37,6 +38,7 @@
         "
       />
       <Button
+        content="Daftar Sekarang"
         @click="$emit('click-register-mentee')"
         class="
           py-2

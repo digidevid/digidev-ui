@@ -126,6 +126,7 @@
         lg:float-right
       "
       content="Daftar"
+      :is-loading="isLoadingSubmit"
       @click="submit"
     />
   </div>
@@ -157,6 +158,7 @@ export default {
       typeClasses: ["Group", "Private"],
       idClass: null,
       isErrorForm: false,
+      isLoadingSubmit: false,
     };
   },
   props: {
@@ -246,6 +248,7 @@ export default {
       }
     },
     async submitRegisterClass() {
+      this.isLoadingSubmit = true;
       const payload = {
         fullname: this.fullname,
         class: this.className,
@@ -264,7 +267,10 @@ export default {
           "https://digidev-api.herokuapp.com",
           payload
         );
-        if (res) this.routeToThankyouPage();
+        if (res) {
+          this.isLoadingSubmit = false;
+          this.routeToThankyouPage();
+        }
       } catch (err) {
         console.log(err);
       }

@@ -1,27 +1,11 @@
 <template>
-  <div :class="`navigation ${setHeight}`">
-    <div
-      class="
-        flex
-        w-full
-        justify-start
-        items-center
-        px-[24px]
-        sm:px-[24px]
-        md:px-[160px]
-        :px-[160px]
-        pt-9
-      "
-    >
-      <div>
-        <nuxt-link to="/"
-          ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
-        /></nuxt-link>
-      </div>
+  <div class="navigation h-[250px] md:h-[350px]">
+    <div class="container pt-9">
+      <nuxt-link to="/"
+        ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
+      /></nuxt-link>
     </div>
-    <div
-      :class="`lg:px-[160px] md:px-[160px] sm:px-[24px] px-[24px] space-y-5 ${setPaddingTop}`"
-    >
+    <div class="container space-y-5 my-[30px] md:my-[40px]">
       <p
         class="
           text-white text-26
@@ -30,6 +14,7 @@
           lg:text-52
           leading-relaxed
           max-w-[1116px]
+          font-bold
         "
       >
         DigiDev Career <br />
@@ -39,16 +24,7 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    setHeight() {
-      return this.typeClass ? "" : "h-[350px]";
-    },
-    setPaddingTop() {
-      return this.typeClass ? "pt-[40px] pb-[800px]" : "my-[40px]";
-    },
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

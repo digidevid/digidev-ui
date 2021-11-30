@@ -61,10 +61,12 @@
               mereka yang sedang mempersiapkan skill untuk berkari sebagai
               profesional.
             </p>
-            <Button
-              content="Daftar jadi mentor"
-              class="mt-5 md:mr-4 lg:text-18 text-14"
-            />
+            <nuxt-link to="/career">
+              <Button
+                content="Daftar jadi mentor"
+                class="mt-5 lg:text-18 text-14"
+              />
+            </nuxt-link>
           </div>
           <div class="absolute top-0 right-0 z-0 w-1/2 md:w-1/3 lg:w-auto">
             <img src="/images/vector/vector736.png" alt="banner illustration" />

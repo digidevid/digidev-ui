@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Navbar class="-mb-32 md:-mb-20" />
+    <Navbar class="-mb-14 md:-mb-20" />
     <div
-      class="grid lg:mb-8 mb-6 justify-center"
+      class="container lg:mb-8 mb-6"
       v-for="(career, id) in dataCareer"
       :key="id"
     >
@@ -22,51 +22,44 @@ export default {
     return {
       dataCareer: [
         {
+          class: "frontend",
           className: " Mentor Frontend Developer",
-          salary: "Rp2.000.000 - Rp5.000.000",
+          salary: "Rp1.000.000 - Rp3.000.000",
           requirement: [
-            "Degree in computer science or related field.",
-            "Understanding of key design principles.",
-            "Proficiency in HTML, CSS, JavaScript, and jQuery.",
-            "Understanding of server-side CSS.",
-            "Experience with graphic design applications such as Adobe Illustrator.",
-            "Experience with responsive and adaptive design.",
+            "Berpengalaman sebagai Frontend Developer minimal 1 tahun.",
+            "Memahami dan menguasai HTML, CSS dan Javascript.",
+            "Memahami dan menguasai framework Vue / React.",
+            "Menguasai penggunaan Git.",
+            "Memahami dan menguasai Tailwind atau Bootstrap.",
+            "Memiliki tools / laptop pribadi.",
+            "Memiliki kemampuan mengajar.",
           ],
         },
         {
+          class: "backend",
           className: " Mentor Backend Developer",
-          salary: "Rp2.000.000 - Rp5.000.000",
+          salary: "Rp1.000.000 - Rp3.000.000",
           requirement: [
-            "Degree in computer science or related field.",
-            "Understanding of key design principles.",
-            "Proficiency in HTML, CSS, JavaScript, and jQuery.",
-            "Understanding of server-side CSS.",
-            "Experience with graphic design applications such as Adobe Illustrator.",
-            "Experience with responsive and adaptive design.",
+            "Berpengalaman sebagai Backend Developer minimal 1 tahun.",
+            "Memahami dan menguasai bahasa pemrograman Javascript / Go / Java /  Python.",
+            "Memahami dan menguasai penggunaan database Sql dan no-Sql.",
+            "Menguasai penggunaan Git.",
+            "Memahami dan menguasai Object Oriented Programming (OOP).",
+            "Memiliki tools / laptop pribadi.",
+            "Memiliki kemampuan mengajar.",
           ],
         },
         {
+          class: "mobile-apps",
           className: " Mentor Mobile Developer",
-          salary: "Rp2.000.000 - Rp5.000.000",
+          salary: "Rp1.000.000 - Rp3.000.000",
           requirement: [
-            "Degree in computer science or related field.",
-            "Understanding of key design principles.",
-            "Proficiency in HTML, CSS, JavaScript, and jQuery.",
-            "Understanding of server-side CSS.",
-            "Experience with graphic design applications such as Adobe Illustrator.",
-            "Expdesign.",
-          ],
-        },
-        {
-          className: " Mentor Full Stack Developer",
-          salary: "Rp2.000.000 - Rp5.000.000",
-          requirement: [
-            "Degree in computer science or related field.",
-            "Understanding of key design principles.",
-            "Proficiency in HTML, CSS, JavaScript, and jQuery.",
-            "Understanding of server-side CSS.",
-            "Experience with graphic design applications such as Adobe Illustrator.",
-            "Expdesign.",
+            "Berpengalaman sebagai Frontend Developer / Mobile Apps Developer minimal 1 tahun.",
+            "Memahami dan menguasai framework React Native / Flutter.",
+            "Memahami prinsip dasar layouting di aplikasi mobile.",
+            "Menguasai penggunaan Git.",
+            "Memiliki tools / laptop pribadi.",
+            "Memiliki kemampuan mengajar.",
           ],
         },
       ],

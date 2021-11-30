@@ -128,7 +128,11 @@
       >
         {{ titleClass }}
       </p>
-      <Button class="mt-5" @click="$emit('click-nav')" />
+      <Button
+        content="Daftar Sekarang"
+        class="mt-5"
+        @click="$emit('click-nav')"
+      />
     </div>
   </div>
 </template>
