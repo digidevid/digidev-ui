@@ -89,11 +89,11 @@ export default {
         },
         {
           name: "pp-2",
-          url: "https://faishal-pokedex.herokuapp.com/",
+          url: "https://todolist-faishal.herokuapp.com/",
         },
         {
           name: "pp-3",
-          url: "https://todolist-faishal.herokuapp.com/",
+          url: "https://faishal-pokedex.herokuapp.com/",
         },
         {
           name: "pp-4",
