@@ -15,28 +15,28 @@
         <span class="font-bold">Kelas</span> yang tersedia
       </h2>
 
-      <div class="lg:flex lg:justify-between items-center mt-8">
-        <p class="md:text-20 font-semibold dark-grey text-left">
-          Kelas <span class="font-bold text-primary">group</span> yang tersedia
-          sebagai berikut
+      <div class="mt-8">
+        <p class="text-12 md:text-16 dark-grey text-left">
+          Belajar secara <span class="font-bold text-primary">group</span> (semi
+          privat) membuat biaya kelas menjadi lebih murah.
         </p>
-        <div>
-          <button
-            class="
-              hidden
-              lg:block
-              h-full
-              text-18
-              w-full
-              font-semibold
-              border-2 border-primary
-              rounded-[10px]
-              md:px-14
-            "
-          >
-            Group
-          </button>
-        </div>
+        <button
+          class="
+            hidden
+            lg:block
+            h-full
+            text-18
+            w-[200px]
+            font-semibold
+            border-2 border-primary
+            rounded-[10px]
+            md:px-14
+            mt-4
+            float-right
+          "
+        >
+          Group
+        </button>
       </div>
 
       <div
@@ -45,8 +45,7 @@
           flex
           xl:flex-none xl:grid xl:grid-cols-4
           mt-4
-          md:mt-8
-          lg:mt-14
+          md:mt-[60px]
           overflow-x-scroll
           xl:overflow-x-visible
           p-2
@@ -62,10 +61,12 @@
       </div>
     </div>
     <div class="leading-7 container mt-16">
-      <div class="lg:flex lg:justify-between items-center mt-8">
-        <p class="md:text-20 font-semibold dark-grey text-left">
-          Kelas <span class="font-bold text-primary">full private</span> yang
-          tersedia sebagai berikut
+      <div class="mt-8">
+        <p class="text-12 md:text-16 dark-grey text-left">
+          Belajar secara
+          <span class="font-bold text-primary">full privat</span> membuat
+          aktivitas belajar menjadi sangat efisien karena mentor akan membimbing
+          hanya khusus untuk kamu.
         </p>
         <div>
           <button
@@ -74,11 +75,13 @@
               lg:block
               h-full
               text-18
-              w-full
+              w-[200px]
               font-semibold
               border-2 border-primary
               rounded-[10px]
               md:px-14
+              mt-4
+              float-right
             "
           >
             Private
@@ -91,8 +94,7 @@
           flex
           xl:flex-none xl:grid xl:grid-cols-4
           mt-4
-          md:mt-8
-          lg:mt-14
+          md:mt-[60px]
           overflow-x-scroll
           xl:overflow-x-visible
           p-2
@@ -147,11 +149,11 @@ export default {
           isActive: true,
         },
         {
-          price: "2,8",
+          price: "4,5",
           priceType: "jt",
-          classType: "Kelas Backend",
-          className: "(Node JS)",
-          scheduling: ["Sebulan 8x pertemuan", "Eksklusif untuk 1 orang"],
+          classType: "Bimbingan Tugas Akhir",
+          className: "Website & Mobile Apps",
+          scheduling: ["2 Bulan 16x pertemuan", "Eksklusif untuk 1 orang"],
           slug: "back-end",
           isActive: false,
         },
