@@ -13,10 +13,10 @@
         rounded-sm
       "
     >
-      <h3 class="text-16 lg:text-20 font-bold leading-tight tracking-tight">
+      <h3 class="text-16 xl:text-20 font-bold leading-tight tracking-tight">
         {{ packet.classType }}
       </h3>
-      <p class="font-medium text-16 lg:text-20">{{ packet.className }}</p>
+      <p class="font-medium text-16 xl:text-20">{{ packet.className }}</p>
       <div class="flex justify-center items-start my-8 lg:my-12 mx-auto">
         <p class="font-medium leading-3">Rp</p>
         <p class="text-[58px] font-bold leading-8">

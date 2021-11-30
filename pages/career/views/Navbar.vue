@@ -33,7 +33,7 @@
         "
         v-if="!typeClass"
       >
-        Form Pendaftaran <br />
+        DigiDev Career <br />
       </p>
     </div>
   </div>
@@ -50,10 +50,8 @@ export default {
     titleClass() {
       if (this.typeClass === "web-basic") {
         return "Kelas Basic Modern Web bersama Digidev";
-      } else if (this.typeClass === "front-end-1") {
-        return "Kelas Frontend Tahap 1 bersama Digidev";
-      } else if (this.typeClass === "front-end-2") {
-        return "Kelas Frontend Tahap 2 bersama Digidev";
+      } else if (this.typeClass === "front-end") {
+        return "Kelas Basic Frontend bersama Digidev";
       } else if (this.typeClass === "back-end") {
         return "Kelas Basic Backend bersama Digidev";
       } else if (this.typeClass === "full-stack") {
@@ -85,7 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .navigation {
-  background-image: url("~/static/images/hero/hero.png");
+  background-image: url("~/static/images/hero/hero6.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

@@ -2,7 +2,9 @@
   <div
     class="
       w-full
-      h-[200px]
+      h-[150px]
+      md:h-[168px]
+      lg:h-[200px]
       container-nav
       rounded-b-[25px]
       bg-gradient-to-br
@@ -46,8 +48,10 @@ export default {
     titleClass() {
       if (this.typeClass === "web-basic") {
         return "Kelas Basic Modern Web bersama Digidev";
-      } else if (this.typeClass === "front-end") {
-        return "Kelas Basic Frontend bersama Digidev";
+      } else if (this.typeClass === "front-end-1") {
+        return "Kelas Frontend Tahap 1 bersama Digidev";
+      } else if (this.typeClass === "front-end-2") {
+        return "Kelas Frontend Tahap 2 bersama Digidev";
       } else if (this.typeClass === "back-end") {
         return "Kelas Basic Backend bersama Digidev";
       } else if (this.typeClass === "full-stack") {

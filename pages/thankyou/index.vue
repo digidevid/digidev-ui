@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavDoneTransaction />
-    <ConfirmationClass class="lg:-mt-20 -mt-28" />
+    <ConfirmationClass class="lg:-mt-20 -mt-16" />
   </div>
 </template>
 

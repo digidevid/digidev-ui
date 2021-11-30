@@ -90,6 +90,11 @@ export default {
           photo: "/images/mentor/faishal.png",
         },
         {
+          name: "Harry Kurniawan",
+          skill: "Software Engineer",
+          photo: "/images/mentor/harry.png",
+        },
+        {
           name: "Ibnu Hazar",
           skill: "Frontend Developer",
           photo: "/images/mentor/ibnu.png",

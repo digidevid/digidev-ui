@@ -136,7 +136,7 @@ export default {
     return {
       SocialContact: [
         {
-          linkImage: "https://www.instagram.com",
+          linkImage: "https://instagram.com/digidev.indo?utm_medium=copy_link",
           imageFile: "Instagram",
         },
         {
