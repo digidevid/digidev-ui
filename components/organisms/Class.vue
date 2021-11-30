@@ -66,7 +66,7 @@
           Belajar secara
           <span class="font-bold text-primary">full privat</span> membuat
           aktivitas belajar menjadi sangat efisien karena mentor akan membimbing
-          hanya khusus untuk kamu.
+          khusus untuk kamu.
         </p>
         <div>
           <button
