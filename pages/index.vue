@@ -8,9 +8,8 @@
     <!-- <Service /> -->
     <Mentor />
     <Profession />
-    <div id="available-class">
-      <Class />
-    </div>
+    <ClassSection />
+    <Class />
     <Flow />
     <PortofolioAlumni />
     <Testimoni />
@@ -26,6 +25,7 @@ import Partner from "~/components/organisms/Partner";
 import Benefit from "~/components/organisms/Benefit";
 import Service from "~/components/organisms/Service";
 import Mentor from "~/components/organisms/Mentor";
+import ClassSection from "~/components/organisms/ClassSection";
 import Class from "~/components/organisms/Class";
 import Testimoni from "~/components/organisms/Testimoni";
 import Footer from "~/components/organisms/Footer";
@@ -44,6 +44,7 @@ export default {
     Benefit,
     Service,
     Mentor,
+    ClassSection,
     Class,
     Testimoni,
     Footer,
