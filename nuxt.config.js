@@ -34,6 +34,12 @@ export default {
         href: "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik+Beastly&display=swap",
       },
     ],
+    script: [
+      {
+        src: "https://kit.fontawesome.com/58afe831c7.js",
+        crossorigin: "anonymous",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
