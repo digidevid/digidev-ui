@@ -70,16 +70,6 @@ export default {
   mounted() {
     this.typeClass = this.$route.query.paket_kelas;
   },
-  methods: {
-    scrollToSection(id) {
-      const section = document.getElementById(id);
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-    },
-  },
 };
 </script>
 

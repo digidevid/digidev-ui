@@ -128,11 +128,7 @@
       >
         {{ titleClass }}
       </p>
-      <Button
-        content="Daftar Sekarang"
-        class="mt-5"
-        @click="$emit('click-nav')"
-      />
+      <Button content="Daftar Sekarang" class="mt-5" @click="clickNav" />
     </div>
   </div>
 </template>
@@ -255,6 +251,13 @@ export default {
       this.isShowMenu = false;
       const icon = document.getElementById("menu");
       icon.classList.toggle("opened");
+    },
+    clickNav() {
+      if (this.typeClass) {
+        this.$emit("clickNav");
+      } else {
+        this.scrollToSection("available-class");
+      }
     },
   },
 };

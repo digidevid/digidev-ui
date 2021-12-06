@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation @click-nav="scrollToSection" />
+    <Navigation />
     <!-- <Info /> -->
     <Vacancy />
     <Benefit />
@@ -57,14 +57,6 @@ export default {
     this.accessHeroku();
   },
   methods: {
-    scrollToSection(slug) {
-      const section = document.getElementById("available-class");
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
-    },
     async accessHeroku() {
       try {
         const res = await axios.get("https://digidev-api.herokuapp.com");

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-main">
     <Navigation
-      @click-nav="
+      @clickNav="
         $router.push(`/register?packet-class=${typeClass}&id-class=${idClass}`)
       "
     />
