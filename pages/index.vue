@@ -9,7 +9,7 @@
     <Mentor />
     <Profession />
     <ClassSection />
-    <Class />
+    <!-- <Class /> -->
     <Flow />
     <PortofolioAlumni />
     <Testimoni />

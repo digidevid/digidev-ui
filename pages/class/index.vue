@@ -229,13 +229,13 @@ export default {
           return "Basic Modern Web";
           break;
         case "front-end-1":
-          return "Frontend Tahap 1";
+          return "Frontend Master 1";
           break;
         case "front-end-2":
-          return "Frontend Tahap 2";
+          return "Frontend Master 2";
           break;
         case "back-end":
-          return "Backend";
+          return "Backend Master";
           break;
         case "full-stack":
           return "Fullstack";
