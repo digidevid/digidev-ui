@@ -111,9 +111,9 @@ export default {
       if (this.typeClass === "web-basic") {
         return "Kelas Basic Modern Web";
       } else if (this.typeClass === "front-end-1") {
-        return "Kelas Frontend Tahap 1";
+        return "Kelas Frontend Master 1";
       } else if (this.typeClass === "front-end-2") {
-        return "Kelas Frontend Tahap 2";
+        return "Kelas Frontend Master 2";
       } else if (this.typeClass === "back-end") {
         return "Kelas Basic Backend";
       } else if (this.typeClass === "full-stack") {

@@ -292,7 +292,7 @@ export const classList = [
   },
   {
     id: 2,
-    name: "Frontend Web Development (Vue Js) - Tahap 1",
+    name: "Frontend Master (Vue Js) 1",
     slug: "front-end-1",
     classDays: 8,
     classWeeks: 4,
@@ -308,7 +308,7 @@ export const classList = [
       "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
     ],
     summaryInfo: [
-      "Mendalami Frontend Web Development Tahap 1",
+      "Mendalami Frontend Master 1",
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
       "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
@@ -441,7 +441,7 @@ export const classList = [
         question:
           "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
         answer:
-          "Kelas Frontend Tahap 1 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
+          "Kelas Frontend Master 1 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
         isActive: false,
       },
       {
@@ -453,7 +453,7 @@ export const classList = [
       {
         question: "Apakah kelas ini bisa dilaksanakan secara online?",
         answer:
-          "Kelas Frontend Tahap 1 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
+          "Kelas Frontend Master 1 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {
@@ -508,7 +508,7 @@ export const classList = [
   },
   {
     id: 3,
-    name: "Frontend Web Development (Vue Js) - Tahap 2",
+    name: "Frontend Master (Vue Js) 2",
     slug: "front-end-2",
     classDays: 8,
     classWeeks: 4,
@@ -519,13 +519,13 @@ export const classList = [
       "Bandung (coming soon)",
     ],
     requirements: [
-      "Sudah mengikuti kelas Frontend tahap 1",
+      "Sudah mengikuti kelas Frontend Master 1",
       "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
       "Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript.",
       "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
     ],
     summaryInfo: [
-      "Kelas Lanjutan Frontend Web Development Tahap 2",
+      "Kelas Lanjutan Frontend Master 2",
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
       "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
@@ -632,19 +632,19 @@ export const classList = [
         question:
           "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
         answer:
-          "Kelas Frontend Tahap 2 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini. Siswa juga harus mengikuti kelas Frontend Tahap 1 sebelum mengikuti kelas ini.",
+          "Kelas Frontend Master 2 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini. Siswa juga harus mengikuti kelas Frontend Master 1 sebelum mengikuti kelas ini.",
         isActive: false,
       },
       {
         question: "Apa saja syarat untuk mengikuti kelas ini?",
         answer:
-          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Sudah mengikuti kelas Frontend tahap 1, Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
+          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Sudah mengikuti kelas Frontend Master 1, Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
         isActive: false,
       },
       {
         question: "Apakah kelas ini bisa dilaksanakan secara online?",
         answer:
-          "Kelas Frontend Tahap 2 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
+          "Kelas Frontend Master 2 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {

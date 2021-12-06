@@ -133,7 +133,7 @@ export default {
         {
           price: "2,8",
           priceType: "jt",
-          classType: "Kelas Frontend Tahap 1",
+          classType: "Kelas Frontend Master 1",
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Eksklusif untuk 1 orang"],
           slug: "front-end-1",
@@ -142,7 +142,7 @@ export default {
         {
           price: "2,8",
           priceType: "jt",
-          classType: "Kelas Frontend Tahap 2",
+          classType: "Kelas Frontend Master 2",
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Eksklusif untuk 1 orang"],
           slug: "front-end-2",
@@ -171,7 +171,7 @@ export default {
         {
           price: "950",
           priceType: "ribu",
-          classType: "Kelas Frontend Tahap 1",
+          classType: "Kelas Frontend Master 1",
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "front-end-1",
@@ -180,7 +180,7 @@ export default {
         {
           price: "950",
           priceType: "ribu",
-          classType: "Kelas Frontend Tahap 2",
+          classType: "Kelas Frontend Master 2",
           className: "(Vue Js)",
           scheduling: ["Sebulan 8x pertemuan", "Grup berisi maksimum 5 orang"],
           slug: "front-end-2",
