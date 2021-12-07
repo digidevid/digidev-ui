@@ -275,7 +275,7 @@ export default {
         navigator.clipboard.writeText(noRekening);
         this.$refs.snackbar.showSnackbar({
           color: "bg-green-500",
-          message: "nomor rekening berhasil disalin",
+          message: "Nomor rekening berhasil disalin!",
         });
       } catch (e) {
         throw e;
