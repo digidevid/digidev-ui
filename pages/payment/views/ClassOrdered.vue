@@ -183,14 +183,16 @@
         />
       </a>
     </div>
+    <Snackbar ref="snackbar" />
   </div>
 </template>
 
 <script>
 import { classList } from "~/constants/class-list.js";
 import Button from "~/components/atoms/Button.vue";
+import Snackbar from "~/components/mollecules/Snackbar.vue";
 export default {
-  components: { Button },
+  components: { Button, Snackbar },
   data() {
     return {
       classList,
@@ -271,6 +273,10 @@ export default {
     copyToClipBoard(noRekening) {
       try {
         navigator.clipboard.writeText(noRekening);
+        this.$refs.snackbar.showSnackbar({
+          color: "bg-green-500",
+          message: "nomor rekening berhasil disalin",
+        });
       } catch (e) {
         throw e;
       }
