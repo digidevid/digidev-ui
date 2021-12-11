@@ -30,7 +30,7 @@
           v-for="(menu, id) in classMenu"
           :key="id"
           class="cursor-pointer uppercase font-medium"
-          @click="scrollToSection(menu.slug)"
+          @click="onClickMenu(menu.slug)"
         >
           {{ menu.name }}
         </li>
@@ -40,7 +40,7 @@
           v-for="(menu, id) in listMenu"
           :key="id"
           class="cursor-pointer uppercase font-medium"
-          @click="scrollToSection(menu.slug)"
+          @click="onClickMenu(menu.slug)"
         >
           {{ menu.name }}
         </li>
@@ -94,7 +94,7 @@
           v-for="(menu, id) in listMenu"
           :key="id"
           class="cursor-pointer"
-          @click="scrollToSection(menu.slug)"
+          @click="onClickMenu(menu.slug)"
         >
           {{ menu.name }}
         </li>
@@ -243,14 +243,15 @@ export default {
         block: "start",
         inline: "nearest",
       });
-      this.isShowMenu = !this.isShowMenu;
-      const icon = document.getElementById("menu");
-      icon.classList.toggle("opened");
     },
     closeMenu() {
       this.isShowMenu = false;
       const icon = document.getElementById("menu");
       icon.classList.toggle("opened");
+    },
+    onClickMenu(id) {
+      this.scrollToSection(id);
+      this.closeMenu();
     },
     clickNav() {
       if (this.typeClass) {
