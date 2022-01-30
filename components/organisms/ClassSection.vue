@@ -1,36 +1,38 @@
 <template>
-  <div id="available-class" class="container py-10 md:py-14 lg:py-20 bg-main">
-    <h2
-      class="
-        leading-7
-        text-24
-        lg:text-40
-        leading-tight
-        tracking-tight
-        font-semibold
-        text-center
-        lg:text-left
-      "
-    >
-      <span class="font-bold">Kelas</span> yang tersedia
-    </h2>
-    <div
-      class="
-        mt-8
-        lg:mt-12
-        grid grid-cols-2
-        lg:grid-cols-3
-        xl:grid-cols-4
-        gap-2
-        md:gap-8
-      "
-    >
-      <ClassCard
-        v-for="(item, id) in dataClasses"
-        :key="id"
-        :data-class="item"
-        :id="id"
-      />
+  <div class="bg-main">
+    <div id="available-class" class="container py-10 md:py-14 lg:py-20">
+      <h2
+        class="
+          leading-7
+          text-24
+          lg:text-40
+          leading-tight
+          tracking-tight
+          font-semibold
+          text-center
+          lg:text-left
+        "
+      >
+        <span class="font-bold">Kelas</span> yang tersedia
+      </h2>
+      <div
+        class="
+          mt-8
+          lg:mt-12
+          grid grid-cols-2
+          lg:grid-cols-3
+          xl:grid-cols-4
+          gap-2
+          md:gap-8
+        "
+      >
+        <ClassCard
+          v-for="(item, id) in dataClasses"
+          :key="id"
+          :data-class="item"
+          :id="id"
+        />
+      </div>
     </div>
   </div>
 </template>
