@@ -4,7 +4,7 @@
       <img
         class="h-[70px] md:h-[100px] w-full object-cover"
         :src="`${dataClass.image}`"
-        alt="frontend master 1"
+        alt="frontend master"
       />
     </div>
     <div class="py-2 px-3 md:px-8 lg:py-3 lg:px-4 border-b-2">

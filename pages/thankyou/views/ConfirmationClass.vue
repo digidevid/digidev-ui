@@ -103,17 +103,15 @@ export default {
   },
   methods: {
     clickConfirm() {
-      window.open("https://api.whatsapp.com/send?phone=6281264562826");
+      window.open("https://api.whatsapp.com/send?phone=6282277068394");
     },
   },
   computed: {
     titleClass() {
       if (this.typeClass === "web-basic") {
         return "Kelas Basic Modern Web";
-      } else if (this.typeClass === "front-end-1") {
-        return "Kelas Frontend Master 1";
-      } else if (this.typeClass === "front-end-2") {
-        return "Kelas Frontend Master 2";
+      } else if (this.typeClass === "front-end") {
+        return "Kelas Frontend Master";
       } else if (this.typeClass === "back-end") {
         return "Kelas Basic Backend";
       } else if (this.typeClass === "full-stack") {

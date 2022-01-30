@@ -54,11 +54,11 @@ export default {
           classType: [
             {
               name: "grup",
-              price: 750000,
+              price: 950000,
             },
             {
               name: "privat",
-              price: 2000000,
+              price: 2200000,
             },
           ],
           benefits: [
@@ -69,50 +69,28 @@ export default {
         },
         {
           id: 2,
-          name: "Kelas Frontend Master 1",
+          name: "Kelas Frontend Master",
           image: "/images/hero/hero3.png",
-          slug: "front-end-1",
+          slug: "front-end",
           isActive: true,
           classType: [
             {
               name: "grup",
-              price: 950000,
+              price: 1200000,
             },
             {
               name: "privat",
-              price: 2800000,
+              price: 3500000,
             },
           ],
           benefits: [
             "Tersedia kelas grup dan privat",
             "Sertifikat",
-            "Vue Js, Nuxt Js",
+            "Vue Js, Nuxt Js, API, Axios, Deployment",
           ],
         },
         {
           id: 3,
-          name: "Kelas Frontend Master 2",
-          image: "/images/hero/hero3.png",
-          slug: "front-end-2",
-          isActive: true,
-          classType: [
-            {
-              name: "grup",
-              price: 950000,
-            },
-            {
-              name: "privat",
-              price: 2800000,
-            },
-          ],
-          benefits: [
-            "Tersedia kelas grup dan privat",
-            "Sertifikat",
-            "Vue Js, Nuxt Js, API, Postman",
-          ],
-        },
-        {
-          id: 4,
           name: "Kelas Backend Master",
           image: "/images/hero/hero4.png",
           slug: "back-end",
@@ -120,11 +98,11 @@ export default {
           classType: [
             {
               name: "grup",
-              price: 950000,
+              price: 1200000,
             },
             {
               name: "privat",
-              price: 2800000,
+              price: 3500000,
             },
           ],
           benefits: [
@@ -134,7 +112,7 @@ export default {
           ],
         },
         {
-          id: 5,
+          id: 4,
           name: "Kelas Bimbingan Tugas Akhir",
           image: "/images/hero/hero5.png",
           slug: "tugas-akhir",

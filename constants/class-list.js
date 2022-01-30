@@ -11,7 +11,7 @@ export const classList = [
       "8x Pertemuan",
       "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
       "Kuota Terbatas",
-      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
+      "Waktu fleksible (mengikuti jadwal siswa)",
     ],
     locations: [
       "Medan",
@@ -131,9 +131,9 @@ export const classList = [
         id: 1,
         name: "Kelas Grup",
         image: "/images/class/group.jpg",
-        price: 750,
+        price: 950,
         priceType: "ribu",
-        realPrice: 750000,
+        realPrice: 950000,
         isPreOrder: true,
         details: [
           "Eksklusif tatap muka",
@@ -150,9 +150,9 @@ export const classList = [
         id: 2,
         name: "Kelas Privat",
         image: "/images/class/private.jpg",
-        price: 2,
+        price: 2.2,
         priceType: "jt",
-        realPrice: 2000000,
+        realPrice: 2200000,
         isPreOrder: false,
         details: [
           "Eksklusif untuk 1 siswa",
@@ -233,7 +233,7 @@ export const classList = [
       {
         question: "Dimana kelas akan dilaksanakan?",
         answer:
-          "Lokasi kelas akan ditentukan pada saat (meeting awal) antara tim Digidev, mentor dan siswa. Lokasi bisa di rumah siswa, cafe, atau learning space milik Digidev.",
+          "Lokasi kelas berada di learning space milik Digidev (Jl. Harmonika Baru no.5a lt.2, Medan Selayang, Medan).",
         isActive: false,
       },
     ],
@@ -292,8 +292,8 @@ export const classList = [
   },
   {
     id: 2,
-    name: "Frontend Master (Vue Js) 1",
-    slug: "front-end-1",
+    name: "Frontend Master (Vue Js)",
+    slug: "front-end",
     classDays: 8,
     classWeeks: 4,
     locations: [
@@ -308,12 +308,12 @@ export const classList = [
       "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
     ],
     summaryInfo: [
-      "Mendalami Frontend Master 1",
+      "Mendalami Frontend Master",
       "Belajar & Praktik (4 Minggu)",
       "8x Pertemuan",
       "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
       "Kuota Terbatas",
-      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
+      "Waktu fleksible (mengikuti jadwal siswa)",
     ],
     syllabus: [
       {
@@ -363,15 +363,49 @@ export const classList = [
         subSyllabus: ["nuxt-link", "$router", "$route (query param link)"],
         isOpen: false,
       },
+      {
+        id: 6,
+        name: "Membuat dan memanggil component",
+        subSyllabus: ["import component", "props", "emit", "v-slot"],
+        isOpen: false,
+      },
+      {
+        id: 7,
+        name: "Mengolah dan memproses API dalam Vue Js menggunakan Axios",
+        subSyllabus: [
+          "Pengenalan tools Postman",
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE",
+        ],
+        isOpen: false,
+      },
+      {
+        id: 8,
+        name: "Install library & plugins",
+        subSyllabus: [
+          "Integrasi TailwindCSS ke project Nuxt",
+          "Menambah google font ke project Nuxt",
+          "Membuat global custom CSS",
+        ],
+        isOpen: false,
+      },
+      {
+        id: 9,
+        name: "Deploy project Nuxt ke production",
+        subSyllabus: [],
+        isOpen: false,
+      },
     ],
     classTypes: [
       {
         id: 1,
         name: "Kelas Grup",
         image: "/images/class/group.jpg",
-        price: 950,
-        priceType: "ribu",
-        realPrice: 950000,
+        price: 1.2,
+        priceType: "jt",
+        realPrice: 1200000,
         isPreOrder: true,
         details: [
           "Eksklusif tatap muka",
@@ -388,7 +422,7 @@ export const classList = [
         id: 2,
         name: "Kelas Privat",
         image: "/images/class/private.jpg",
-        price: "2,8",
+        price: 3.5,
         priceType: "jt",
         realPrice: 2800000,
         isPreOrder: false,
@@ -435,13 +469,31 @@ export const classList = [
         content:
           "Siswa memahami dan mampu mengimplementasi perpindahan page dalam projek Nuxt",
       },
+      {
+        id: 8,
+        content:
+          "Siswa memahami dan mampu mengimplementasi pembuatan dan pemanggilan component Vue",
+      },
+      {
+        id: 9,
+        content: "Siswa mampu mengolah dan memproses API",
+      },
+      {
+        id: 10,
+        content:
+          "Siswa mampu menginstall library dan plugins dalam projek Nuxt",
+      },
+      {
+        id: 11,
+        content: "Siswa mampu mendeploy projek Vue / Nuxt ke Production",
+      },
     ],
     faq: [
       {
         question:
           "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
         answer:
-          "Kelas Frontend Master 1 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
+          "Kelas Frontend Master ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini.",
         isActive: false,
       },
       {
@@ -453,7 +505,7 @@ export const classList = [
       {
         question: "Apakah kelas ini bisa dilaksanakan secara online?",
         answer:
-          "Kelas Frontend Master 1 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
+          "Kelas Frontend Master ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
         isActive: false,
       },
       {
@@ -472,7 +524,7 @@ export const classList = [
       {
         question: "Dimana kelas akan dilaksanakan?",
         answer:
-          "Lokasi kelas akan ditentukan pada saat (meeting awal) antara tim Digidev, mentor dan siswa. Lokasi bisa di rumah siswa, cafe, atau learning space milik Digidev.",
+          "Lokasi kelas berada di learning space milik Digidev (Jl. Harmonika Baru no.5a lt.2, Medan Selayang, Medan).",
         isActive: false,
       },
     ],
@@ -508,197 +560,6 @@ export const classList = [
   },
   {
     id: 3,
-    name: "Frontend Master (Vue Js) 2",
-    slug: "front-end-2",
-    classDays: 8,
-    classWeeks: 4,
-    locations: [
-      "Medan",
-      "Jakarta (coming soon)",
-      "Yogyakarta (coming soon)",
-      "Bandung (coming soon)",
-    ],
-    requirements: [
-      "Sudah mengikuti kelas Frontend Master 1",
-      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
-      "Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript.",
-      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
-    ],
-    summaryInfo: [
-      "Kelas Lanjutan Frontend Master 2",
-      "Belajar & Praktik (4 Minggu)",
-      "8x Pertemuan",
-      "1 Pertemuan berdurasi 3 jam (2 jam materi dan praktik, 1 jam tugas)",
-      "Kuota Terbatas",
-      "Waktu dan Lokasi fleksible (mengikuti jadwal siswa)",
-    ],
-    syllabus: [
-      {
-        id: 1,
-        name: "Membuat dan memanggil component",
-        subSyllabus: ["import component", "props", "emit", "v-slot"],
-        isOpen: false,
-      },
-      {
-        id: 2,
-        name: "Mengolah dan memproses API dalam Vue Js menggunakan Axios",
-        subSyllabus: [
-          "Pengenalan tools Postman",
-          "GET",
-          "POST",
-          "PUT",
-          "DELETE",
-        ],
-        isOpen: false,
-      },
-      {
-        id: 3,
-        name: "Install library & plugins",
-        subSyllabus: [
-          "Integrasi TailwindCSS ke project Nuxt",
-          "Menambah google font ke project Nuxt",
-          "Membuat global custom CSS",
-        ],
-        isOpen: false,
-      },
-      {
-        id: 4,
-        name: "Deploy project Nuxt ke production",
-        subSyllabus: [],
-        isOpen: false,
-      },
-    ],
-    classTypes: [
-      {
-        id: 1,
-        name: "Kelas Grup",
-        image: "/images/class/group.jpg",
-        price: 950,
-        priceType: "ribu",
-        realPrice: 950000,
-        isPreOrder: true,
-        details: [
-          "Eksklusif tatap muka",
-          "8x pertemuan",
-          "Grup belajar (maksimum 5 siswa)",
-          "Mentor berpengalaman",
-          "Kurikulum terupdate dunia kerja",
-          "Pertemuan offline (wajib)",
-          "Gabung ke grup whatsapp dengan siswa lain",
-          "Sertifikat",
-        ],
-      },
-      {
-        id: 2,
-        name: "Kelas Privat",
-        image: "/images/class/private.jpg",
-        price: "2,8",
-        priceType: "jt",
-        realPrice: 2800000,
-        isPreOrder: false,
-        details: [
-          "Eksklusif untuk 1 siswa",
-          "8x pertemuan",
-          "Mentor berpengalaman",
-          "Kurikulum terupdate dunia kerja",
-          "Pertemuan offline (tatap muka) atau online (daring)",
-          "Gabung ke grup whatsapp dengan siswa lain",
-          "Sertifikat",
-        ],
-      },
-    ],
-    goals: [
-      {
-        id: 1,
-        content:
-          "Siswa memahami dan mampu mengimplementasi pembuatan dan pemanggilan component Vue",
-      },
-      {
-        id: 2,
-        content: "Siswa mampu mengolah dan memproses API",
-      },
-      {
-        id: 3,
-        content:
-          "Siswa mampu menginstall library dan plugins dalam projek Nuxt",
-      },
-      {
-        id: 4,
-        content: "Siswa mampu mendeploy projek Vue / Nuxt ke Production",
-      },
-    ],
-    faq: [
-      {
-        question:
-          "Bisakah kelas ini untuk orang awam (tidak bisa programming)?",
-        answer:
-          "Kelas Frontend Master 2 ini tidak cocok untuk orang yang belum memiliki basic. Siswa harus memiliki basic/dasar pemrograman seperti dasar HTML, CSS dan Javasctript untuk mengikuti kelas ini. Siswa juga harus mengikuti kelas Frontend Master 1 sebelum mengikuti kelas ini.",
-        isActive: false,
-      },
-      {
-        question: "Apa saja syarat untuk mengikuti kelas ini?",
-        answer:
-          "Memiliki laptop pribadi dengan minimum spek ram 4 GB, core i3, kondisi laptop sehat, Sudah mengikuti kelas Frontend Master 1, Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript, Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline).",
-        isActive: false,
-      },
-      {
-        question: "Apakah kelas ini bisa dilaksanakan secara online?",
-        answer:
-          "Kelas Frontend Master 2 ini dilaksanakan secara offline (langsung tatap muka) maupun online (daring). Namun untuk online, hanya berlaku untuk pendaftaran dengan tipe privat (1 on 1 dengan mentor).",
-        isActive: false,
-      },
-      {
-        question:
-          "Apakah akan mendapatkan sertifikat setelah selesai mengikuti kelas?",
-        answer:
-          "Setiap siswa yang telah selesai mengikuti kelas apapun di Digidev akan mendapatkan sertifikat sesuai dengan kelas yang diikuti dengan syarat mengikuti kelas sampai akhir.",
-        isActive: false,
-      },
-      {
-        question: "Kapan jadwal kelas dilaksanakan?",
-        answer:
-          "Jadwal kelas akan ditentukan pada saat briefiing (meeting awal) antara tim Digidev, mentor dan siswa. Jadi kamu diharuskan untuk hadir saat briefing kelas yang dipilih. Jika tidak hadir maka dianggap batal mengikuti kelas.",
-        isActive: false,
-      },
-      {
-        question: "Dimana kelas akan dilaksanakan?",
-        answer:
-          "Lokasi kelas akan ditentukan pada saat (meeting awal) antara tim Digidev, mentor dan siswa. Lokasi bisa di rumah siswa, cafe, atau learning space milik Digidev.",
-        isActive: false,
-      },
-    ],
-    tutors: [
-      {
-        id: 1,
-        name: "Faishal Arif",
-        location: "Medan - Jakarta Selatan",
-        photo: "/images/mentor/faishal.png",
-        job: "CEO & Founder",
-        linkedin: "https://www.linkedin.com/in/fshlarf/",
-        github: "https://github.com/fshlarf",
-        company: "ex-Blanja.com, ex-Elevenia, ex-Bonza, Seakun.id",
-        bio: "Faishal Arif adalah seorang Software Engineer dengan pengalaman di dunia profesional selama 4 tahun. Saat ini sedang berkarir sebagai CEO di startup yang dibangunnya yaitu Seakun.id. Memiliki skill dan pengalaman di dunia modern web development untuk frontend, backend maupun mobile apps development.",
-      },
-      {
-        id: 2,
-        name: "Ibnu Hazar",
-        location: "Medan",
-        photo: "/images/mentor/ibnu.png",
-        job: "Frontend Software Engineer",
-        linkedin: "https://www.linkedin.com/in/ibnu-hazar/",
-        github: "https://github.com/ibnuhazar101",
-        company: "Iredium.com, Seakun.id",
-        bio: "Sebelumnya bekerja di dunia telekomunikasi, Ibnu menjadi Junior Software Engineer yang memulai karir nya di dunia Web Development di tahun 2021. Selain bekerja full time di Seakun.id, Ibnu juga bekerja part time di Iredium.com.",
-      },
-    ],
-    requirements: [
-      "Memiliki laptop pribadi dengan minimum spesifikasi ram 4 GB, intel Core i3, kondisi laptop sehat.",
-      "Sudah memahami dasar pemrograman, dasar HTML, CSS dan Javascript.",
-      "Sudah divaksin minimal 1x dan mengikuti prokes (untuk kelas offline) dan menunjukkan sertifikat vaksin.",
-    ],
-  },
-  {
-    id: 4,
     name: "Backend Web Development (Node Js)",
     slug: "back-end",
     classDays: 8,

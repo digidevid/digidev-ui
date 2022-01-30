@@ -89,8 +89,8 @@
           </div>
           <div class="flex space-x-2">
             <img src="/images/icons/contact/phone-icon.svg" alt="phone icon" />
-            <a href="https://api.whatsapp.com/send?phone=6281264562826"
-              >+62 812 6456 2826</a
+            <a href="https://api.whatsapp.com/send?phone=6282277068394"
+              >+62 822-7706-8394</a
             >
           </div>
           <div class="flex space-x-2">
@@ -98,7 +98,9 @@
               src="/images/icons/contact/location-icon.svg"
               alt="location icon"
             />
-            <a href="">Medan - Jakarta Selatan, Indonesia</a>
+            <a href=""
+              >Jl. Harmonika Baru no.05a lt.2, Medan Selayang, Medan. 20132</a
+            >
           </div>
         </div>
       </div>

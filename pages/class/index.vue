@@ -228,11 +228,8 @@ export default {
         case "web-basic":
           return "Basic Modern Web";
           break;
-        case "front-end-1":
-          return "Frontend Master 1";
-          break;
-        case "front-end-2":
-          return "Frontend Master 2";
+        case "front-end":
+          return "Frontend Master";
           break;
         case "back-end":
           return "Backend Master";

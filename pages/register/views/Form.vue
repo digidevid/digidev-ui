@@ -175,10 +175,8 @@ export default {
     titleClass() {
       if (this.className === "web-basic") {
         return "Kelas Basic Modern Web";
-      } else if (this.className === "front-end-1") {
-        return "Kelas Frontend Master 1";
-      } else if (this.className === "front-end-2") {
-        return "Kelas Frontend Master 2";
+      } else if (this.className === "front-end") {
+        return "Kelas Frontend Master";
       } else if (this.className === "back-end") {
         return "Kelas Backend Master";
       } else if (this.className === "full-stack") {

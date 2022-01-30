@@ -175,7 +175,7 @@
 
       <a
         target="_blank"
-        href="https://api.whatsapp.com/send?phone=6281264562826"
+        href="https://api.whatsapp.com/send?phone=6282277068394"
       >
         <Button
           class="lg:!text-18 !text-14 lg:py-4 py-3 px-4 md:px-8"
@@ -242,10 +242,8 @@ export default {
     titleClass() {
       if (this.choosedClass === "web-basic") {
         return "Kelas Basic Modern Web";
-      } else if (this.choosedClass === "front-end-1") {
-        return "Kelas Frontend Master 1";
-      } else if (this.choosedClass === "front-end-2") {
-        return "Kelas Frontend Master 2";
+      } else if (this.choosedClass === "front-end") {
+        return "Kelas Frontend Master";
       } else if (this.choosedClass === "back-end") {
         return "Kelas Backend Master";
       } else if (this.choosedClass === "full-stack") {
