@@ -19,12 +19,18 @@
         </div>
         <div class="p-4 md:p-6">
           <p class="font-bold text-lg">{{ type.name }}</p>
-          <div class="flex items-start my-5">
-            <p class="text-xs font-medium">Rp</p>
-            <p class="text-4xl font-bold leading-8">
+          <div class="flex items-start my-6">
+            <p class="text-xs font-medium text-primary">Rp</p>
+            <p class="text-5xl font-bold text-primary">
               {{ type.price
               }}<span class="text-base">{{ type.priceType }}</span>
             </p>
+            <span class="text-sm ml-3 pt-5">
+              <del>
+                Rp{{ type.oriPrice
+                }}<span class="text-base">{{ type.oriPriceType }}</span>
+              </del>
+            </span>
           </div>
           <div class="space-y-2">
             <div
