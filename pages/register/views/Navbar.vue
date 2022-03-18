@@ -15,7 +15,7 @@
     >
       <div>
         <nuxt-link to="/"
-          ><img class="max-w-[56px]" src="~/static/digidev-bw.png" alt=""
+          ><img class="max-w-[56px]" src="~/static/logo/digidev-bw.png" alt=""
         /></nuxt-link>
       </div>
     </div>
