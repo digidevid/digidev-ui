@@ -270,19 +270,19 @@ export default {
   background-position: center center;
 }
 .hero-home {
-  background-image: url("~/static/images/hero/hero.png");
+  background-image: url("~/static/images/hero/hero.jpeg");
 }
 .hero-web-basic {
-  background-image: url("~/static/images/hero/hero2.png");
+  background-image: url("~/static/images/hero/hero2.jpeg");
 }
 .hero-front-end {
-  background-image: url("~/static/images/hero/hero3.png");
+  background-image: url("~/static/images/hero/hero3.jpeg");
 }
 .hero-back-end {
-  background-image: url("~/static/images/hero/hero4.png");
+  background-image: url("~/static/images/hero/hero4.jpeg");
 }
 .hero-full-stack {
-  background-image: url("~/static/images/hero/hero5.png");
+  background-image: url("~/static/images/hero/hero5.jpeg");
 }
 .menu {
   background-color: transparent;

@@ -29,7 +29,7 @@ export default {};
 
 <style lang="scss" scoped>
 .navigation {
-  background-image: url("~/static/images/hero/hero6.png");
+  background-image: url("~/static/images/hero/hero6.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

@@ -50,7 +50,7 @@ export default {
         {
           id: 1,
           name: "Kelas Web Basic",
-          image: "/images/hero/hero2.png",
+          image: "/images/hero/hero2.jpeg",
           slug: "web-basic",
           isActive: true,
           classType: [
@@ -72,7 +72,7 @@ export default {
         {
           id: 2,
           name: "Kelas Frontend Master",
-          image: "/images/hero/hero3.png",
+          image: "/images/hero/hero3.jpeg",
           slug: "front-end",
           isActive: true,
           classType: [
@@ -94,7 +94,7 @@ export default {
         {
           id: 3,
           name: "Kelas Backend Master",
-          image: "/images/hero/hero4.png",
+          image: "/images/hero/hero4.jpeg",
           slug: "back-end",
           isActive: false,
           classType: [
@@ -116,7 +116,7 @@ export default {
         {
           id: 4,
           name: "Kelas Bimbingan Tugas Akhir",
-          image: "/images/hero/hero5.png",
+          image: "/images/hero/hero5.jpeg",
           slug: "tugas-akhir",
           isActive: false,
           classType: [
