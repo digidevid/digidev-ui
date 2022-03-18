@@ -17,9 +17,9 @@
       </h2>
       <div
         class="
-          mt-8
+          mt-4
           lg:mt-12
-          grid grid-cols-2
+          grid grid-cols-1
           lg:grid-cols-3
           xl:grid-cols-4
           gap-2
@@ -55,12 +55,14 @@ export default {
           isActive: true,
           classType: [
             {
-              name: "grup",
+              name: "Grup",
+              oriPrice: 1200000,
               price: 950000,
             },
             {
-              name: "privat",
-              price: 2200000,
+              name: "Privat",
+              oriPrice: 2400000,
+              price: 1900000,
             },
           ],
           benefits: [
@@ -77,12 +79,14 @@ export default {
           isActive: true,
           classType: [
             {
-              name: "grup",
+              name: "Grup",
+              oriPrice: 1500000,
               price: 1200000,
             },
             {
-              name: "privat",
-              price: 3500000,
+              name: "Privat",
+              oriPrice: 3000000,
+              price: 2400000,
             },
           ],
           benefits: [
@@ -99,12 +103,14 @@ export default {
           isActive: false,
           classType: [
             {
-              name: "grup",
+              name: "Grup",
+              oriPrice: 1500000,
               price: 1200000,
             },
             {
-              name: "privat",
-              price: 3500000,
+              name: "Privat",
+              oriPrice: 3000000,
+              price: 2400000,
             },
           ],
           benefits: [
@@ -115,22 +121,46 @@ export default {
         },
         {
           id: 4,
-          name: "Kelas Bimbingan Tugas Akhir",
-          image: "/images/hero/hero5.jpeg",
-          slug: "tugas-akhir",
+          name: "Kelas Administrasi Perkantoran",
+          image: "/images/hero/hero-office.jpeg",
+          slug: "office",
           isActive: false,
           classType: [
             {
-              name: "privat",
-              price: 4500000,
+              name: "Grup",
+              oriPrice: 1150000,
+              price: 900000,
+            },
+            {
+              name: "Privat",
+              oriPrice: 2300000,
+              price: 1800000,
             },
           ],
           benefits: [
-            "Tersedia kelas privat",
+            "Tersedia kelas grup dan privat",
             "Sertifikat",
-            "Materi sesuai Tugas Akhir",
+            "Microsoft Office (Word, Excel, Power Point), Surat Elektronik",
           ],
         },
+        // {
+        //   id: 4,
+        //   name: "Kelas Bimbingan Tugas Akhir",
+        //   image: "/images/hero/hero5.jpeg",
+        //   slug: "tugas-akhir",
+        //   isActive: false,
+        //   classType: [
+        //     {
+        //       name: "Privat",
+        //       price: 4500000,
+        //     },
+        //   ],
+        //   benefits: [
+        //     "Tersedia kelas privat",
+        //     "Sertifikat",
+        //     "Materi sesuai Tugas Akhir",
+        //   ],
+        // },
       ],
     };
   },

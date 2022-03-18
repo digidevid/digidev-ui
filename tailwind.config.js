@@ -19,6 +19,8 @@ module.exports = {
         mentorBg: "url('~/static/bg-mentor.jpg')",
       },
       fontSize: {
+        8: "8px",
+        10: "10px",
         12: "12px",
         14: "14px",
         16: "16px",
