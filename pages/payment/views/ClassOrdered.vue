@@ -73,6 +73,7 @@
             border
             cursor-pointer
           "
+          :class="{ 'border-[#0a7dfa]': item.id === choosedBank.id }"
           @click="checkBank(item)"
           v-for="(item, id) in dataBank"
           :key="id"
@@ -150,7 +151,7 @@
         <div class="pt-4 lg:pt-6 grid space-y-4">
           <div class="flex justify-between">
             <p class="text-12 lg:text-16 opacity-60">
-              Kelas Frontend Engineer - Grup
+              {{ titleClass }} - <span class="capitalize">{{ typeClass }}</span>
             </p>
             <p class="text-12 lg:text-16 opacity-60">
               {{ formatCurrency(parseInt(price)) }}
@@ -170,7 +171,7 @@
         </div>
       </div>
       <p class="text-[10px] lg:text-14 pt-4 pb-4 lg:pt-6 lg:pb-8 opacity-60">
-        Pastikan untuk cek kembali kelas yang akan kamu beli
+        Pastikan untuk cek kembali kelas yang akan kamu bayar!
       </p>
 
       <a

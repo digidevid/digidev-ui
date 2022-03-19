@@ -29,7 +29,10 @@
     >
       <div>
         <nuxt-link to="/"
-          ><img class="w-14" src="~/static/digidev-bw.png" alt="digidev brand"
+          ><img
+            class="w-14"
+            src="~/static/logo/digidev-bw.png"
+            alt="digidev brand"
         /></nuxt-link>
       </div>
     </div>
