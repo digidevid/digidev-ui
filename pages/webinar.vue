@@ -1,11 +1,11 @@
 <template>
-  <div>Redirect to webinar form registration</div>
+  <div>Redirecting to webinar link...</div>
 </template>
 
 <script>
 export default {
   mounted() {
-    window.location = "https://forms.gle/jkcwRe3ipapgeZEV7";
+    window.location = "https://telkomsel.zoom.us/j/99629692372?pwd=cGNpMU04SlNNaVQ3RnJmaVdGdjFZdz09";
   },
 };
 </script>
