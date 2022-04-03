@@ -143,6 +143,44 @@ export default {
             "Microsoft Office (Word, Excel, Power Point), Surat Elektronik",
           ],
         },
+        {
+          id: 5,
+          name: "Ramadhan Camp - Simple Web Project (Keranjang Belanja)",
+          image: "/images/hero/hero-office.jpeg",
+          slug: "camp-basic",
+          isActive: true,
+          classType: [
+            {
+              name: "Reguler",
+              oriPrice: 350000,
+              price: 150000,
+            },
+          ],
+          benefits: [
+            "Mentor profesional software engineer",
+            "Sertifikat",
+            "Mendapat bimbingan & arahan pembuatan projek",
+          ],
+        },
+        {
+          id: 6,
+          name: "Ramadhan Camp - Movie Recommendation (Vue)",
+          image: "/images/hero/hero-office.jpeg",
+          slug: "camp-frontend",
+          isActive: true,
+          classType: [
+            {
+              name: "Reguler",
+              oriPrice: 400000,
+              price: 200000,
+            },
+          ],
+          benefits: [
+            "Mentor profesional software engineer",
+            "Sertifikat",
+            "Mendapat bimbingan & arahan pembuatan projek",
+          ],
+        },
         // {
         //   id: 4,
         //   name: "Kelas Bimbingan Tugas Akhir",
