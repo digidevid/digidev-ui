@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main">
+  <div class="bg-main" v-if="chosedClass">
     <Navigation
       @clickNav="
         $router.push(`/register?packet-class=${typeClass}&id-class=${idClass}`)
@@ -156,6 +156,7 @@ import ClassFaq from "./views/ClassFaq.vue";
 import ClassBanner from "./views/ClassBanner.vue";
 import Footer from "~/components/organisms/Footer.vue";
 import { classList } from "~/constants/class-list.js";
+import axios from "axios";
 export default {
   components: {
     Button,
@@ -241,19 +242,27 @@ export default {
     },
   },
   mounted() {
-    const { paket_kelas } = this.$router.history.current.query;
     this.typeClass = this.$route.query.paket_kelas;
     this.idClass = this.$route.query.id_kelas;
-    if (paket_kelas) {
-      this.classList.forEach((element) => {
-        if (element.slug === paket_kelas) {
-          this.chosedClass = element;
-          this.shownTutor = this.chosedClass.tutors[0];
-        }
-      });
-    }
+    this.getDataClass();
+    // if (paket_kelas) {
+    //   this.classList.forEach((element) => {
+    //     if (element.slug === paket_kelas) {
+    //       this.chosedClass = element;
+    //       this.shownTutor = this.chosedClass.tutors[0];
+    //     }
+    //   });
+    // }
   },
   methods: {
+    async getDataClass() {
+      const { paket_kelas } = this.$router.history.current.query;
+      const res = await axios.get(
+        `https://demo8852377.mockable.io/${paket_kelas}`
+      );
+      this.chosedClass = res.data;
+      this.shownTutor = this.chosedClass.tutors[0];
+    },
     nextTutor(id) {
       this.shownTutor = this.chosedClass.tutors[id - 1 + 1];
     },
