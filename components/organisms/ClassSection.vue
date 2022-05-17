@@ -145,7 +145,7 @@ export default {
         },
         {
           id: 5,
-          name: "Ramadhan Camp - Simple Web Project (Keranjang Belanja)",
+          name: "Mini Camp - Simple Web Project (Keranjang Belanja)",
           image: "/images/hero/hero-office.jpeg",
           slug: "camp-basic",
           isActive: true,
@@ -164,7 +164,7 @@ export default {
         },
         {
           id: 6,
-          name: "Ramadhan Camp - Movie Recommendation (Vue)",
+          name: "Mini Camp - Movie Recommendation (Vue)",
           image: "/images/hero/hero-office.jpeg",
           slug: "camp-frontend",
           isActive: true,
