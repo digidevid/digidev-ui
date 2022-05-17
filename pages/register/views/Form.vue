@@ -137,12 +137,11 @@ import Button from "~/components/atoms/Button";
 import Input from "~/components/atoms/Input";
 import Dropdown from "~/components/atoms/Dropdown";
 import axios from "axios";
-import { classList } from "~/constants/class-list.js";
 export default {
   components: { Button, Dropdown, Input },
   data() {
     return {
-      classList,
+      chosedClass: {},
       fullname: "",
       className: "",
       typeClass: "Tipe Kelas",
@@ -170,6 +169,7 @@ export default {
   mounted() {
     this.className = this.$route.query["packet-class"];
     this.idClass = this.$route.query["id-class"];
+    this.getDataClass();
   },
   computed: {
     titleClass() {
@@ -207,10 +207,15 @@ export default {
     dropdownCity() {
       this.isOpenCity = !this.isOpenCity;
     },
+    async getDataClass() {
+      const res = await axios.get(
+        `https://demo8852377.mockable.io/${this.className}`
+      );
+      this.chosedClass = res.data;
+    },
     chooseClass(param) {
-      //0 for group, 1 fro private
       this.price =
-        this.classList[this.idClass].classTypes[
+        this.chosedClass.classTypes[
           param.toLowerCase() === "group" ? 0 : 1
         ].realPrice;
       this.typeClass = param;
