@@ -18,7 +18,7 @@
               {{ formatCurrency(parseInt(price)) }}
             </h3>
             <p class="lg:block hidden dark-grey">
-              {{ description }}
+              {{ detailTypeClass.description }}
             </p>
           </div>
         </div>
@@ -192,6 +192,7 @@
 import { classList } from "~/constants/class-list.js";
 import Button from "~/components/atoms/Button.vue";
 import Snackbar from "~/components/mollecules/Snackbar.vue";
+import axios from "axios";
 export default {
   components: { Button, Snackbar },
   data() {
@@ -199,11 +200,12 @@ export default {
       classList,
       choosedClass: "",
       typeClass: "",
-      idClass: "",
       typeClass: "",
       price: "",
       className: "",
       choosedBank: {},
+      detailClass: {},
+      detailTypeClass: {},
       totalPrice: 0,
       convenienceFee: 25000,
       dataBank: [
@@ -229,15 +231,10 @@ export default {
     };
   },
   mounted() {
-    this.choosedBank = this.dataBank[0];
     this.choosedClass = this.$route.query["choosed-class"];
-    this.idClass = this.$route.query["id-class"];
+    this.getDataClass();
+    this.choosedBank = this.dataBank[0];
     this.typeClass = this.$route.query["type-class"];
-    this.price =
-      this.classList[this.idClass].classTypes[
-        this.typeClass.toLowerCase() === "group" ? 0 : 1
-      ].realPrice;
-    this.totalPrice = this.convenienceFee + this.price;
   },
   computed: {
     titleClass() {
@@ -249,19 +246,27 @@ export default {
         return "Kelas Backend Master";
       } else if (this.choosedClass === "full-stack") {
         return "Kelas Basic Fullstack";
-      }
-    },
-    description() {
-      if (this.typeClass.toLowerCase() === "group") {
-        return "Pilihan kelas group memiliki konsep pre-order, yang artinya menunggu sampai grup belajar mencapai minimal 3 orang.";
-      } else if (this.typeClass.toLowerCase() === "private") {
-        return "Pilihan kelas private, 1 siswa akan diajarkan langsung oleh 1 mentor";
-      } else {
-        return "Silahkan lengkapi data di bawah";
+      } else if (this.choosedClass === "tugas-akhir") {
+        return "Kelas Bimbingan Tugas Akhir";
       }
     },
   },
   methods: {
+    async getDataClass() {
+      const res = await axios.get(
+        `https://demo8852377.mockable.io/${this.choosedClass}`
+      );
+      this.detailClass = res.data;
+      if (this.detailClass.classTypes) {
+        this.detailClass.classTypes.forEach((type) => {
+          if (type.slug === this.typeClass) {
+            this.detailTypeClass = type;
+            this.price = type.realPrice;
+            this.totalPrice = this.convenienceFee + this.price;
+          }
+        });
+      }
+    },
     formatCurrency(num) {
       if (num) {
         return `Rp${num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}`;

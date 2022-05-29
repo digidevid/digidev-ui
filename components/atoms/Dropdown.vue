@@ -73,10 +73,11 @@
         <div class="py-1">
           <div v-for="(item, id) in listDropdown" :key="id">
             <p
-              class="text-gray-700 block px-4 py-2 text-sm cursor-pointer"
-              @click="$emit('click-list', item, id)"
+              class="text-gray-700 block px-4 py-2 text-sm"
+              :class="`${item.isActive ? 'cursor-pointer' : 'bg-gray-100'}`"
+              @click="clickList(item)"
             >
-              {{ item }}
+              {{ item.text }}
             </p>
           </div>
         </div>
@@ -92,9 +93,9 @@ export default {
       type: String,
       default: "Pilih",
     },
-    choosedList: {
+    placeholder: {
       type: String,
-      default: "List Terpilih",
+      default: () => "",
     },
     isOpen: {
       type: Boolean,
@@ -102,7 +103,7 @@ export default {
     },
     listDropdown: {
       type: Array,
-      default: ["list 1", "list 2"],
+      default: [],
     },
     error: {
       type: Boolean,
@@ -116,11 +117,21 @@ export default {
   data() {
     return {
       value: "",
+      choosedList: "",
     };
   },
-  watch: {
-    choosedList() {
-      this.value = this.choosedList;
+  mounted() {
+    if (this.placeholder) {
+      this.choosedList = this.placeholder;
+    }
+  },
+  methods: {
+    clickList(item) {
+      if (item.isActive) {
+        this.choosedList = item.text;
+        this.value = item.value;
+        this.$emit("click-list", item);
+      }
     },
   },
 };

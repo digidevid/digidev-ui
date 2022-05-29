@@ -74,8 +74,8 @@
 
         <Dropdown
           title="Pilihan Kelas"
+          placeholder="Tipe Kelas"
           @click="dropdownClass"
-          :choosedList="typeClass"
           :isOpen="isOpenClass"
           :listDropdown="typeClasses"
           @click-list="chooseClass"
@@ -98,8 +98,8 @@
 
         <Dropdown
           title="Kota Domisili"
+          placeholder="Pilih Kota"
           @click="dropdownCity"
-          :choosedList="city"
           :isOpen="isOpenCity"
           :listDropdown="cities"
           @click-list="chooseCity"
@@ -153,11 +153,34 @@ export default {
       date: "",
       isOpenClass: false,
       isOpenCity: false,
-      cities: ["Medan", "Jakarta", "Bandung", "Malang"],
-      typeClasses: ["Group", "Private"],
+      // cities: ["Medan", "Jakarta", "Bandung", "Malang"],
+      cities: [
+        {
+          text: "Medan",
+          value: "Medan",
+          isActive: true,
+        },
+        {
+          text: "Jakarta (coming soon)",
+          value: "Jakarta",
+          isActive: false,
+        },
+        {
+          text: "Bandung (coming soon)",
+          value: "Bandung",
+          isActive: false,
+        },
+        {
+          text: "Malang (coming soon)",
+          value: "Malang",
+          isActive: false,
+        },
+      ],
+      typeClasses: [],
       idClass: null,
       isErrorForm: false,
       isLoadingSubmit: false,
+      description: "Silahkan lengkapi data di bawah",
     };
   },
   props: {
@@ -181,15 +204,8 @@ export default {
         return "Kelas Backend Master";
       } else if (this.className === "full-stack") {
         return "Kelas Basic Fullstack";
-      }
-    },
-    description() {
-      if (this.typeClass.toLowerCase() === "group") {
-        return "Pilihan kelas group memiliki konsep pre-order, yang artinya menunggu sampai grup belajar mencapai minimal 3 orang.";
-      } else if (this.typeClass.toLowerCase() === "private") {
-        return "Pilihan kelas private, 1 siswa akan diajarkan langsung oleh 1 mentor";
-      } else {
-        return "Silahkan lengkapi data di bawah";
+      } else if (this.className === "tugas-akhir") {
+        return "Kelas Bimbingan Tugas Akhir";
       }
     },
   },
@@ -212,17 +228,26 @@ export default {
         `https://demo8852377.mockable.io/${this.className}`
       );
       this.chosedClass = res.data;
+      this.typeClasses = this.chosedClass.classTypes.map((type) => {
+        return {
+          text: `${type.name}`,
+          value: `${type.slug}`,
+          isActive: true,
+        };
+      });
     },
     chooseClass(param) {
-      this.price =
-        this.chosedClass.classTypes[
-          param.toLowerCase() === "group" ? 0 : 1
-        ].realPrice;
-      this.typeClass = param;
+      this.chosedClass.classTypes.forEach((element) => {
+        if (element.slug === param.value) {
+          this.price = element.realPrice;
+          this.description = element.description;
+        }
+      });
+      this.typeClass = param.value;
       this.isOpenClass = false;
     },
     chooseCity(param) {
-      this.city = param;
+      this.city = param.value;
       this.isOpenCity = false;
     },
     routeToThankyouPage() {
@@ -237,11 +262,11 @@ export default {
       if (
         !this.fullname ||
         !this.className ||
-        this.typeClass === "Tipe Kelas" ||
+        !this.typeClass ||
         !this.price ||
         !this.email ||
         !this.whatsapp ||
-        this.city === "Pilih Kota" ||
+        !this.city ||
         !this.address
       ) {
         this.isErrorForm = true;

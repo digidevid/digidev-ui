@@ -116,6 +116,8 @@ export default {
         return "Kelas Basic Backend";
       } else if (this.typeClass === "full-stack") {
         return "Kelas Basic Fullstack";
+      } else if (this.typeClass === "tugas-akhir") {
+        return "Kelas Bimbingan Tugas Akhir";
       }
     },
   },
