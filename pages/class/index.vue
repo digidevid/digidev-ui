@@ -1,9 +1,7 @@
 <template>
   <div class="bg-main" v-if="chosedClass">
     <Navigation
-      @clickNav="
-        $router.push(`/register?packet-class=${typeClass}&id-class=${idClass}`)
-      "
+      @clickNav="$router.push(`/register?packet-class=${typeClass}`)"
     />
     <div
       class="
@@ -47,11 +45,7 @@
             <Button
               content="Daftar Sekarang"
               class="text-16 mt-6 w-full"
-              @click="
-                $router.push(
-                  `/register?packet-class=${typeClass}&id-class=${idClass}`
-                )
-              "
+              @click="$router.push(`/register?packet-class=${typeClass}`)"
             />
           </div>
         </div>
@@ -129,9 +123,7 @@
         <ClassBanner
           :class-title="classTitle"
           @click-register-mentee="
-            $router.push(
-              `/register?packet-class=${typeClass}&id-class=${idClass}`
-            )
+            $router.push(`/register?packet-class=${typeClass}`)
           "
         />
       </div>
@@ -178,7 +170,6 @@ export default {
       chosedClass: {},
       shownTutor: {},
       typeClass: "",
-      idClass: "",
       menu: [
         {
           id: 1,
@@ -238,21 +229,15 @@ export default {
         case "full-stack":
           return "Fullstack";
           break;
+        case "tugas-akhir":
+          return "Bimbingan Tugas Akhir";
+          break;
       }
     },
   },
   mounted() {
     this.typeClass = this.$route.query.paket_kelas;
-    this.idClass = this.$route.query.id_kelas;
     this.getDataClass();
-    // if (paket_kelas) {
-    //   this.classList.forEach((element) => {
-    //     if (element.slug === paket_kelas) {
-    //       this.chosedClass = element;
-    //       this.shownTutor = this.chosedClass.tutors[0];
-    //     }
-    //   });
-    // }
   },
   methods: {
     async getDataClass() {

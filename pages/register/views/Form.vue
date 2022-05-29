@@ -177,7 +177,6 @@ export default {
         },
       ],
       typeClasses: [],
-      idClass: null,
       isErrorForm: false,
       isLoadingSubmit: false,
       description: "Silahkan lengkapi data di bawah",
@@ -191,7 +190,6 @@ export default {
   },
   mounted() {
     this.className = this.$route.query["packet-class"];
-    this.idClass = this.$route.query["id-class"];
     this.getDataClass();
   },
   computed: {
@@ -252,7 +250,7 @@ export default {
     },
     routeToThankyouPage() {
       this.$router.push(
-        `/thankyou?class-name=${this.className}&class-id=${this.idClass}&city=${this.city}`
+        `/thankyou?class-name=${this.className}&city=${this.city}`
       );
     },
     submit() {

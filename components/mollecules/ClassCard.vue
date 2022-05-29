@@ -34,13 +34,13 @@
             dataClass.isActive ? 'Lihat Detail Kelas' : 'Coming Soon'
           } `"
           class="!text-14 w-full hidden md:block"
-          @click="redirectToDetail(dataClass.slug, id)"
+          @click="redirectToDetail(dataClass.slug)"
           :disabled="!dataClass.isActive"
         />
         <Button
           :content="`${dataClass.isActive ? 'Detail Kelas' : 'Coming Soon'} `"
           class="!text-12 !py-2 w-full md:hidden"
-          @click="redirectToDetail(dataClass.slug, id)"
+          @click="redirectToDetail(dataClass.slug)"
           :disabled="!dataClass.isActive"
         />
       </div>
@@ -79,13 +79,13 @@ export default {
   },
   methods: {
     toRupiah,
-    redirectToDetail(slug, id) {
+    redirectToDetail(slug) {
       if (slug === "camp-basic") {
         this.$router.push("/camp/basic");
       } else if (slug === "camp-frontend") {
         this.$router.push("/camp/frontend");
       } else {
-        this.$router.push(`/class?paket_kelas=${slug}&id_kelas=${id}`);
+        this.$router.push(`/class?paket_kelas=${slug}`);
       }
     },
   },

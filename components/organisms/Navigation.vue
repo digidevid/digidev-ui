@@ -208,6 +208,8 @@ export default {
         return "Kelas Backend Master bersama Digidev";
       } else if (this.typeClass === "full-stack") {
         return "Kelas Basic Fullstack bersama Digidev";
+      } else if (this.typeClass === "tugas-akhir") {
+        return "Kelas Bimbingan Tugas Akhir bersama Digidev";
       }
     },
     setHeight() {
