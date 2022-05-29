@@ -121,28 +121,52 @@ export default {
         },
         {
           id: 4,
-          name: "Kelas Administrasi Perkantoran",
-          image: "/images/hero/hero-office.jpeg",
-          slug: "office",
-          isActive: false,
+          name: "Kelas Bimbingan Tugas Akhir",
+          image: "/images/hero/hero5.jpeg",
+          slug: "tugas-akhir",
+          isActive: true,
           classType: [
             {
-              name: "Grup",
-              oriPrice: 1150000,
-              price: 900000,
+              name: "1 Bulan",
+              oriPrice: 3000000,
+              price: 2200000,
             },
             {
-              name: "Privat",
-              oriPrice: 2300000,
-              price: 1800000,
+              name: "2 Bulan",
+              oriPrice: 5000000,
+              price: 4000000,
             },
           ],
           benefits: [
-            "Tersedia kelas grup dan privat",
-            "Sertifikat",
-            "Microsoft Office (Word, Excel, Power Point), Surat Elektronik",
+            "Bimbingan menyelesaikan tugas akhir",
+            "Persiapan seminar/sidang tugas akhir",
+            "Tugas Akhir seputar Website, Aplikasi, Database, AI dan Machine Learning",
           ],
         },
+        // {
+        //   id: 4,
+        //   name: "Kelas Administrasi Perkantoran",
+        //   image: "/images/hero/hero-office.jpeg",
+        //   slug: "office",
+        //   isActive: false,
+        //   classType: [
+        //     {
+        //       name: "Grup",
+        //       oriPrice: 1150000,
+        //       price: 900000,
+        //     },
+        //     {
+        //       name: "Privat",
+        //       oriPrice: 2300000,
+        //       price: 1800000,
+        //     },
+        //   ],
+        //   benefits: [
+        //     "Tersedia kelas grup dan privat",
+        //     "Sertifikat",
+        //     "Microsoft Office (Word, Excel, Power Point), Surat Elektronik",
+        //   ],
+        // },
         {
           id: 5,
           name: "Mini Camp - Simple Web Project (Keranjang Belanja)",
@@ -181,24 +205,6 @@ export default {
             "Mendapat bimbingan & arahan pembuatan projek",
           ],
         },
-        // {
-        //   id: 4,
-        //   name: "Kelas Bimbingan Tugas Akhir",
-        //   image: "/images/hero/hero5.jpeg",
-        //   slug: "tugas-akhir",
-        //   isActive: false,
-        //   classType: [
-        //     {
-        //       name: "Privat",
-        //       price: 4500000,
-        //     },
-        //   ],
-        //   benefits: [
-        //     "Tersedia kelas privat",
-        //     "Sertifikat",
-        //     "Materi sesuai Tugas Akhir",
-        //   ],
-        // },
       ],
     };
   },
